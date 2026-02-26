@@ -1,0 +1,18 @@
+ai-requirements-engine/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── run.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── src/
+│   ├── config.py
+│   ├── ingestion/
+│   ├── embeddings/
+│   ├── retrieval/
+│
+└── notebooks/

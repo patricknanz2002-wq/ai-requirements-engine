@@ -23,7 +23,7 @@ class InMemoryVectorStore:
         self.ids.extend(ids)
 
 
-    def search(self, query_vector, top_k):
+    def search(self, query_vector: np.ndarray, top_k: int) -> list[tuple[str, float]]:
 
         if(self.vectors is None):
             raise RuntimeError("Vector store is empty. Call add() first.")  

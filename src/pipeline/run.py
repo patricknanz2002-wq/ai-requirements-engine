@@ -1,6 +1,6 @@
 from pathlib import Path
-from embeddings.embedder import RequirementsEmbedder
-from embeddings.vectorStore import InMemoryVectorStore
+from src.embedding.embedder import RequirementsEmbedder
+from src.retrieval.vector_Store import InMemoryVectorStore
 
 ############################################
 ##
@@ -61,7 +61,7 @@ def run_retrieval_pipeline(documents):
 ##
 ############################################
 data_path = "data/raw"
-base_path = Path(__file__).resolve().parent.parent
+base_path = Path(__file__).resolve().parent.parent.parent
 target_path = (base_path / data_path).resolve()
 
 documents = load_documents_recursive(target_path)

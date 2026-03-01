@@ -32,8 +32,9 @@ class InMemoryVectorStore:
         matrix = self.vectors
         similarities = matrix @ query_vector
 
-        # argsort keeps connection between matrix and ids
+        # argsort saves the indexes of the similarities in top_indices descending (-1), without changing ids or similarities lists
         top_indices = np.argsort(similarities)[::-1][:top_k]
 
+        # returns a tupel of ids and similarities
         return [(ids[i], similarities[i]) for i in top_indices]
             

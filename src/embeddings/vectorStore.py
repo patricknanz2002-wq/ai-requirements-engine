@@ -19,6 +19,7 @@ class InMemoryVectorStore:
         else:
             self.vectors = np.vstack([self.vectors, vectors])
 
+        # Ids are loaded into ram, without checking for None, since ids is initialized as list.
         self.ids.extend(ids)
 
 

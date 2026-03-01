@@ -60,9 +60,13 @@ def run_retrieval_pipeline(documents):
 ## Run
 ##
 ############################################
-data_path = "data/raw"
-base_path = Path(__file__).resolve().parent.parent.parent
-target_path = (base_path / data_path).resolve()
+def main():
+    data_path = "data/raw"
+    base_path = Path(__file__).resolve().parent.parent.parent
+    target_path = (base_path / data_path).resolve()
 
-documents = load_documents_recursive(target_path)
-run_retrieval_pipeline(documents)
+    documents = load_documents_recursive(target_path)
+    run_retrieval_pipeline(documents)
+
+if __name__ == "__main__":
+    main()

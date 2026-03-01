@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1612</title><requirement>The save condition of the electric drive system in form of the low-side or the high-side active short circuit (AKS) has to be ensured also in low condition of the low voltage system in the range of 3 volts ... 6 volts (operation of the main controller is in this low voltage range not necessary)</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

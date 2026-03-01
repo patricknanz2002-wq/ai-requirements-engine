@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1991</title><requirement>To ensure that the test severity corresponds to the actual requirements of field use, when performing the test special care must be given to an appropriate emulation of the installed situation of the component in the vehicle generally according to SPEC-10611, Chapter 5.5.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

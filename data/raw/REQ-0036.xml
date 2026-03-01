@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0036</title><requirement>The dwell times of the measurements have to be chosen appropriately to the time constant of the tuners, amplifiers and the measurement equipment.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

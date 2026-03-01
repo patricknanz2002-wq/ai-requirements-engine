@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2079</title><requirement>- special high data rate cable (separate to the Sensor Ethernet connecting to the vehicle bus, i.e. separate LVDS / Ethernet line)</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

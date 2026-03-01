@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1828</title><requirement>The computing platform shall be scalable to an entry platform without the need of changes in layout or by exchanging a small PCB for the computing platform.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

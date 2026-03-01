@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0949</title><requirement>In case of typical driving scenarios the validation shall be succesfully completed as fast as possible, latest typically after 3 seconds driving with or after driving a distance not more than 100 m.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1168</title><requirement>Note: SCC always tries to use the old session ID as long as the connector remains plugged.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

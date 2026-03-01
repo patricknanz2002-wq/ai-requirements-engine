@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1905</title><requirement>If the state of the energy flow is `` Plugged &amp; Ground Pad inactive '' AND as soon as the trigger `` Energy is transfered (OBC) '' occures, the state of the energy flow is `` Plugged &amp; Charge &amp; Ground Pad inactive ''.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

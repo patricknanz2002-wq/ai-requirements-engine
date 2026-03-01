@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1635</title><requirement>Note 2: The RF switch output must be set to the inactive state to detect short to battery and set to the active state to detect open or short to ground.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

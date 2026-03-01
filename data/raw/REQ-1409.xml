@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1409</title><requirement>Estimation has to be done permanently because the self steering gradient is different from vehicle to vehicle and depends on several factors e.g. tires, vehicle life etc.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

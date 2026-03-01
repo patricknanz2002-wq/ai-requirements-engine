@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0394</title><requirement>The OBC shall sendOBL_Chrg_Flap_Stat equal CLOSE to the EMM.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

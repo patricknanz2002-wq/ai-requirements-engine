@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0350</title><requirement>If after the time PPNM_IODCCloseAttemptTime the relay is not closed (T30gStatusOpen equal 1) the error signal IODCCloseError has to be set to 1 for one cycle.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

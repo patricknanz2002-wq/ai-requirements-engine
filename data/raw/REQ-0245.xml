@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0245</title><requirement>If this voltage is below a certain level, the automatic stop is disabled and the GM1 is ended.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

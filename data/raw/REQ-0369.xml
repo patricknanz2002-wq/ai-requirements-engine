@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0369</title><requirement>The energy management shall control the battery current close to zero (tolerance + / - 1 ampere).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

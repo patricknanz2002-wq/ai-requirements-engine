@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1623</title><requirement>In Lithium mode, there is no need of backup battery charge control, decouople relay diagnosis, backup relay diagnosis, short circuit detection in backup path or relay cycle counters.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

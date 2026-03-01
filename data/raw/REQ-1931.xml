@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1931</title><requirement>A specific message sequence is started as soon as Download_Contract_Certificate.Set message is received indicating that the sequence is not complete (Sequence Transmission State equal sequence in progress).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

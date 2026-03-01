@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1160</title><requirement>It must be possible to switch off the external activation of the parking lock via the AUX-supply line (emergency path), as long as the component is fully functional.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

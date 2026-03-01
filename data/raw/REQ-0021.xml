@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0021</title><requirement>The component shall be able to handle at least 1,000 graphical icons (e.g. POI-symbols) simultaneously on the display and apply an adequate grouping principle if necessary.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

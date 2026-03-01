@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1611</title><requirement>Faults (delivery interruptions, short circuits to ground or power) must be separately recognized and stored in every operating state (e.g. activated / not activated) on all inputs and outputs.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

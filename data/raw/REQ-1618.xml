@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1618</title><requirement>A short circuit is detected if the filtered backup battery voltage is below a certain level:</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

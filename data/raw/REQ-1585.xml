@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1585</title><requirement>Furthermore the cell block and all internal connections must stay intact so far, that no short circuit, isolation failure, leakage or any other critical event occurs.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

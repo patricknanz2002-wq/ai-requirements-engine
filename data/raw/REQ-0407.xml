@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0407</title><requirement>The OBC shall react in response to a Proximity Input Voltage being in a range between open and closed for S3 by entering the HV Shutdown sequence.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

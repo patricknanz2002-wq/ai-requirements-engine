@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1698</title><requirement>To avoid the EOL alignment mode the component shall have the oportunity to be aligned within a very short time of driving, mostly indepentenly of driving conditions for an alignment of the component.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

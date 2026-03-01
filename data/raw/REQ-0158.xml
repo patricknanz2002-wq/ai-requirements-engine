@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0158</title><requirement>These parameters can be calculated afterwards [ADS, Matlab] or during the measurement using a virtual antenna embedded in the VNA by appropriate modification of calibration error terms.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

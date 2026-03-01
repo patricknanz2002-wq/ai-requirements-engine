@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1110</title><requirement>BCDActSoc greater than PPNM_BCMBuckMdExtHigh or (PNHV_DrvInhMd_Rq equal 0 longer than 5 seconds)</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

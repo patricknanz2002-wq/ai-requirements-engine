@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0916</title><requirement>The signal has to signalize (signal state 0 equal NACPT) that an object does not fulfill the requirements for a pedestrian (incl. pedestrian dummies, pedestrians with sports equipment or other equipment) independently of their moving state (moving, stationary) for a fast functional reaction exclusively after a fusion with a camera, i.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1877</title><requirement>Information: If the engine is in the state `` automatic stop '' and the absence of the driver is detected, then a level 1 restart must be requested as soon as possible.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

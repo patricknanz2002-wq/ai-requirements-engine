@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0384</title><requirement>If the diagnostic service '' ADSE_INTERFACE_OPEN_CLOSEâ? with parameter value `` Close '' is received in extended diagnostic session and the ADSE interface is not open the longitudinal control system must return success.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

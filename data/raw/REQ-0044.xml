@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0044</title><requirement>The repeated transmission of identical Object Lists shall be signalized by an identical timestamp and counted in the signal state of the appropriate signal counter (SW_CYCL).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1108</title><requirement>If (ISPBatVolt less than 12.1 volts AND ISPBatCurr greater than 0 ampere AND PPNM_BCMGM1SOCContrlEnbl equal 1) for longer than 5 seconds a flag SOCContrlLowBatStopRq has to be set for 300 seconds.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

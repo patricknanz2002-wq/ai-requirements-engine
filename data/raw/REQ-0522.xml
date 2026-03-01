@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0522</title><requirement>The most important input signal for the BMS is the request to close the contactors (PNHV_Energy_Rq).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

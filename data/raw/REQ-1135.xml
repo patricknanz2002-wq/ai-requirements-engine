@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1135</title><requirement>17 data of type "long" (size: four byte) or any mixture of data types with added number of byte up to the specified limit.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

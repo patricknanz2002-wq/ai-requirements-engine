@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1580</title><requirement>The LBC shall be self protected for over current and short circuit, in case of over current requested by load, the LBC shall limit the output current to its max output current for max duration (TBD), then disable the output for self protection.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

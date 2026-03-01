@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1723</title><requirement>For calibration tasks, the SVS ECU is allowed to leave the camera cover opened for a short time until the tasks are finished</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

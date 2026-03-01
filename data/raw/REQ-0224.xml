@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0224</title><requirement>The supplier shall store training video files and several audiofiles in different languages provided by OEM in the persistent memory (the training video files may vary depending on a certain headunit hardware version for a specific region).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

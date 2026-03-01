@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1180</title><requirement>The contents of the OCM_A1 message are used for activation of the restraint features as long as the WSS control unit sends the OCM_Frm1 message</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

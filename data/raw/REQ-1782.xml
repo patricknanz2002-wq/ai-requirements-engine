@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1782</title><requirement>The requirements on environment conditions (bightness etc.) during offline calibration are similar to the requirements, specified for the MPC/SMPC calibration.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0082</title><requirement>The diagnostic trace memory is used by the service diagnostic tool to trace test sequence steps performed by the service technician to allow the diagnostic tool to continue the repair procedure where it was interrupted and to allow engineering to determine whether the appropriate repair procedure has been performed at all.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

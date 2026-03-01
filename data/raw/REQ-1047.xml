@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1047</title><requirement>Especially when testing a large number of fuse-links, allow sufficient cooling time to prevent the test fixture from overheating.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

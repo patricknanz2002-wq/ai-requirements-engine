@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1146</title><requirement>Initialization value after power on / wakeup is `` SNA '' as long as no voltage values can be measured within the sensor on KL30 pin for ECU supply.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

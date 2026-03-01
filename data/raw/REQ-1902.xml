@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1902</title><requirement>As soon as the inductive charging starts (WPT_HVDC_Curr greater than 0,5 ampere) and the terminal 15R is active, the EMM sends to the IC the request to display `` Inductive charging is active '' via WPT_ChrgActv_Disp_Rq equal TRUE.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

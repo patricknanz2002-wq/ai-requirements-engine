@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0915</title><requirement>The signal has to signalize (signal state 0 equal NACPT) that an object does not fulfill the requirements for an object with longitudinally pronounced moving direction (codriving and oncoming traffic) as well as stopped or stationary obstacles for a fast functional reaction exclusively after a fusion with a camera, i.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

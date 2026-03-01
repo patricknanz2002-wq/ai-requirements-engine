@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1014</title><requirement>The function shall be available as fast as possible, for this reason the range estimation statistics shall start for velocities not larger than 5km/h and typically above 0.5km/h.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

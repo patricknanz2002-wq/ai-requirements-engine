@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0361</title><requirement>An object is AbC-relevant as long as one lane of the object 's assigned lanes isn't blocked by a closer (distance along the lanes) object which is not of object category Overrunnable or Underdrivable.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

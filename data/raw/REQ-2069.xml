@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2069</title><requirement>There is no special requirement to the count of cells, as long as the specified power, voltage and energy requirements will be met in compliance with the maximum specified currents and voltage levels.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

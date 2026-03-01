@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1011</title><requirement>PN may be superimposed by a larger error offset due to incorrect stored face proportions according to AGMR-1315.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0146</title><requirement>This information has to be transported to the BMC electronics via an appropriate bus system.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

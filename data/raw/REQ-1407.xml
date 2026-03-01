@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1407</title><requirement>This means: if several diagnostic services have the same scaling and unit they shall have their own unique presentation service in spite of getting references to a single presentation service.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

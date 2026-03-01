@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1103</title><requirement>If the activation phase is longer than tLEDon, the LED is illuminated.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

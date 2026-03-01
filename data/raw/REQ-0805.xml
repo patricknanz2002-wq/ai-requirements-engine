@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0805</title><requirement>Details about the protocols used (UDP, SOME-IP, headers, End2End safeguarding, service delivery etc.) are defined in the K-Matrix and the delivered ECU Extracts, genereted with the OEM XDIS tool.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

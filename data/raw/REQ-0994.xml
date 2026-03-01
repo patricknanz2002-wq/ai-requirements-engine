@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0994</title><requirement>The specified maximum and minimum value shall not be exceeded during transmission, especially in situations with very strong bending of the predicted ego vehicle path or a large slip angle of the vehicle.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0354</title><requirement>As soon as the DC-Box recognizes that the battery contactors are closed, the DC-Box shall close S2.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

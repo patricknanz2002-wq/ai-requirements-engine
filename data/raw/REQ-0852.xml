@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0852</title><requirement>Assembly processes are to be discussed and reviewed in the early design phase of the program to influence the design of the components if necessary, e.g. d-owner parts which are delivered from client or tolerances vs. manufacturing.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

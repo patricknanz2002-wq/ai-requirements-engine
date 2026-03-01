@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0266</title><requirement>Neu: A full Charge Request is set when the charge sum difference between two full charge cycles exceeds a certain value.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

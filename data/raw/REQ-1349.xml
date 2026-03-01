@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1349</title><requirement>When a particular temperature level is exceeded, the corresponding derating functions must be activated in the control electronics in order to protect the electric motor against overheating.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

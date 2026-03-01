@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1231</title><requirement>``It is feasible, that the object detection area is limited directly in front of the host vehicle by the sensor field of view of the near range scan, the far range scan and the minimum detection range; this is not shown in the drawing.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

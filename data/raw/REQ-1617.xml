@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1617</title><requirement>The input and output channels are to be designed in a way that they are protected against short circuits which might be caused by measurement procedures and operating voltage.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

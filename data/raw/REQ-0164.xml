@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0164</title><requirement>In case the ECU is running in the Extended Diagnostic Session and receives the UDS Diagnostic Service `` Communication Control - Service Identifier [28 hex] '' with the control type 0x00 or 0x80 (Enable Rx And Tx) or the ECU switches into the Default Session, the converter has to switch into the requested mode (or LHOM in case of appropriate conditions), immediately.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

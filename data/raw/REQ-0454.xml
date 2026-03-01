@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0454</title><requirement>Scenario 2 (Ego-yaw-dynamic only): The system vehicle (maximum velocity 20 m / s) turns left in a close distance in front of the oncoming object vehicle (maximum velocity 28 m / s).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

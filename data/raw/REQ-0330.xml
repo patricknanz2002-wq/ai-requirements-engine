@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0330</title><requirement>If the ADSE interface is closed the limits must be set to the default value.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1021</title><requirement>The search speller shall be used to select one entry from a large list of entries (e.g. a town list in navigation).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

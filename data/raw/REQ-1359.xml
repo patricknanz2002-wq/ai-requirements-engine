@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1359</title><requirement>The HMI of the component shall provide the ability to switch between several languages (with Latin characters, Asian character sets, and also other languages with different writing directions, e.g. Arabic) immediately (max. 5 seconds delay).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0016</title><requirement>Active HV components can feed in currents into the HV intermediate circuit and have an adequate control mechanism for switching off the feed-in.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

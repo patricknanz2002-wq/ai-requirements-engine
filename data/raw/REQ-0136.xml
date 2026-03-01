@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0136</title><requirement>SCC shall ignore any SDP response message that provides an SECC server IP address which is not valid or regarded as not appropriate.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

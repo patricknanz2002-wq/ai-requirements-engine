@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0907</title><requirement>The central gateway serves as CAN-CAN gateway and provides vehicle and diagnostic information over CAN and diagnostics information over Fast Ethernet to the HU.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

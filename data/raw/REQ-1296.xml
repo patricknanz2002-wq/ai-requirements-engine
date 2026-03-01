@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1296</title><requirement>The signal state DTR_Obj_X_Collision_Ovrlp equal EGO_COLLOVRLP_BRAKE signalizes objects having a high accordance of the particular radii to the fused lane radius at the distance of the object due to the given tolerances of the input signals for the fused lane radius (derived from vehicle signals like yawrate, wheel angle, lateral acceleration, wheel speed and RADAR detections).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

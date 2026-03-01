@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1685</title><requirement>If the button press is shorter than the LIN cycle time, the signal is to be set to `` TRUE '' for one communication cycle.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

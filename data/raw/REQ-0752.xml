@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0752</title><requirement>It does not define protocol, interconnect, or connector details because these details are application-specific.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

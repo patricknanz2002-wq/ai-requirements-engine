@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1816</title><requirement>Small deviations of the signal value are only allowed based on lane approximation of stationary or moving objects or based on tolerance deviations of adjustment values for vehicle data.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0983</title><requirement>The components design shall be realized in a way that a change to the connector is possible with few impacts and no additional costs.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

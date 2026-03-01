@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0875</title><requirement>The supplier shall perform a load test at end of line for the component to reduce the rate of early failures in OEM production and in vehicle.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

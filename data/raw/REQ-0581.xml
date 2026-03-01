@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0581</title><requirement>The assignment of drivers and front passengers HMI to the left or right view of the SplitView display (for left and right hand driving cars) shall be configurable either via CVI (common vehicle information) or diagnosis variant coding.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

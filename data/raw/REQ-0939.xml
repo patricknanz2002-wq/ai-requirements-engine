@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0939</title><requirement>The reset calculation is terminated if no fast SOC determination is possible, if it is not needed or if the determination has ended.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

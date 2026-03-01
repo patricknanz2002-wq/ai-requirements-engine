@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0389</title><requirement>With Scc_61851StateCommand (CLOSE) the SCC indicates to the charging system that it waits for a closed S2 to proceed.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

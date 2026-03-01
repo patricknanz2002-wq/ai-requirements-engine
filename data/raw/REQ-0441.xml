@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0441</title><requirement>The piston cooling Valve is a black / white switchable valve which either fully closes or fully opens the oil channel for piston cooling (target state evaluation see: [MRD-Sw-2396])</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

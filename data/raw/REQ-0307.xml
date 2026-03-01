@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0307</title><requirement>While being commanded to standby and all charging conditions are met, the charger closes the AC contactors and enters the Ready_to_Charge mode, as soon as the contactors are closed.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

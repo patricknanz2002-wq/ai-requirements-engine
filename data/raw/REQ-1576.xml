@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1576</title><requirement>A short circuit shall be detected in an HV component if the short circuit occurred in the signal connector or between the interlock lines that are routed between the signal driver circuit and this component.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

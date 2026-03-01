@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0554</title><requirement>2. If the monitoring of the common alarm input is deactivated: NOT M:Common Alarm Input Monitoring Active while the timer is running, the execution of the function is terminated.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

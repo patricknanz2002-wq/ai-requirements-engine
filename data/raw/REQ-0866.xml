@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0866</title><requirement>The autonomous partial braking intervention will be started earlier than that of CMS2 if the situation has reached a hazardous degree due to the missing escape route.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

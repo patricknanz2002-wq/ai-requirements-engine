@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0513</title><requirement>In case that SCC is available the OBC shall finish the initialization of the charge communication and wait for the AC-Contactor enable bit from the SCC Module before requesting the EVSE AC-contactors to close.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

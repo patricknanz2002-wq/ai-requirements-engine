@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2138</title><requirement>The BMC software must be initialized in the vehicle production process, so that a use in other vehicles of the same type is possible only after repair/return to client and a reinitialization process with special tools not available to the customers.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

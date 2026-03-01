@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1652</title><requirement>In the case of an IPE failure AND loss of coolant, the maximum operation time will be significantly reduced due to the additional IGBT losses associated with a 3-phase short.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

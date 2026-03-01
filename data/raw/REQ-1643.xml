@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1643</title><requirement>Addtionally the fault is set, if the proximity signal is jumping between a short to battery and short to ground fault.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

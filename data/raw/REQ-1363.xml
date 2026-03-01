@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1363</title><requirement>If several link-versions are necessary in one software release (e.g. for 6 and 8 cylinders), the same functions have to be used.Different programm lines are not allowed.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

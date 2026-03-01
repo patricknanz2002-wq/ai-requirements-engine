@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0387</title><requirement>The SCC shall then send the signal Scc_61851StateCommand equal CLOSE delayed by Scc_61851StateCommandDelayCfg seconds.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

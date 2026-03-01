@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0411</title><requirement>The BMS must open / close battery cooling valve if CAN Signal PNHV_Bat_CoolVlv_Rq_HVAC requests an action:</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

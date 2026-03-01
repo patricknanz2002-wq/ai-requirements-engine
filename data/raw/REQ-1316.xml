@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1316</title><requirement>The component, when operating and being illuminated, within its defined FOV (in particular the main antenna lobe), by interfering EM signals in the 76-77GHz frequency band and considering valid frequency allocations:</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

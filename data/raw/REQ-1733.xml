@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1733</title><requirement>The electrical design of the component shall ensure that voltages up to 500 V (non-normal operation) at PILOT pin do not cause severe damages to the component so that fire hazards or similar threats for the vehicle cannot occur.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

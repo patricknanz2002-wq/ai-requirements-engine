@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0055</title><requirement>To influence the LV output voltage depending on LV output current, an appropriate calibration parameter (`` Factor '') has to be provided.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

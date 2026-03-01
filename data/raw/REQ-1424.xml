@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1424</title><requirement>If the locking of the Vehicle Inlet is not possible after triggering several times, the OBC shall display the locking fault with a white blinking locking LED at the Vehicle Inlet.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

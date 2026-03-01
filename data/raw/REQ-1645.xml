@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1645</title><requirement>Circuit continuity checks shall include separate fault codes for short to ground, short to power, and open circuit.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1323</title><requirement>In particular, all measurement boundary conditions, for example supply voltages, input signals and bus messages, shall be listed in detail for each and every test step and the measuring accuracies and sampling rates shall be defined for the parameters to be measured.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

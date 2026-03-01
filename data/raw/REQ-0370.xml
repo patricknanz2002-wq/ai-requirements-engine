@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0370</title><requirement>While activating the precharging circuit, the BMS shall first close one main contactor and then provide the limited precharging current.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

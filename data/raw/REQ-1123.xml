@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1123</title><requirement>If after a failure confirmation the Ignition is not on AND EF_Actv is off for longer than PPNM_HWDecErrIgnIffTime the emergency mode is left, the redundancy supply is switched off and the backup relay is not longer actuated.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

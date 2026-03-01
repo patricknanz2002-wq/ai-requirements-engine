@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1385</title><requirement>Functional State A or B is not achieved or there are one or several fault entries in the fault memory of the component after the test.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

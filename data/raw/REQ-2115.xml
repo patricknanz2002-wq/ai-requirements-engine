@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2115</title><requirement>The performance requirements for traffic light recognition shall be fulfilled independent of whether some or all of the traffic lights in a traffic lights assembly have special shapes (e.g. directional arrows).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2146</title><requirement>The contractor shall store ``default values'' in a ROM for use in special cases, such as limp-home functions.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

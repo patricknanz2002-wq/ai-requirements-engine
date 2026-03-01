@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1001</title><requirement>During these corrections, the maximum azimuth alignment deviation signalized on bus must not be greater than before correction, with the exception that the maximum azimuth alignment deviation after compensation is verified to be larger.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

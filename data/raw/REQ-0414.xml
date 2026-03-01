@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0414</title><requirement>As the control-unit housing the PNM has no power supply if the DDP-relay is open, the relay can only be closed by the central locking system (EIS).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

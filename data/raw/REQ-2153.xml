@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2153</title><requirement>If the vehicle possesses a fixed partition window, a special communication solution is applied and InCarCom is deactivated permanently.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

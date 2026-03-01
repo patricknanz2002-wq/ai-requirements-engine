@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1615</title><requirement>Reduced switching losses during active short circuit (high side and as well low side) shall be considered correctly by the thermal model and shall be reflected in the power loss calculation and the maximum current calculation.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

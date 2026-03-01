@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0890</title><requirement>For early fault diagnosis and avoidance in series production, the contractor must install methods such as SPC, PAT, PAA (`` AV Reliability / Part Average Analysis '' [LH-2170]) etc. for real-time recording and online evaluation of measured data in the process; these can be used to detect and select preliminary damage on the basis of anomalies during the process.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

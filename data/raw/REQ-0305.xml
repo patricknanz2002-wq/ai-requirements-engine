@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0305</title><requirement>If the function requests a starter activation, the starter relay switch closes, so that the clamp 15 is connected to clamp 50.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

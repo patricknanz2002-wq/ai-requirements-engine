@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1756</title><requirement>If a screw with the requested tolerances is not available, the supplier has to propose a screw whose tolerances are as similar as possible to the ones listed above.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

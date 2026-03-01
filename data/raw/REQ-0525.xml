@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0525</title><requirement>As soon as the BMS receives the request to close the battery contactors, the BMS closes the battery contactors.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

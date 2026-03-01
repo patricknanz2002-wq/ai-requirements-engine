@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0869</title><requirement>If the IOD relay opened early (IODOpenedEarly) or Hibernation Mode</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

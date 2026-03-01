@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1680</title><requirement>System reaction after parking time greater than or equal to 5 minutes but shorter than T_STANDBY:</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

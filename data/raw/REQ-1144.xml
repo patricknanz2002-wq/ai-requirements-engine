@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1144</title><requirement>After initialization of the component after PowerOn the signal state has to be NOT_SELECTED / DEFAULT as long as no valid objects are emitted.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

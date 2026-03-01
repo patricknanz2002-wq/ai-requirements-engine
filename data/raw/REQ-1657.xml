@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1657</title><requirement>Pressing the panic button of the key for T greater than or equal to 1 second will start the panic alarm, shortly pressing the button (T less than 1 second) stops the alarm.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

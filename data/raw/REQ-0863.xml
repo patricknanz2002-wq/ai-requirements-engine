@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0863</title><requirement>The supervision of the quality limiting constraints of the course have to be designed in the way that even in dynamic driving situations and particularly in test szenarios no limitation of the braking functionality CMS ES1, ES2 as well as CMS2+ and BAS+ (on stationary objects) occurs due to a not sufficiently early (TTC) signaling of the signal state EGO_COLLOVRLP_BRAKE.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

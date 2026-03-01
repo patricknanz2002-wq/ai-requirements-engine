@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1125</title><requirement>If the vehicle was parked for longer than T_STANDBY, the position assignments of the four wheel sensors are redetermined in the subsequent trip.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

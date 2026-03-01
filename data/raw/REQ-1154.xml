@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1154</title><requirement>The component RDU shall disable the driver assistance functions in case of `` DTR_SysDamp equal 2 or equal 3 '' and for `` SRD_SysDamp equal 2 or equal 3 '' and trigger the according message in the combi as long as the condition is present.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

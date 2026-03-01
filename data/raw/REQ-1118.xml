@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1118</title><requirement>The timer DDPTimerOpen is also started if DIAG_DDPStart equal 2 for longer than 5 seconds (independent of the mentioned conditions above)</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

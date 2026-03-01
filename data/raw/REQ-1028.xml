@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1028</title><requirement>If the maximum value is reported on bus, the deviation of the reported distance is equal or larger than 2.8m and function reactions should be plausibilized using independent information.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0120</title><requirement>In order to manage the overall ISM band allocation, an appropriate software application shall be implemented to allow configuration, priorization and management of ISM band allocation by the several components wireless interfaces.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0063</title><requirement>If a precondition check is negative, the ACCSW shall set the appropriate value in the AK_Hinweis signal (see IF1 specification `` getUnfulfilledRequirements '').</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

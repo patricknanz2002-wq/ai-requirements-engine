@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0557</title><requirement>The MTF framework shall use a common communication middleware which is used for communication via Interface 1 (between applications and the HMI) and selected Platform Interfaces (between applications and other applications and system services, for example audio management).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

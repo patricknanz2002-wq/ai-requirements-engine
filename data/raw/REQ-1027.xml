@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1027</title><requirement>If the maximum value for DTR_DistRoadBorder_Lt_MaxNegDev is reported on bus, the real distance to the road border may be larger than DTR_DistRoadBorder_Lt + DTR_DistRoadBorder_Lt_MaxNegDev.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

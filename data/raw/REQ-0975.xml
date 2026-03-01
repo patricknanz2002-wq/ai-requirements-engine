@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0975</title><requirement>Inside tunnels of category Cat1, the sensor shall deliver fewer than 0.00005 false alarm sensor objects with Obj_LongDoubleFusion_Qual set continuously to 2 equal HIGH per hour in all ODAs, where the number of sensor cycles the false alarm is delivered as sensor object is greater than 8.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0215</title><requirement>The DRCAM shall provide valid measurements if PN is within a certain border area outside the real eye ellipse according to AGMR-631.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

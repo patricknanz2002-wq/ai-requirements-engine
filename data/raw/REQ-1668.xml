@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1668</title><requirement>On the object interface the provided yaw-rate value is signaled "default" sometimes for a short period, typically less than 1 second. The sensor-cluster performs a self-test during this time.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

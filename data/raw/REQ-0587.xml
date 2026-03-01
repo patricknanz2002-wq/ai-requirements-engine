@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0587</title><requirement>If the timer is running and common alarm input is active: M:Common Alarm Input Active, the execution of the function is to be ended and can be restarted by deactivating the input: NOT M:Common Alarm Input Active</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0701</title><requirement>The component has to be designed for end node assignment (see FlexRay Networking Details A3420001599).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

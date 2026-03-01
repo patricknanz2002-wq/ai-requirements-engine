@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0403</title><requirement>This assumption is revised at the time when after message lost a new valid K?B state signal (`` open '' or `` closed '' or `` fault '') is received from the gear box controller.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

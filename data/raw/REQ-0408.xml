@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0408</title><requirement>Discrete outputs shall implement software controlled switches which when open (Off) result in a logical low signal level or when closed (On) results in a logical high signal level of the associated processor pins.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

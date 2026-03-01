@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0325</title><requirement>10 seconds after the door is closed, it is still incorporated into the monitoring.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

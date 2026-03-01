@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0876</title><requirement>Fault paths with safety-critical impact whose occurences cannot be ruled out (O greater than 1 ppm over lifetime) and whose on-board diagnosis (see detection rate) does not permit early detection, so that injury to people must be expected.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

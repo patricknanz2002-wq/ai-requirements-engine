@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1499</title><requirement>In some carlines there will be only one speaker connected to a speaker output, in other carlines several speakers will be connected to a speaker output.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

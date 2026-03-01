@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1352</title><requirement>The component design should have the option to be used in several different vehicle architectures without changing major components (e.g. the signal processing unit, PCB, Flash-memory, RAM, RF-module, antenna, etc.).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1547</title><requirement>The sampling rate shall be selected such that open circuits and short circuits will be detected with absolute certainty.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

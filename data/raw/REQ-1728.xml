@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1728</title><requirement>When entering a curve, in S-curves and similar scenarios the commonly used clothoid model representing the road geometry is limited to the vicinity of the vehicle.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

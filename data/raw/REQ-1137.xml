@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1137</title><requirement>BCMChrgRqExt is set to 2 if ((BCDActSoc less than PPNM_BCMBuckMdExtLow) and (PNHV_DrvInhMd_Rq equal 1 longer than 5 seconds))</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

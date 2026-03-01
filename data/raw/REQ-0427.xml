@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0427</title><requirement>The in this document used definition of contact open / closed relates to the logical state and not to the electrical status of the input signal.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

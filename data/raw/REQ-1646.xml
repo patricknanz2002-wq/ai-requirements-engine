@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1646</title><requirement>All sensors shall have electrical circuit checks (short to battery, short to ground, open circuit), signal out of range high or low (signal is in the physical range, but the signal value is not a reasonable / acceptable operating range), and signal plausibility (signal stuck, signal bias / shifted).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

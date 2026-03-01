@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1845</title><requirement>The left and middle edge point shall be equal if only one side of the object is observable or a sensor object side is smaller than the required accuracy in x- and y-direction.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

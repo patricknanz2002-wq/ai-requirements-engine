@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0556</title><requirement>The execution of the function is immediately terminated when the monitoring of the common alarm input is deactived: NOT M:Common Alarm Input Monitoring Active</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0917</title><requirement>3. Media Search Engine: The player application scans all available sources for supported media and stores the metadata from each file (e.g. cover art, title, artist, album, genre) in a central database, which allows fast browsing and searching of the available media.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

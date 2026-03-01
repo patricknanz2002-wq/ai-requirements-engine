@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1823</title><requirement>Note: The current implementation separates two NvM blocks for those small parameters.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

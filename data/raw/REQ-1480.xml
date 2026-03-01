@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1480</title><requirement>The battery temperature may be the result of several temperatures measured at different locations inside the battery.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

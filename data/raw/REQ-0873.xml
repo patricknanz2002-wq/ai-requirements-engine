@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0873</title><requirement>THEN effective TSA speed limit shall be updated earliest 200 milliseconds before and no later than when the EV is passing the speed limit sign associated with exit ramp.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

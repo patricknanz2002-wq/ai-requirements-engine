@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1469</title><requirement>With the ECU project, several CAN communication networking variants have to be supported (different vehicle lines and powertrain systems).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

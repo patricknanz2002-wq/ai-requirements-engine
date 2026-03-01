@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1255</title><requirement>If the longitudinally nearest object classified as TRUCK or CAR leaves the detection field of the sensor, relating objects classified as MULTIPLE have to be labelled still as MULTIPLE.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

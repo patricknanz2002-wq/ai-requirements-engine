@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1247</title><requirement>For this function it is important that the component can exactly measure in the near field down to 1 m and the component shall have a wide horizontal field of view in the near field.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

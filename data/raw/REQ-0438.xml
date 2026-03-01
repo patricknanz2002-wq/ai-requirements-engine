@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0438</title><requirement>The identifier `` Read ADSE usage odometer values '' must return the odometer values when ADSE interface is opened and closed [ADSE_long_419].</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

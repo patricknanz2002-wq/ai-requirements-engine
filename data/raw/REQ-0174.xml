@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0174</title><requirement>If bad wheather conditions or a visual range shorter than 20 meters do not allow a valid measurement for all sample points, the SMPC shall deliver only valid measurements.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

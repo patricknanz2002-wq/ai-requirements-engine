@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1102</title><requirement>In the event of connecting the OBC (vehicle) to the mains, the inrush current drawn from the OBC (e.g. to precharge its internal bulk capacitor) shall not exceed the limits of a circuit breaker type B with a nominal current of 8 A, shall not exceed 48 A for a longer time periode than 5 milliseconds and shall not disturb RCDs.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

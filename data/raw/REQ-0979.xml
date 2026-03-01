@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0979</title><requirement>A determination of the signal DTR_DistRoadBorder_Lt has to be possible as well in the case that only a few RADAR reflections in large distances from each other exist and only in subdomains therein with smaller distance differences, for example concrete borders with large reflectors having 60m distance difference.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

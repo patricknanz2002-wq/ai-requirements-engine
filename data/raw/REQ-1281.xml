@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1281</title><requirement>For control units which are permanently connected to terminal 30, the terminal pins of the (+) supply and the grounding-pin (-) near the terminal plug shall be arranged as far away from each other as possible.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

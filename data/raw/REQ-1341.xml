@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1341</title><requirement>Depending on the type of cellular antenna interface available in a particular vehicle, the TCU shall configure to the appropriate interface.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

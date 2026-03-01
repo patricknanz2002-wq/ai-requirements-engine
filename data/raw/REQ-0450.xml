@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0450</title><requirement>Wait until all doors and the Deck Lid are closed: NOT (M:Door FL Open OR M:Door FR Open OR M:Door RL Open OR M:Door RR Open OR M:Deck Lid Open)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

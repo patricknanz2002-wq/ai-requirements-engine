@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0029</title><requirement>If the EMM can not recognize the vehicle velocity, adequate substitute values must be used.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

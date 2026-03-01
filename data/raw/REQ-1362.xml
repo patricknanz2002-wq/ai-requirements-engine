@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1362</title><requirement>The required audio signal is a pink noise with about 81 dB SPL (measured at every passenger head position) and a duration between 400 milliseconds and several seconds (dependant on the accident severity)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

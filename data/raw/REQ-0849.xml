@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0849</title><requirement>For defects that cannot be reproduced with the current release and which relate to an earlier release, the contractor shall create at least one test case that verifies the defect in the earlier release.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

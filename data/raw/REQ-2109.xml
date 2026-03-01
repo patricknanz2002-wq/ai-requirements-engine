@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2109</title><requirement>In very special cases it might be acceptable that the supplier replies with a qualified status message, e.g. in case of a complex problem during investigation.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1016</title><requirement>The offset error of the EgoLane to the driven trajectory shall not be larger than the offset error of the DTR_LaneRadius to the driven trajectory within 90 % of the time period.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1846</title><requirement>All three edge points shall be equal to the reference point if the extension of the object is smaller than the required accuracy in x- and y-direction.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

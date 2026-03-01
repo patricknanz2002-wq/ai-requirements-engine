@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0175</title><requirement>The predicted power shall be based on the worst cell with the lowest voltage.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

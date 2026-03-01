@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1419</title><requirement>For the measurement a timestamp is needed to synchronize several measurement computers or control units.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

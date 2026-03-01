@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1171</title><requirement>After this first trigger the signal `` SC_ChargeRemainingTime '' shall be updated with each change on the value of `` Ecpm_TMinsFullChDurn '' as long as [PLGW-2704] does not apply.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

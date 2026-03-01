@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1572</title><requirement>All contacts / pins on the Charge Coupler Interface Connector shall be tested to short circuits to the AC supply line.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

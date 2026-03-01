@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0072</title><requirement>In case of an actuator the functions contain also the closed-loop position control and the appropriate diagnostics.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

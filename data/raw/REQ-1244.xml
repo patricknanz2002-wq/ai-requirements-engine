@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1244</title><requirement>This signal state signalizes the nearest (Dist_X) comoving, oncoming, stopped (comoving or oncoming) or stationary object which fulfills the quality criteria on one of the left hand sided neighbouring lanes.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

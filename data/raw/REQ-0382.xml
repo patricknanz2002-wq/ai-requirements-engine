@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0382</title><requirement>On function wake-up all timers are reset and IODCPreOpenState is set to 0 (Close)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

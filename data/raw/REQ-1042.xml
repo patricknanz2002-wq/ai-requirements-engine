@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1042</title><requirement>These algorithms shall work independently from driving conditions, e.g. driving not in line with preceding vehicle or large vehicle acceleration, deceleration and steering of the system vehicle.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

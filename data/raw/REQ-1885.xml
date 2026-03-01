@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1885</title><requirement>In case the status of PNHV_GenIntrlk_Rdy is not known (CAN communication errors or signal time out) the supervision is deactivated as soon as the vehicle HVDC Bus voltage is below HvilDeactivationThreshold.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

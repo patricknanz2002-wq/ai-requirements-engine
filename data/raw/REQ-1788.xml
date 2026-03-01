@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1788</title><requirement>This signal state signalizes the moving (incl. oncoming), stopped (comoving or oncoming) or stationary object which fulfills the quality criteria located on the left neighbouring lane with the smallest lateral displacement (Dist_Y) to the estimated ego lane.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

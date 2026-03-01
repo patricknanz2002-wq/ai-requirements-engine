@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1234</title><requirement>This signal state signalizes the nearest comoving, stopped or a priori stationary object (Dist_X) on the ego lane of the system vehicle which is outside of the respective range limit.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

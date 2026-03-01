@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1100</title><requirement>Is there no vehicle traction standby release from level2 for a time longer than a calibratable time (1 second) after rising edge of T50, then the vehicle traction standby release (FBA_E2) will be irreversibly deactivated for the current driving cycle and an error will be stored in failure memory.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

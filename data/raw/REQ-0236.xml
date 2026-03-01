@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0236</title><requirement>If the cell voltages of the Li-Ion battery differ more than a certain value, the battery has to be kept in full charge to enable an internal balancing of the cells.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

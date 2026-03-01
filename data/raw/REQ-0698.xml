@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0698</title><requirement>The ESD requirements for CAN transceivers are specified in the further applicable document `` FV CAN Networking Details '' [A342 000 16 99].</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

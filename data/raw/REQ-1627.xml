@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1627</title><requirement>As example, a zero-power consumption flags a non-connected cable, a high power consumption a short circuit in the cable or the active antenna element.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1057</title><requirement>During the long time load and the knee test, the maximal deflection has to be lower than 20 millimetres.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0509</title><requirement>The OBC shall not request the EVSE AC Contactors to close while the supervisory control unit does not request Standby.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

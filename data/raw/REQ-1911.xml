@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1911</title><requirement>If the call stack cannot be output via the logging interface, it shall be saved and, following system restart, output via the logging interface as soon as logging is available again and a client can record the output.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

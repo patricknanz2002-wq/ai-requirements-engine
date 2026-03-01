@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2078</title><requirement>PWM-Output Radom-Heating only active in special conditions In case of short circuit up to 36 ampere could occur over connector pins and cable harness. ''</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

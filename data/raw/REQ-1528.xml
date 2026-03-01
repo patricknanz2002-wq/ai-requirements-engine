@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1528</title><requirement>The CID shall detect short and open circuits on the audio connection and set a DTC if a short circuit or open circuit is present.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

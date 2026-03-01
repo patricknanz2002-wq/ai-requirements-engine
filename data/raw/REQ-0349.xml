@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0349</title><requirement>If the torque actuator implements a lower break torque than the break torque request because the [transmission] is not closed then the torque actuator must send this information (`` stop break torque '').</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

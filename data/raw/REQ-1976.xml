@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1976</title><requirement>But there are special driving events like Stopp / Start with swinging crank / camshaft, starting and clutching in, bad shifting, braking down to zero without using the clutch, correct and incorrect push- and tow-starting, high engine speed gradients and similar that must not lead to a false diagnosis.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

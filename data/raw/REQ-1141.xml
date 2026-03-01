@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1141</title><requirement>An object 's obj_id shall remain the same as long as the object is tracked by the sensor, regardless whether the object is delivered as sensor object, as part of the sensor object list or not.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

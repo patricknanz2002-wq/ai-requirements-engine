@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0201</title><requirement>After setting the wire to low the engine controller has to wait for a certain amount of time before the starter is started</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

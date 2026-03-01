@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0443</title><requirement>If the SCC detects a closed contactor (voltage at inlet, see SCC-DIS-3572) where it expects the EVSE to have open contactors (not voltage at inlet) the SCC shall</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

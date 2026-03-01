@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0461</title><requirement>In case, the interface of MetaCore can not be discussed close between the actors, the affected actors shall join a SA Meeting (Software architecture meeting) at OEM side by request of OEM.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

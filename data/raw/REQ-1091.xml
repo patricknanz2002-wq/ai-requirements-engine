@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1091</title><requirement>The sensor must not predict and deliver sensor objects without measurements longer than 8 sensor cycles</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

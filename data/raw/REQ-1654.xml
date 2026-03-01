@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1654</title><requirement>Max peak phase current during three phase short can be very high: TBD A for 2 milliseconds</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

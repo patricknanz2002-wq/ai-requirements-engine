@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1650</title><requirement>After starting a short distance route calculation (e.g. within 50 km) the route guidance (incl. ADRs &amp; map display in all zoom-levels) shall be available within 1 s.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

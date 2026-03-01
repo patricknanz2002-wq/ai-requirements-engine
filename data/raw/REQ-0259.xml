@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0259</title><requirement>It has to be taken into consideration that this supply current shall be symmetrically for all cells within the module to prevent any interferences with the equalizing function of certain cells in the module.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

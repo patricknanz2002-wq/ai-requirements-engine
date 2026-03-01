@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1747</title><requirement>The contractor must rule out confusion, incorrect assembly (right/left, rotated by 180°, parts with similar geometry, etc.), incorrect behavior during assembly via corresponding design features (Design for Manufacturing) (see graphic for visualization).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

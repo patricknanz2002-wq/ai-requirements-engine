@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1003</title><requirement>It might be a good assumption to implement a parameter which allows larger residuals for segments which are further away, due to the angular error of radar sensor.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

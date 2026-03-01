@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1927</title><requirement>The Control Pilot is considered as `` Connected '' as soon as the Control Pilot Pin changes its state from the unconnected state (this might be Hardware specific behavior).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

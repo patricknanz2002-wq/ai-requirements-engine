@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0924</title><requirement>It shall allow complete updates of the database as well as partial and incremental updates of parts like map areas, satellite and aerial imagery, DTM, POI data, TMC tables, language files, SW-updates etc. For fast update of data content, the Headunit shall provide an interface for connection to an external standard device.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

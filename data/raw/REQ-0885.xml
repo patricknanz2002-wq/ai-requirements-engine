@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0885</title><requirement>An incorrect too high clutch torque may lead to an early release of the electric parking brake and consequently to an inadvertent rolling of the vehicle.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

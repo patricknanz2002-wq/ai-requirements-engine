@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1271</title><requirement>If a light system damping of the DTR sensor is observed, but no relevant influence on the system functionality is present (all object data etc. are still determined and transmitted) the condition DTR_SysDamp equal ``1''/INC_DAMP is sent and a connected near range sensor system can sensitise the damping detection with this information if necessary.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

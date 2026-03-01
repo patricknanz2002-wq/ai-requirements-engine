@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2024</title><requirement>The LCD-stack with overlapping front cover is a special arrangement of standard LCD module parts (e.g. LCD-cell, driver-electronics, backlight unit with cooling infrastructure, socket for PCB-connection, etc.) with a special front cover panel.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1018</title><requirement>- be used for large data failure statitics (i.e. calculation of false brakings over 300 000 km of measurements consisting of a mix of OEM data and supplier data)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

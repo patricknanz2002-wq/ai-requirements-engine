@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1888</title><requirement>In the partial networking status the communication with the KLA is enabled as soon as PNHV_CoolPwr_Rq is greater than 0.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

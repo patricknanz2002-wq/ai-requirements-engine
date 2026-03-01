@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1225</title><requirement>Exceeding the guaranteed write cycles shall not automatically result in the lock out of a cell, since the number of actual write cycles is usually much higher than the guaranteed number.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

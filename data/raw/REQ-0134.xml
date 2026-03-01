@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0134</title><requirement>ATCU functions that shall not be accessible to unauthorized persons shall have appropriate security mechanisms in place.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1934</title><requirement>As soon as the HV and LV battery charging is complete (SOC ~ 100 %), the vehicle mode `` charging '' is completed.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0932</title><requirement>The driver would like to drive off fast: Until reaching the start end engine speed threshold, either (the upper clutch switch is active) resp. (the clutch pedal position sensor greater than threshold for clutch pedal active (calibr., 50 %) AND clutch pedal position sensor plausible) OR the gas pedal value greater than a calibratable minimum threshold (5%) AND</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1099</title><requirement>The load limitation is activated if the summation of [EM2_TrqMin_Rq_MSSE + minimum permissible drag torque of power train] undershoots the torque limit M_Grenz_neg equal [negative permissible torque + torque offset for the load limitation] for longer than a calibratable time t_M_Grenz_neg (150 milliseconds; calibratable until 300 milliseconds).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

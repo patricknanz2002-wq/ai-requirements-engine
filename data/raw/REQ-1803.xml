@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1803</title><requirement>The physical size of the modules must be kept as small as possible in order to facilitate packaging in all corresponding model series and car types.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

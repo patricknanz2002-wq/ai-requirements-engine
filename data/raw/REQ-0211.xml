@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0211</title><requirement>The end of charge signal is reset after the SOC has dropped by a certain delta, for example 5 %.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1093</title><requirement>A partial on-device navigation database update (up to 20 % of full database size) shall not take longer than 7 minutes.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

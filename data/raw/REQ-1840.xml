@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1840</title><requirement>LimpHome means the contactors shall open as soon as a small current is reached (calibration value 7 ampere).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

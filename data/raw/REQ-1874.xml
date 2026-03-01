@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1874</title><requirement>In case the DTR-sensor after KL87 / 15 `` ON '' and finished system initialization has firstly sufficient accurate measured a target to secure that transmit and receive function is assured and no increased system damping is present, the bit is set to `` 1 '' as soon as possible.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

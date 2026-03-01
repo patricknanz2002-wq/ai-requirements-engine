@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1636</title><requirement>Short to ground failure of a digital output shall be detected by the driver (if hardware supports that).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

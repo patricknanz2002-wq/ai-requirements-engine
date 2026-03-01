@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1105</title><requirement>This interface function is only needed for asynchronous monitors, i.e. when the time to detect a fault may be longer than the time to detect a passing system.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

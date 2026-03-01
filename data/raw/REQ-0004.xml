@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0004</title><requirement>In order to ensure that the severity of this test corresponds to the actual requirements in the field, particular care must always be taken during the performance of this test to simulate the mounting situation of the component in the vehicle adequately in accordance with `` E / E Environmental Testing; Part 1: Test Specifications '' [LH-2160], chapter 5.5</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

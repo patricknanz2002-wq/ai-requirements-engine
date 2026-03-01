@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1265</title><requirement>The HF signal processing (such as amplification and mixing) for the far range and the near range scan shall be separate.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

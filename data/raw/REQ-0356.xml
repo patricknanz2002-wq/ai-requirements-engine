@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0356</title><requirement>If the vehicle possesses a variable partition window between the front seat row and the rear seat row, the system shall apply the last mode principle on InCarCom front-to-rear if the partition window is not closed.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0969</title><requirement>After a power on the SOC has to be determined by last stored values in IBS or ECU or a fast determination has to take place.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

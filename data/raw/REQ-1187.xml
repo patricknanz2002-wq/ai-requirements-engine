@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1187</title><requirement>If the ON-button is pressed long the RCU shall deactivate the chosen display and turn into OFF-modus.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

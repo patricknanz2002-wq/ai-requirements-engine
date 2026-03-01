@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1581</title><requirement>This test verifies the SDC 's immunity to short circuits in the I / O singnal lines where it is feasible that a short circuit can occur in the wiring or at the SDC lines.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

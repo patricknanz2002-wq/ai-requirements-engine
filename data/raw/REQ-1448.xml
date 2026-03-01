@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1448</title><requirement>Multiple route calculation, i.e. several routes shall be calculated in parallel, for short, fast, dynamical, and economical route with the possibility to avoid specific street classes (e.g. freeway, vignette, toll, ferries, car carrying trains, tunnel, high-occupancy vehicle, unpaved, controlled access, express lanes...) and under consideration of the current time and day.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

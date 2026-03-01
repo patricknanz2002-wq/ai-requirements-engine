@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0682</title><requirement>If not specified in more detail all SOC-values are refering to the physical borders of the battery system.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

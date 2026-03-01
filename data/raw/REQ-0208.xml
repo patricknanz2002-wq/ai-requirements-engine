@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0208</title><requirement>After an I_peak event, the dc / dc converter is allowed to deliver a reduced output current (I_recover) for a certain time (T_recover).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

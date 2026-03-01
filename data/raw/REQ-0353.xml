@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0353</title><requirement>As soon as all preconditions in the DC-Box are fulfilled, the DC-Box shall close the DC contactors.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1855</title><requirement>If the unlimited torque requests from the operating strategy are smaller than M_Grenz_pos, the limitation requests to level 1 must be reset and the desired electric motor torque of the operating strategy must be used for the CAN output.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

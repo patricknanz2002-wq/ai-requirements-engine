@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1590</title><requirement>- Short circuit behaviour must be proofed on max. number of cells not divided by shut-of circuit.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

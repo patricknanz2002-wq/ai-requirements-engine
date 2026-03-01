@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1055</title><requirement>The peak current shall never be lower than the long term current.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

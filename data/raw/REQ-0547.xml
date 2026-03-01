@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0547</title><requirement>The behavior of the DC / DC converter and the power electronic in case of HV Under- / Overvoltage is subject of the common specification during the first project phase.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2094</title><requirement>Since CAN communication errors in case of ``Ignition Status NOT equal ON'' are basically not considered and stored, for the Partial Network Operation a special CAN signal was introduced: 222-EMM_Data1_AR / Bus_Actv_Stat (message 0x2FA), 166-ECM_A13 / Bus_Actv_Stat (message 0x226).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

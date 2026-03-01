@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0189</title><requirement>All 3 modes of the browser shall run seperately which leads in a worst case scenario to more than 512 MB of RAM.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

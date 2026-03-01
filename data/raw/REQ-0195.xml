@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0195</title><requirement>The SIM OS shall implement intelligent mechanisms to reduce memory stress such as over-provisioning, trim, wear-leveling and bad block mapping.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

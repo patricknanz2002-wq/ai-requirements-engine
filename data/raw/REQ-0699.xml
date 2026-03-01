@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0699</title><requirement>The ESD requirements for Flexray, LIN and CAN transceivers are specified in the further applicable documents `` FlexRay Networking Details '' [LH-3927], `` LIN 2.1 Network Requirements '' [LH-2209] and `` FV CAN Networking Details '' [LH-2208].</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

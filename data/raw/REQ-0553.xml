@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0553</title><requirement>The common idea is to have two variables called DLMLevel and DLMPTCLevel, which describe how many consumers are disabled.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1571</title><requirement>Short circuit of each pin for 60 s both at ground and at UB.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

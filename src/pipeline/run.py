@@ -1,6 +1,7 @@
 from pathlib import Path
 from src.embedding.embedder import RequirementsEmbedder
 from src.retrieval.vector_Store import InMemoryVectorStore
+import xml.etree.ElementTree as ET
 
 ############################################
 ##
@@ -10,16 +11,27 @@ from src.retrieval.vector_Store import InMemoryVectorStore
 def load_documents_recursive(target_path: Path) -> list[dict]:
 
     if not target_path.exists():
-        raise FileNotFoundError(f"Path {target_path} for >>method load_documents_recursive<< does not exist.")
-    
+        raise FileNotFoundError(
+            f"Path {target_path} for >>method load_documents_recursive<< does not exist."
+        )
+
     documents = []
 
-    # Creating dictionaries as list in documents
-    for file in target_path.rglob("*.txt"):
-       documents.append({
-           "id": file.stem,
-           "text": file.read_text(encoding="utf-8", errors="ignore")
-       })
+    # Creating dictionaries and appending them to list "documents"
+    for file in target_path.rglob("*.xml"):
+        tree = ET.parse(file)
+        root = tree.getroot()
+
+        title_element = root.find("title")
+        description_element = root.find("requirement")
+
+        req_id = title_element.text.strip() if title_element is not None else file.stem
+        text = description_element.text.strip() if description_element is not None else ""
+
+        documents.append({
+            "id": req_id,
+            "text": text
+        })
 
     return documents
 
@@ -45,7 +57,7 @@ def run_retrieval_pipeline(documents):
     # Creating, encoding and comparing search term
     query_text = input("Please enter the customer requirement text to compare: ")
     vectorized_query = embedder.encode([query_text])[0]
-    top_search_results = store.search(vectorized_query, 1)
+    top_search_results = store.search(vectorized_query, 5)
     
     # Creating a dictionary, loading id and text of each entry in documents list
     doc_lookup = {doc["id"]: doc["text"] for doc in documents}

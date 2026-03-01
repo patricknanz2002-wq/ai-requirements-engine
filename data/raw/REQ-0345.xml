@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0345</title><requirement>In case that a CAN-Limphome-Mode or a CAN-error is identified the opened contactors are not closed and precharging is not startet.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

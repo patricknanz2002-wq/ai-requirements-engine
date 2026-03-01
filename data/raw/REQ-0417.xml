@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0417</title><requirement>This signal is set as a state machine changing it 's value (open / close) on a certain condition:</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1094</title><requirement>2. invalid PWM-frequency: if the PWM-frequency is longer out of range of the specifications than the fault tolerance time, the control behaviour must be given (threshold, error message, temporal resolution, temporal correcting errors)</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

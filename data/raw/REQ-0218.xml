@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0218</title><requirement>The TCU communicates with OBC in order to activate or deactivate certain functions, such as smart charging.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

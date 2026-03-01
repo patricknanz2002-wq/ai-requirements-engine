@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1129</title><requirement>The KNFE-Mode shall be suitable for long time verification, especially to verify criteria which need an extensive testing to reach the needed confidence level (i.e. greater than 1000 km, greater than 50 h testing).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

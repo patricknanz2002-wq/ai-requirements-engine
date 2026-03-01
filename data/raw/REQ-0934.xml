@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0934</title><requirement>In case that the measurement of single cell voltages is fast enough, the overall battery voltage is simply the sum of all single cell voltages.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

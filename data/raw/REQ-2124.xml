@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2124</title><requirement>The contractor shall ensure that all connectors representing vehicle options (e.g. Family RSE, external Tunerbox, USB, ETC / VICS, camera interfaces ...) can be assembled or not if client does not require this for a special variant.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0565</title><requirement>On expiration of the timer, monitoring of the Common Alarm Input is to be activated and the execution of the function is to be stopped:</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

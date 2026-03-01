@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1801</title><requirement>The backup battery is connected by a thick wire to the backup relay and by two small sense wires to the ECU housing the PNM.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

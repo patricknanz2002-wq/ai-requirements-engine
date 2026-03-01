@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1695</title><requirement>The application software e.g. path prediction has to check if calculation could be done without a value e.g. for a short time or not.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0005</title><requirement>An adequate velocity independent cross-fading at chances of EPS_FtWhlAngl_Stat between HIGH_PRECISION and LOW_PRECISION shall be done to avoid jumps in the output signal.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

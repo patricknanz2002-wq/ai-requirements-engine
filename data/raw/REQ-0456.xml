@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0456</title><requirement>At the determination of the class MULTIPLE it has to be precluded that a pedestrian located close to a vehicle is wrongly allocated to the class MULTIPLE.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

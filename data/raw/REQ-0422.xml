@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0422</title><requirement>If the timer is running and the Deck Lid is open M:Deck Lid open, execution of the function is to be ended and can be restarted by closing the Deck Lid.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

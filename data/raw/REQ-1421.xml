@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1421</title><requirement>The checksums of the data stored several times must be available in separate memory areas, so that if problems occur when writing EEPROM checksum data, these checksums, which are stored several times, do not become invalid!</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

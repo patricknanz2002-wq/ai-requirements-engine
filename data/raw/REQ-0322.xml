@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0322</title><requirement>If in this time frame RelayClose equal 1 occurs, the relay is correctly closed.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

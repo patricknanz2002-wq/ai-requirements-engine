@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0880</title><requirement>If the history of more than 10 seconds is relevant to the resimulation result, measures shall be taken in an early stage of development to solve that problem.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

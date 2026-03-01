@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1544</title><requirement>Hardware failure or damage must be avoided in the case of control pulse line (IN / IFL pin) short circuit to ground or Vbatt</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

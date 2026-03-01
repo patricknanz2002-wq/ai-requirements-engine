@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1629</title><requirement>Each microphone input shall tolerate a short circuit to terminal 30 for at least 1 minutes ute.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

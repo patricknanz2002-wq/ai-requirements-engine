@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0181</title><requirement>The accuracy of the system shall be at least two times better than all required position accuracies and not worse than a factor of 5 in all other values (velocity, acceleration, latency etc).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1078</title><requirement>Remark: The possibility to overrun or underrun an object can mostly be determined not until a longer observation time which is not given in any case for detections coming from road border objects like guide posts.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

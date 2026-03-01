@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0274</title><requirement>LIN-Master is the ECU that houses the PNM, the IBS works as LIN-Slave with the possibility to wake up the Master-ECU in certain cases.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

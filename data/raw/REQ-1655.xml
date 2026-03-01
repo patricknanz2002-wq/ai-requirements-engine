@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1655</title><requirement>SDCMD0 and SDCMD1 provide information to the FPGA to apply a three phase short upper, three phase short lower, or a six switch open, as specified in the software requirements.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

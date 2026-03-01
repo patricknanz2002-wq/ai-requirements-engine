@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0351</title><requirement>In case of reset, the central locking system will close the DDP-relay again after a certain wait time.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

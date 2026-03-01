@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0872</title><requirement>THEN TSA display content shall be updated to the new implicit speed limit according to TSA display strategy earliest 500 milliseconds before and no later than entry ramp at position of EV is approximately parallel to highway.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

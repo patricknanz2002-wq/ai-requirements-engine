@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1899</title><requirement>If the state of the charge prediction is `` Display charge prediction in the charging page '' AND as soon as the trigger `` IC sleeps '' occures, the UI functions shall turn off the charging page.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

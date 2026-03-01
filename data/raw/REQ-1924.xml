@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1924</title><requirement>The error reaction is reset as soon as the supervision of the interlock loop is possible and the interlock signal becomes valid again.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

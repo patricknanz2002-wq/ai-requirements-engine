@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0347</title><requirement>The activation of the precharging circuit after having closed the corresponding main contactor will close the electrical circuit.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

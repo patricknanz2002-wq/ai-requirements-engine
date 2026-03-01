@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1601</title><requirement>This short circuit condition is continued for at least one hour after the cell or battery external case temperature has returned to 55 ± 2°C.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

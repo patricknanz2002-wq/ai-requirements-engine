@@ -24,7 +24,7 @@ It enables semantic comparison of customer requirements to identify previously i
 ## 2. Architecture Overview
 ##
 #########################
-TXT Requirements  
+Requirements are stored as individual XML files (simulating ALM/PLM systems like Polarion or Doors), containing structured metadata (title, status, owner, description).
 → Document Loader  
 → SentenceTransformer Embeddings  
 → In-Memory Vector Store  
@@ -50,7 +50,7 @@ TXT Requirements
 1. Install dependencies:
 
 Bash:	pip install -r requirements.txt
-Add: 	add .txt requirement files to: "data/raw/"
+Add: 	add .xml requirement files to: "data/raw/"
 Run:	python -m src.pipeline.run
 
 Enter a requirement text when prompted.

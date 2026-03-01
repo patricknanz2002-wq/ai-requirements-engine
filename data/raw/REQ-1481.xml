@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1481</title><requirement>For the verification of the customer objections, components which contain several functions, have to store function specific malfunction codes in place of summary internal malfunction codes</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

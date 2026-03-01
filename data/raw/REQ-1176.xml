@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1176</title><requirement>The contractor isn't responsible for the audible feedback of the LIN connector as long as the OEM proposed connector type is used.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

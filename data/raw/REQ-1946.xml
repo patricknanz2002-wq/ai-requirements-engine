@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1946</title><requirement>As soon as DDPMonLevel equal 2, the opening procedure is active and all other procedures are stopped.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

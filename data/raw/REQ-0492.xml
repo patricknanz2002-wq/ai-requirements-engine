@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0492</title><requirement>For EMC reasons, all transceiver circuit components are to be located close together on the printed board</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

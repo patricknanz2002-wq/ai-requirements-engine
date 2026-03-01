@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0225</title><requirement>A basic set of up to 3 alarm files will be stored on the HU durable storage (the alarm files may vary depending on a certain headunit hardware version for a specific region).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

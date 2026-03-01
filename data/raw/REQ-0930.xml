@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0930</title><requirement>For fast adaptation after exceeding threshold the control should use only a integrating controller.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

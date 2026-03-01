@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0184</title><requirement>In case that the electronics for isolation measurement failed, a worst case value less than 100 Ohm / Volt is assumed (internal and external).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

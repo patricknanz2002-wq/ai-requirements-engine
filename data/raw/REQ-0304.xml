@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0304</title><requirement>For slipping and closed NAK (clutch picture 1,2 ,4,7) the following is valid: The minimum power train torque is the addition of the maximum permissible drag torque of combustion engine and the idle speed controller desired torque (idle speed controller output and disturbance variable compensation).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

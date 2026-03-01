@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0413</title><requirement>If the IOD relay changes to open by any defect while it should be closed, the normal closing procedure has to be executed.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

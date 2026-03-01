@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1138</title><requirement>IF the duration of the drive cycle was long enough (BCDDrivingTime greater than PPNM_PNDSWDMinDrivingTime) the following percentages are calculated at the end of the drive cycle (x equal 1..16):</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

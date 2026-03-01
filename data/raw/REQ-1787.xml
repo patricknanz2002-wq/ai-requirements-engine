@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1787</title><requirement>In case that both angles are equal (absolute value), the reference point shall be positioned to the edge with the smaller azimuth angle between the position vector (absolute value) and the system vehicle's longitudinal axis.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

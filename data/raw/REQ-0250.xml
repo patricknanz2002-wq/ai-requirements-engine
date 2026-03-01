@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0250</title><requirement>Telelog is a SNAP enabled HU native application, in which certain specified telematics feature usages are logged by the HU, and the logs are sent to the OEM Vehicle Backend (OEMVB) for further analysis.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

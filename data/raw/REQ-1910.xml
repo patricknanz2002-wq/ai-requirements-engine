@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1910</title><requirement>As soon as one of the specified conditions is FALSE, the bus communication monitoring shall be deactivated (and the Generic Debounce Timer will be reset).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

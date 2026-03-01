@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1253</title><requirement>The nearest object to estimated vehicle path has the nearest lateral position to the estimated vehicle path but is still on the left lane.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

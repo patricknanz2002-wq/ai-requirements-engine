@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1107</title><requirement>1: If the timer has been enabled for longer than PPNM_ISPLongStopTWait since the last reset.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

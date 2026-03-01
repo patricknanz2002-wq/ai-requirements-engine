@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1507</title><requirement>If the locking of the Vehicle Inlet is not possible, the OBC shall trigger the locking of the Vehicle Inlet several times.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

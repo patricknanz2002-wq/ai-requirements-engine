@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0024</title><requirement>In case the OBC is limited on the frequency of the HVAC input Voltage, the OBC shall react in response to the detected fault by entering the HV Shutdown sequence or if possible reduce its input power to an adequate level.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

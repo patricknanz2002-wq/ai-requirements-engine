@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1843</title><requirement>Overrating of small dips (zero values) in the antenna pattern can be avoided by use of the cumulative distribution function.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

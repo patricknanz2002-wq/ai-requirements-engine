@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1126</title><requirement>In a new ignition cycle after a parking time longer than T_STANDBY the ECU starts with Press_Disp_Avl equal 0.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

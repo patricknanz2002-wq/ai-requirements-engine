@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1697</title><requirement>The component shall have algorithms to verify the maximum azimuth / elevation alignment deviation after power on within a very short time and driving distance, independently from driving conditions.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0256</title><requirement>The TCU is connected to the ORC redundantly via CAN and LIN to execute automatic emergency calls on certain crash levels.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0700</title><requirement>For the selection of transceivers / SBCs (System Basis Chips), or integrated semiconductor elements with network interface, Function Specification `` FlexRay Networking Details '' [LH-3927] shall be observed for FlexRay.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

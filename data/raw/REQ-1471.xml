@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1471</title><requirement>During a time span of (S_Time_Out + T_assoc_response) the PLC Driver shall be able to receive multiple CM_ATTEN_CHAR.IND indications addressed to the local PLC node from several EVSEs.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

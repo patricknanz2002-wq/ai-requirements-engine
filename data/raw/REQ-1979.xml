@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1979</title><requirement>If PLC is routed over Mains, HV-AC lines shall be tested in special PLC-Mode according to CISPR / I / xyz.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

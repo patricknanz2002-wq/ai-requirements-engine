@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1203</title><requirement>Shielding effectiveness of the total system: greater than 70 dB from 10 kilohertz up to 5 megahertz and 65 dB from 5 megahertz up to 500 megahertz (this means, the cables have to provide much higher shielding effectiveness), also after PV / DV.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

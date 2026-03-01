@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0053</title><requirement>Whenever an SCC internal error occured, e.g. reading NvM failed, copy of data failed or compare operation failed the SCC shall set Scc_15118SequenceOptionAttemptCtr equal 0, set the appropriate error bits as described in SCC-DIS-2438 and stop the V2G Communication Session.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

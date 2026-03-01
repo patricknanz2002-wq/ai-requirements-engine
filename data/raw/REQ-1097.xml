@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1097</title><requirement>The ignition coil is de-energized in the case when the control pulse Vin is longer than the allowed maximum time.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

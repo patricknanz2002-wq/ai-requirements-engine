@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1682</title><requirement>Immediate diagnostics readiness of all control modules shorter than 1 second after start or switch-on ignition shall be guaranteed (at least inquiry of part number).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

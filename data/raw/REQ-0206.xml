@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0206</title><requirement>Possibility to change certain behavior like message / frame cycle time of active setting at initialization.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

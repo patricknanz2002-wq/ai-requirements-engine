@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0448</title><requirement>Certain states of the car and currently running functions or events are a requirement to keep the IOD relay closed or close it, if it is open.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

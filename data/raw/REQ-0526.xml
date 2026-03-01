@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0526</title><requirement>As soon as the EMM receives the information that the insulation measurement has stopped, the EMM sends the request to close the DC contactors, received by the DC-Box.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

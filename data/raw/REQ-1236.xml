@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1236</title><requirement>First extrapolations show that within the FoV of the near range scan and the far range scan about 150 stationary objects can be detected, tracked and/or predicted within a range of 100m in complex environments on highways; taking into account the additional range needed for obstacle classification the detection range and hence the number of detectable objects will be even larger.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

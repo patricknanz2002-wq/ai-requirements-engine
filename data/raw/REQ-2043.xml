@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2043</title><requirement>If the current speed limit is not restricted (e.g. on certain parts of german Autobahn), the special value UNRESTRICTED shall be transmitted via .</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

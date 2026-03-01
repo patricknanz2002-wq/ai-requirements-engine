@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0453</title><requirement>The alarm recycling counter is reset when Deck Lid and flippper glass are closed NOT M:Deck Lid Open AND NOT M:Flipper Glass Open or if the VTA is deactivated: NOT M:VTA Active</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

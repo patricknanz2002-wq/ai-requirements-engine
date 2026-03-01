@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1089</title><requirement>At least 75 % of all objects of object category Ordinary with movement category Stationary shall have obj_ObstclDtct set to OBSTACLE not longer than 5 sensor cycles after entering ODA-Near or after becoming fully visible to the sensor within ODA-Near, whichever comes second.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

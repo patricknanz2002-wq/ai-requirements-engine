@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1642</title><requirement>The LED output shall allow the following diagnostics: open load short to bat short to gnd general electrical error</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1857</title><requirement>If AC_InstantLineVoltage is smaller than 25 volts, the global variable shall be set to 0.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

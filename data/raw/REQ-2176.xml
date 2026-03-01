@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2176</title><requirement>Data, which due to their importance are stored several times in the EEPROM memory (e.g. drive authorisation data), are stored in various blocks.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

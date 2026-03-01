@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0462</title><requirement>In order to guarantee best possible mountability also at oblique insertion directions the cam sensor 's geometry and shape must keep clearance as low as possible between sensor and bore while inserting the sensor and the sensor 's shape must provide a good insertion guide, sensor 's middle axis must be as close as possible to bore 's middle axis while insertion.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

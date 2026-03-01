@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1932</title><requirement>A specific message sequence is finalized as soon as a Download_Contract_Certificate.Set message is received indicating that the sequence is complete (Sequence Transmission State equal sequence complete).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

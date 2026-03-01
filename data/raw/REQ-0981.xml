@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0981</title><requirement>If the component (far range sensor) is not initalized with values for high damping, the system will switch on because of less blockage on the bumper but switch off a few seconds / minutes again because the blockage on the radom plate is now high enough to switch off.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

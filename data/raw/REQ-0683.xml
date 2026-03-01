@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0683</title><requirement>Specific messages related to network management and diagnosis are not mentioned in detail because these messages are explained in the corresponding standards.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

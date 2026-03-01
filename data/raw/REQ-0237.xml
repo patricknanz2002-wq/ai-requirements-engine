@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0237</title><requirement>Certain states of the car and currently running functions or events require the DDP not to open the DDP relay.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

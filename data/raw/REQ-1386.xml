@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1386</title><requirement>The required functional state is not achieved or the fault memory of the component has one or several entries after the test.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

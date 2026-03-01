@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0641</title><requirement>The TCU shall connect to the Head Unit Hang Up Button using the ExtKI protocol, for details see the ExtKI specification [RD2206].</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0080</title><requirement>The gateway communication interface (ECU extract) shall be configured according to the appropriate architecture.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

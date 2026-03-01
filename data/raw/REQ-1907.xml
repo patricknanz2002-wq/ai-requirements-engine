@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1907</title><requirement>As soon as the `` ADAPT user name '' and the allocated `` ADAPT position NUM '' have been saved, the System shall delete the received `` Data Set '' in the temporary storage.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

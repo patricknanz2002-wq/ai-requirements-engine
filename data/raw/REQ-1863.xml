@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1863</title><requirement>On the other hand the routine will be stopped if the battery current does not become small enough while zero current control is forced.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

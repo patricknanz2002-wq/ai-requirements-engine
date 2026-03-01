@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1060</title><requirement>Remark: The long feedback path between the rear loudspeakers and the front microphones OR the front loudspeakers and the rear microphones is controlled by feedback suppression as described in FInCC-23</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

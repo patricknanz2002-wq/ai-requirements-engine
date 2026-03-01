@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1854</title><requirement>The filter calculation ends when the negative permissible torque is smaller than the `` shaped negative permissible torque '' once again.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

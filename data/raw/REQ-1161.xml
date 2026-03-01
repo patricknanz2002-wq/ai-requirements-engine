@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1161</title><requirement>The parking lock actuator shall be activated as long as the AUX-supply line is powered (typically 3 seconds).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

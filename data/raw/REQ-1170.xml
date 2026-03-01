@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1170</title><requirement>As long as the CVN is not valid the transmitted data bytes for the CVN shall be set to 0x00.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

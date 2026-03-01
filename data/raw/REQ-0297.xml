@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0297</title><requirement>In order to reduce the coupling of EMC distortions from electronic control units located directly on the glass (e.g. cameras, rain light sensor) or in the close vicinity of the glass (e.g. displays, wiring harness), the antenna design needs to be optimized for minimum interference coupling.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

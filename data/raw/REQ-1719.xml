@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1719</title><requirement>During starting (cranking of the engine) the battery voltage will drop to a low level for a short period of time and then rise slightly.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

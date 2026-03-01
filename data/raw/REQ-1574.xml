@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1574</title><requirement>The interlock control logic (IL-logic) as per Fig. 5-2 shall be designed so that a short circuit between the interlock lines can be detected.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

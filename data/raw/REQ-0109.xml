@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0109</title><requirement>An appropriate debouncing shall be implemented for the detection of every error.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

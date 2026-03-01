@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1487</title><requirement>The siren sends the alarm reason in several status bits.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

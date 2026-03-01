@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2059</title><requirement>No special adaptation of the measurement tool shall be needed by the supplier to change between different K-Matrix versions, except the change of the arxml-file.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

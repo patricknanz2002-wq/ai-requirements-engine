@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1166</title><requirement>As long as there is no EVSEIsolationStatus is received SNA will be returned.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

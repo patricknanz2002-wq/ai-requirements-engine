@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0199</title><requirement>Only if a bad powernet condition is detected by the IODC, the bus is woken up to switch off the telematics.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

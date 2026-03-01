@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1925</title><requirement>As soon as the CAN Signal returns to a valid value (OBL_Rq_Mod equal not SNA) the error shall be reset (but the event is stored in the error memory) and the OBC returns to regular operation.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

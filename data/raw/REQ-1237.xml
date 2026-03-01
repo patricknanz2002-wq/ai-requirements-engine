@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1237</title><requirement>The ABC-Preview Function is calculating a road profile in the near range in front of the vehicle with higher accuracy than the road profile specified in AGMR-726.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

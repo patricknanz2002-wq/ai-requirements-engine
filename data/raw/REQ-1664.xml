@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1664</title><requirement>The Three Phase Short shall always be applied through the lower IGBTs in case upper and lower IGBTs report a collector-emitter voltage saturation fault at the same time.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

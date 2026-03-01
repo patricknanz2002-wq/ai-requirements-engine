@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1903</title><requirement>The display shall disappear as soon as Klemme! equal 15R OR WPT_HVDC_Curr less than 0,5 ampere via WPT_ChrgActv_Disp_Rq equal SNA.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

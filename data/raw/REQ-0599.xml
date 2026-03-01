@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0599</title><requirement>The tolerance data on the left of the double lines must be kept by the control elements, if this close to comparable control elements, e.g. in the same component or in two close together convenient components are blocked.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

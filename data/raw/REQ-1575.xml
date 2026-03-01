@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1575</title><requirement>In the event of such a short circuit, the interlock CAN message shall be sent by an HV component.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

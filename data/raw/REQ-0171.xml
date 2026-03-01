@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0171</title><requirement>Since the mounting characteristics can be worse during oblique insertion it must be guaranteed that mounting with a maximal oblique direction of insertion movement is possible without any restrictions (see also the following article).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0517</title><requirement>In case that a CAN-Limphome-Mode or a CAN-error is identified the OBC shall not request the EVSE AC-contactors to close.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

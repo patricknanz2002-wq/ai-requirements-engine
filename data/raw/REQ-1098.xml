@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1098</title><requirement>The load limitation is activated if the summation of [EM2_TrqMax_Rq_MSSE + actual combustion engine torque] exceeds the torque limit M_Grenz_pos equal [positive permissible torque + torque offset for torque limitation] for longer than a calibratable debounce time t_M_Grenz_pos (150 milliseconds; calibratable until 300 milliseconds).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

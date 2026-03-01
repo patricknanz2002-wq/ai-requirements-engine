@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1892</title><requirement>If there is a request of the EMM to unlock the vehicle inlet and AC current is above the AC current threshold, the inlet shall be unlocked as soon as the AC current is below the AC current threshold.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0326</title><requirement>In the event of remote Deck Lid lid release, the ITS monitoring is interrupted until the Deck Lid is closed again.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

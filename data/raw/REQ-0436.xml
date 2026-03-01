@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0436</title><requirement>BR217, the system sets different parameter sets, not only according to to the user 's selection but also depending on the roof status (opened or closed).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

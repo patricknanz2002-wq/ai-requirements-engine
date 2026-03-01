@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1701</title><requirement>The USV shall provide a signal to the measurement tool to power down after ignition is switched off and in case the program has to power down the complete system after a short delay.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

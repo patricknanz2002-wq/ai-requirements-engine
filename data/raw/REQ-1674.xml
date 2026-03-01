@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1674</title><requirement>For every possible error (open load, short, ...) a description is provided by the contractor how the monitoring is realized in hardware and software.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

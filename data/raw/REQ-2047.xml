@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2047</title><requirement>If a special LIN chipset is needed for LIN transmission, the sensor shall use a OEM recommended chipset.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

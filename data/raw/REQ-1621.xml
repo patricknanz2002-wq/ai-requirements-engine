@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1621</title><requirement>To detect a short circuit to VCC the following failure detection has to be implemented:</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

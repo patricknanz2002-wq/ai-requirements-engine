@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1330</title><requirement>For components which in an overload condition (current, voltage, temperature) can automatically shut off and on again (or can be caused to do so or which in an overload condition are without any defined antirepeat), it shall be verified that when there is a permanent activate condition, this will not result in any damage of the component and the control unit (in particular the PCB).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

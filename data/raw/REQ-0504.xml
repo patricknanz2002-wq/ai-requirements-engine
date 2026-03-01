@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0504</title><requirement>Each fixed Dante issue shall have a distinct and meaningful verification (e.g. measurement, 8D report, screenshot, etc.) to enable OEM to close the issue (Dante defect).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1434</title><requirement>This path prediction is based on several vehicle signals, which have to be first compensated and then combined to minimize estimation derivation.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

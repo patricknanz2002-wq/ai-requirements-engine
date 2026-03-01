@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1401</title><requirement>If several submenus are necessary for the representation of a functionality, these submenus can be reached from an already opened submenu by selecting the respective submenu element.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

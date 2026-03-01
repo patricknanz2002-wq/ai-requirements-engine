@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0068</title><requirement>Therefore, each application that uses LVDS should also refer to the appropriate protocol and interconnect standard.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

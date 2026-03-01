@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2001</title><requirement>For test cases, the variants for which the test cases are to be executed, e.g. markets, model series, body types, special equipment codes, shall be specified.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

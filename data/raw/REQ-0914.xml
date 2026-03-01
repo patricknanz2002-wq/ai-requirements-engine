@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0914</title><requirement>The signal has to signalize (signal state 1 equal ACPT) that an object fulfills the quality attributs of an object with longitudinally pronounced moving direction (codriving and oncoming traffic of all vehicle types incl. bicycles) as well as stopped or stationary obstacles for a fast functinal reaction exclusively after a fusion with a camera.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

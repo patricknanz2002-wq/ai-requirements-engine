@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1257</title><requirement>The reference system shall allow automatic counting of the accordance or disaccordance of predetermined objects from both systems, at least the nearest objects allocated to the ego lane and/or the first neighboring lanes left and right; the lane allocation shall be determined and assigned by the ego radar sensor.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

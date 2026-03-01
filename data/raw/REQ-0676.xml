@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0676</title><requirement>The OBC is responsible for all detection of all its errors, corresponding de- / mature criterias and debouncing, as described in detail in chapter "OBD" [OBC-4285].</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

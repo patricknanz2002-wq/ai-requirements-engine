@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1579</title><requirement>Intention of mode `` LOCKED '' is a basic self protection of the DC / DC converter in case of technical problems, e.g. short output circuit, internal voltage measurement break down etc.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

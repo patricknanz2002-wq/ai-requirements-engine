@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1149</title><requirement>Stationary RADAR detections shall only attribute to one segment, as long as the residual error of segment computation is within the acceptable range.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0135</title><requirement>SCC shall ignore any SDP response message that was sent from an IP Adress which is not valid or regarded as not appropriate.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

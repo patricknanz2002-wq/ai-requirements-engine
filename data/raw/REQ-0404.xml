@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0404</title><requirement>If the condition `` powertrain open '' for the automatic stop is fulfilled, the level 2 gives a release for the automatic stop to level 1 (Exception: in case of `` powertrain closed '' for automatic restart, see chapter `` Repeated restart after reversible start abortion '' [?K-2852 ff]) AND</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

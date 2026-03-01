@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1683</title><requirement>If the parking time is shorter than 5 seconds then BCDChargeBalanceSt equal 0 else</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

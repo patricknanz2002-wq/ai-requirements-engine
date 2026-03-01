@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1937</title><requirement>Capacitor discharging starts as soon as a valid CAN-signal indicates that the contactors are opened.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

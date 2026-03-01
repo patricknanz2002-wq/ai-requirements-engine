@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1722</title><requirement>This includes: No triangle may have an inner angle of less than five degree, no short wire elements may be present.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

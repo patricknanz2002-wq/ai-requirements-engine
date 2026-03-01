@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1794</title><requirement>The component has to consider the classification MOTORBIKE during the lane allocation of objects because these objects require different lane allocation and overlap criteria due to their small lateral dimension and very high lateral dynamic.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1197</title><requirement>Where flash processors are used, the EEPROM can be replaced with flash memory if the much lower number of write cycles (1% - 0.1%) on the flash memory is sufficient.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0562</title><requirement>The Common Power Train Controller is a controller for the HV system, and a CAN gateway between the powertrain bus and the interior bus.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

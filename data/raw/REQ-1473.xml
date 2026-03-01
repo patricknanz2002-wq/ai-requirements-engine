@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1473</title><requirement>This function allows the application software to switch the PLC modems configuration between several PIBs.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

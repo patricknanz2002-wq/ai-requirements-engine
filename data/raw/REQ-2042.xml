@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2042</title><requirement>If the system can't determine the speed limit (no speed limit transmitted to display to the driver), the special value IDLE shall be used, indicating that no speed limit information can be provided.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

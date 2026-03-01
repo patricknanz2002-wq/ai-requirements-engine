@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0426</title><requirement>On triggering of an alarm are to be written as base data into the alarm history: the alarm source and the current status of the door switches (open / closed)</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1040</title><requirement>Remark: This yaw angle difference affects the neccessary FoV for the sensor due to the tilt of the lanes to be surveyed and the specified minimum lane radius; the vehicle is positioned with a maximum lateral deviation to the lane so large, that the vehicle does not drive beyond the lane mark.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

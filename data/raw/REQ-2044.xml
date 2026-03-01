@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2044</title><requirement>If the system can't determine the next speed limit, the special value IDLE shall be used, indicating that no information on next speed limit can be provided.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

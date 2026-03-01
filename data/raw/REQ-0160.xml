@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0160</title><requirement>Appropriate firing thresholds are calculated on the basis of the crash measurement signals under consideration of all parameters (belt buckle status, equipment programming, etc.).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

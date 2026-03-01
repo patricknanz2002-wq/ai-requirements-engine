@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1916</title><requirement>As soon as a validation ends successfully, the remaining items in the list shall be skipped.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

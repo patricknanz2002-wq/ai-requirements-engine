@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0281</title><requirement>Remark: After the system has established the ability of providing a stable output signal state, the system may fade in the actual output signal within in a certain time interval.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

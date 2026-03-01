@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1025</title><requirement>For turning vehicles or objects migrating from an obtuse orientation angle to an acute orientation angle or vice versa, the transmitted values for the longitudinal and lateral relative velocity and the longitudinal acceleration shall not exhibit discontinuities larger than the specified accuracies.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

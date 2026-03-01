@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1192</title><requirement>To prevent battery damage on long descending roads and on high temperature a protection has to be implemented that deactivates the recuperation if the battery is completely full.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

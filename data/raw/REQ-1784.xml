@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1784</title><requirement>It is feasible to allocate objects not to the ego lane with collision overlap during small curve radii to avoid potentially implausible functional reactions, i.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

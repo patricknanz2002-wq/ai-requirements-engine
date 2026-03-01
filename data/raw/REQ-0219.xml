@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0219</title><requirement>The TCU communicates with CPC in order to activate and deactivate certain functions, such as preconditioning.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

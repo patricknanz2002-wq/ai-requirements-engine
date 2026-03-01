@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1529</title><requirement>Electrical interfaces shall always be designed so that destruction through a possible short circuit during adaptation or when components, which are under voltage, are being handled can be avoided.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1871</title><requirement>If both services TV and DAB are requested in station wagons with small rear side windows and in convertibles, the tuner derives the DAB2 signal from the TV antenna using a splitter.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

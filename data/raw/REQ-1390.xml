@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1390</title><requirement>In order to manage the overall 2.4 GHz ISM band allocation, an appropriate software application shall be implemented to allow configuration, prioritization and management of 2.4 GHz ISM band allocation by the several components wireless interfaces.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

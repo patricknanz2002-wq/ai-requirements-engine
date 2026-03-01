@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0163</title><requirement>The contractor shall target an architecture that allows an exchange of radio technologies without requiring PCB modification (for example by selecting an appropriate chipset).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1948</title><requirement>If the state of the Vehicle Inlet LEDs is `` Charging '' AND as soon as the trigger `` charge pause '' occures, the status LED shall be glowing orange.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

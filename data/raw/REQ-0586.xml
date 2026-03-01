@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0586</title><requirement>Activation of the VTA and non active common alarm input: M:VTA active AND NOT M:Common Alarm Input Active</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0002</title><requirement>In order to ensure that the severity of this test corresponds to the real requirements in the field, particular care must be taken during the test to generally simulate the installation situation of the component in the vehicle adequately in accordance with SPEC 10305-1 Draft 1: E / E Environmental Testing; Part 1: Test Specifications&gt;.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

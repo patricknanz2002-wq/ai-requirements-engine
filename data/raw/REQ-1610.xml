@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1610</title><requirement>For calculating and / or measuring the overvoltage during turn-off, inductivities of 50µH and maximum short circuit currents of 3500 ampere shall be taken into account.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

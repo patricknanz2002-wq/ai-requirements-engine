@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0030</title><requirement>If the EMM receives no information about the state of the vehicle via CAN, the EMM shall use adequate substitute values.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

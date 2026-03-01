@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0463</title><requirement>To monitor the temperature of the vehicle inlet close to the DC pins, a second temperature sensor (type PT1000) is integrated into the vehicle inlet.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

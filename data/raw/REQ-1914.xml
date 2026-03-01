@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1914</title><requirement>Reversible failure reactions are deactivated during the driving cycle, as soon as the failure disappears.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

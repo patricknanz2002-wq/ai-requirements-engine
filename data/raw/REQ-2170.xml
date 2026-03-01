@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2170</title><requirement>In components with multiple voltage inputs, there may be potential differences between the various supply points.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

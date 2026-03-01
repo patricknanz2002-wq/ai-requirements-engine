@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1067</title><requirement>[SRC004d] It is possible to miss some restarts in 3S seconds operation mode because the rail pressure goes down if the stop mode lasts very long and there is not enough time to raise it up for restart.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0896</title><requirement>Because ``Design For Test'' is the basis for the automation of other test cases it is required that this part of the SW is available as early as possible.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

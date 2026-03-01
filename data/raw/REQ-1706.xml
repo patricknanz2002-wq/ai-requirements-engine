@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1706</title><requirement>A short signal problem on the crank signal that could lead to a short switching from crank signal to cam signal does not have to raise a visible fault, but every permanent fault reaction (e.g. a permanent limp-home mode) has to set a fault.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

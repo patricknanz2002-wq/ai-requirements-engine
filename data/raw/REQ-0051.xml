@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0051</title><requirement>Appropriate measures (return spring) must be taken to ensure that the actuator opens under the most unfavorable conditions within the defined operating range (ambient temperature, power supply voltage, dirt, intake manifold absolute pressure, backpressure).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

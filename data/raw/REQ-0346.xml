@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0346</title><requirement>The BMS will not close contactors for active x-crash error in combination with isolation error even if requested by any control unit</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

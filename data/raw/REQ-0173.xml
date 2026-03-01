@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0173</title><requirement>To distinguish between normal engine running and bad driver actions, the software has to use the current gear and clutch information on manual transmission cars to detect if the driver has occured an engine stalling.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

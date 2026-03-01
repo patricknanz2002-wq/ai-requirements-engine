@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0383</title><requirement>If the diagnostic service '' ADSE_INTERFACE_OPEN_CLOSEâ? with parameter value `` Close '' is received in extended diagnostic session the ADSE interface must be closed.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

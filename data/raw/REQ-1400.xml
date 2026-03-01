@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1400</title><requirement>If there are several ways to program persistent ECU memories then these ways shall be applied independent of each other:</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

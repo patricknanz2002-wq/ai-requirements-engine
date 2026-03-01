@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1009</title><requirement>The component design shall allow to upgrade in a later design step to larger memory with the same footprint and the same interface without PCB modification.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

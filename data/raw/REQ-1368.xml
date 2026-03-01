@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1368</title><requirement>2.discharge to 50 % SOC with 0,5C (optional: several start SOC values possible, e.g. 80%, 50 %, 30 %)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

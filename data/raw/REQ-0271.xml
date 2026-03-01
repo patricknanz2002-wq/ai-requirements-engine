@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0271</title><requirement>BackupBatChargeRq equals 1, if any of the set events happened (stop disable because of voltage drop or a low after start voltage) and the backup battery voltage has not been higher than 13 volts for a certain amount of time.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

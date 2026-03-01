@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0261</title><requirement>If signals are assigned from functions that are switched off in certain conditions, SNA resp. default values are assigned during switched off times.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0240</title><requirement>If the internal resistance of the battery is above a certain value the maximum charge of the battery is limited to an upper value.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

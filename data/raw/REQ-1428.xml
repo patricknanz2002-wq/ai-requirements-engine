@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1428</title><requirement>The component performs software download including switching from application to bootloader, CRC, signature check, and restart with a throughput of at least 1 GByte / 15 minutes. The component software consists of several parts each with its own part number.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

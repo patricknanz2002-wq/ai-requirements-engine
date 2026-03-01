@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1443</title><requirement>A software used to program an ECU by the SWDL can contain several logical blocks.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1943</title><requirement>As soon as the departure time is reached the operating strategy of the vehicle commands the battery cooling system in order to lower the battery temperature while lowering the SOC as well until SOCmax is reached.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

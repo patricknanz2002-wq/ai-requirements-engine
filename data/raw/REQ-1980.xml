@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1980</title><requirement>There is a special behaviour for the setting of LHC_EBL_Rq depending on the following conditions:</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

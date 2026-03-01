@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0421</title><requirement>If the timer is running and the hood open M:Hood open, execution of the function is to be ended and can be restarted by closing the hood.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

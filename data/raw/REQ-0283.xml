@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0283</title><requirement>The system uses this signal to deactivate InCarCom if the sound volume signal exceeds a certain threshold.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

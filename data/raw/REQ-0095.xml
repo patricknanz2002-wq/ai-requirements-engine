@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0095</title><requirement>The ACCSW shall stop the execution of an Active Comfort program if the user has terminated the lead function, reading the appropriate signals.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

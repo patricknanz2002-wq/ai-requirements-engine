@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1663</title><requirement>However, a Three Phase Short has to be applied at higher speed in order to prevent the motor from entering Uncontrolled Generator Mode (UCG) and to cut off the uncontrolled power flow into the dc-link.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

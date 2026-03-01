@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1076</title><requirement>Further it calculates the current charge level of the battery by integration and determines the SOC by the quiescent voltage if the standby time is long enough.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

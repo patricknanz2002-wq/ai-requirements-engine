@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1653</title><requirement>Therefore the appropriate fault reaction is a three phase short using all the IGBTs located on the same side as the faulted IGBT.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

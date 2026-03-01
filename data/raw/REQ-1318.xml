@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1318</title><requirement>For the D-sample and for all subsequent releases (in particular for the PPF report), automated testing must be contribute at least 80 % to the overall test coverage.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

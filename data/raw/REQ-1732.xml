@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1732</title><requirement>SCC shall use esl_initFIPS186, esl_stirFIPS186 and esl_getBytesFIPS186 or similar alternative functions to generate a random number of approrpriate length.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

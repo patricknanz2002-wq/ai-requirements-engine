@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0064</title><requirement>When accepted COMAND display must trigger an appropriate action which is defined outside of the VC.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

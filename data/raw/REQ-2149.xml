@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2149</title><requirement>If the units have been inactivated, all crash telegrams and internal control unit errors recorded in memory may be read out and/or deleted only by the manufacturer of the vehicle or the device with special access authorization</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

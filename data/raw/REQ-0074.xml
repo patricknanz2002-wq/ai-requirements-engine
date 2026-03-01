@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0074</title><requirement>The value shall change from the response message to the request message after the response message is received and all contained data is processed, e.g. interpreted and forwarded to the appropriate interface.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

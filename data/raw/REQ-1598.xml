@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1598</title><requirement>The additional measurement range for short circuit / overcurrent detection shall be greater than 250 ampere to 500 ampere.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1418</title><requirement>The API shall trigger the CANTP transmission of one or several data elements to KOM module, depending on the provided bit mask parameter.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

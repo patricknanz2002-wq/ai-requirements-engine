@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0187</title><requirement>It must be guaranteed that the CPU peak load during crash algorithm in worst case is max. 90%.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

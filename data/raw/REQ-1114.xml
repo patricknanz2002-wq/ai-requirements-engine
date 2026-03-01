@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1114</title><requirement>If the value of abs (ISPBatVoltFilt1 / ISPBatCurr_A) is equal or higher than PPNM_BCDBatTermMax for longer than PPNM_BCDBatTermDT, then BCDDynRes is set to 200, independent of the actual values of ISPLastValidRdi_mOhm or RdiRevFilt.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1351</title><requirement>If is changed twice and the value of a particular offset / threshold was not changed in between, the original value of the setting shall be restored.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

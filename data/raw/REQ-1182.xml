@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1182</title><requirement>The signal IBS_ParkingTime_Reset_Rq is set to 1 as long as (OMCDrivingMode equal 1 AND PPNM_BSIParkResetEn equal 1) else 0</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0783</title><requirement>PWM interface details have to be discussed with the customer (frequency, resolution, range of duty cycle, etc).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

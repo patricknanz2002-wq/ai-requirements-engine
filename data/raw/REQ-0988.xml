@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0988</title><requirement>Function to monitor: `` set and actual values of all actuators have to stay within normal variation during normal operation; no skips or larger offsets; no entries in the error memory ''</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

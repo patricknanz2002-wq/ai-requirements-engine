@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1254</title><requirement>If multiple objects are detected for a physically real vehicle, the signal shall be ``1'' only for the nearest object if possible and the object shall be described using length and width.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

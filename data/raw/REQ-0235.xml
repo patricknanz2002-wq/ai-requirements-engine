@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0235</title><requirement>During the development phase, certain applicable parameters can be stored in the EEPROM and copied to RAM when the system is started up.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

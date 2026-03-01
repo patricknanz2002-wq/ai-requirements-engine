@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1408</title><requirement>If several modules have to flash, they can be flashed with a complete cycle.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

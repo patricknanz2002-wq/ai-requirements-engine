@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2033</title><requirement>The functional safety requirements of this chapter are derived from the functional safety LV Bordnet and are based on safety goals of other safety relevant components in the LV Bordnet and are specially related to the DC/DC-Converter</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

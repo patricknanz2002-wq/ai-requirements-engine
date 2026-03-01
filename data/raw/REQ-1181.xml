@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1181</title><requirement>As long as DDPMonLevel equal 0, the DDP state remains in idle, meaning DDP is closed.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

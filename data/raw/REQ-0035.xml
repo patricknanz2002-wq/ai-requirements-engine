@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0035</title><requirement>If the control logic is designed appropriately, a short circuit can also be detected by the signal driver circuit.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

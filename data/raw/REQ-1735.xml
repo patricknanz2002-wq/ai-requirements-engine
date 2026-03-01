@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1735</title><requirement>The component shall provide hardware acceleration for 2D and 3D graphics as well as video playback and for other graphical features like usage of Flash, Silverlight or similar tools.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

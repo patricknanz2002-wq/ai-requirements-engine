@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0642</title><requirement>The TCU shall connect to the Steering Wheel Hang Up Button using the associated CAN message, for detail see the applicable K-Matrix.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

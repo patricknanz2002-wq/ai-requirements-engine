@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1272</title><requirement>The event/error code shall be differentiated depending on blockage reasons: a.) blockage after selftest/power on detected b.) far range blockage during normal operation is detected c.) blockage of near range sensors switches system into blockage.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

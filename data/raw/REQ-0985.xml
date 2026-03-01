@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0985</title><requirement>This charging is interrupted, if a no-charge condition applies longer than a few seconds.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

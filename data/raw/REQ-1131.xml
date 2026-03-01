@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1131</title><requirement>After starting a long distance route calculation (e.g. across whole Europe or across whole US) the route guidance (incl. ADRs &amp; map display in all zoom-levels) shall be available within 5 s.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1109</title><requirement>If (ISPBatVolt &lt; PPNM_BCMHELowVoltLmtTest and ISPBatCurr &gt; PPNM_BCMHEBattCurrMin) for longer than 5 seconds a flag LowBatStopRq has to be set for 300 seconds.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0937</title><requirement>The charge acceptance of the battery is important to ensure a fast recharging of the battery after de-charging in park, especially at cell temperatures between -10°C and 5°C.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

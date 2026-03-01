@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1279</title><requirement>During development of the sensor it must be taken into consideration that a starter generator or a hybrid engine located near the crank sensor forms a magnetic field which must not influence the sensor.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

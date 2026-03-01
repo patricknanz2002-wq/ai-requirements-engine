@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1538</title><requirement>Short circuit proofing for all pins against battery voltage, ground and to each other.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0883</title><requirement>The use of early defect detection is intended to detect pre-damage of devices (e.g. manufacturing-related pre-damage, ESD pre-damage, ?Â&amp;brvbar;) or to detect early device failures which cannot be detected using a component end-of-line test.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1568</title><requirement>A short circuit may be permanent (component in service / not in service).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

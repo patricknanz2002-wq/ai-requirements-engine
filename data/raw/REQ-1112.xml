@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1112</title><requirement>While BCMChrgRq greater than 0 and (PNHV_PN14_QuiesCurr_Md_Rq equal 0 for longer than 5 seconds) (i.e. charge only requested by PNM) the signal PN14_DCDC_BuckMd_Rq equal 1 to request the DCDC converter</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

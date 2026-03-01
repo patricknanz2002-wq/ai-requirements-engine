@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2054</title><requirement>If there are any special development and debug tools (hardware, software) necessary to access the communication middleware from the outside of the component, the contractor shall provide these tools to the client.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

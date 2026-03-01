@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1382</title><requirement>The OEM Vehicle PC vehicle measurement system is a special system to collect measurement data from several sources and suppliers e.g. ABR, RDU, analogue voltages, several CAN and FR buses etc.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

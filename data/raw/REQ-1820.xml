@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1820</title><requirement>An appropriate algorithm has to be chosen to compensate for small offset drifts of VehYaw Rate in a way that does not compromise LaneRadius dynamic performance.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

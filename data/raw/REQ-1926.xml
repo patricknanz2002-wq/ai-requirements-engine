@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1926</title><requirement>As soon as the CAN Signals return to a valid value (not SNA) the error shall be reset and the OBC returns to regular operation.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

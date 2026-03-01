@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2120</title><requirement>The value of the counter `` number of started EOL alignments in elevation '' shall be read out by a special diagnostic command and may be reseted if necessary (sensor have to be unlocked) by different special diagnostic command.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

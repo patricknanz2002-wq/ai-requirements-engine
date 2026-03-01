@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1081</title><requirement>The real time clock must be able to cover longer periods of time and schedule events without inbetween wake ups.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

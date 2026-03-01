@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0501</title><requirement>The ultrasonic sensors support the Object Detection (OD) of the SVS and allows to display discrete distance information of close objects.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0681</title><requirement>The Secondary-OBD-Control-Unit is responsible for handling all of its errors, (error detection, check of all release conditions, debouncing, etc.), as described in detail in chapter `` OBD '' [OBC-4285].</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

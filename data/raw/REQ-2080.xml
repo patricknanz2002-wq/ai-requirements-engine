@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2080</title><requirement>If special issues (i.e. ghost targets, antenna related issus, object separation) require raw data, at least 1 car shall be suitable to support that mode with any radar sample.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

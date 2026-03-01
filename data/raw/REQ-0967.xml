@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0967</title><requirement>This procedure is to guarantee that the energy management gets the open circuit voltage in case of fast switch on sequences.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

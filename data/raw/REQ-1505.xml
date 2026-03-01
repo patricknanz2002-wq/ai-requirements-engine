@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1505</title><requirement>As soon as the OBC receives the request to unlock the Vehicle Inlet again from the EMM, the OBC shall unlock the Vehicle Inlet several times.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

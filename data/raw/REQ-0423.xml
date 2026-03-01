@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0423</title><requirement>If the Deck Lid lid is opened while the timer is running: M:Deck Lid open, the timer is to be stopped and then restarted when the Deck Lid lid is closed.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

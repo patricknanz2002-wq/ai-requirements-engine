@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0420</title><requirement>If the timer is running and doors are open M:Door XY open, the execution of the function is to be ended and can be restarted by closing the doors.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

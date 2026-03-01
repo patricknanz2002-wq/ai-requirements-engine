@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1389</title><requirement>The component shall use adaptive gain control to meet different attenuations in the several cars.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

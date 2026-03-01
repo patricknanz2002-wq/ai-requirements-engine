@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0935</title><requirement>During dynamic situations a faster voltage measurement is required that is always recalibrated by the more precise sum of single cell voltages in stable and nondynamic phases.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

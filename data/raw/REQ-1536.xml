@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1536</title><requirement>The USB interface shall be protected against misisue (e.g. IT security issues, short cut or load, defect files systems, ...)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

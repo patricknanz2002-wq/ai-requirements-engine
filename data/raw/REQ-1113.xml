@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1113</title><requirement>While BCMChrgRq greater than 0 for longer than 5 seconds the signal ends.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

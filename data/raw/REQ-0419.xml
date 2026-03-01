@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0419</title><requirement>If the voltage difference is high enough an opened relay is detected and the relay is closed.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

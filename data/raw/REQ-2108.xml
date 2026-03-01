@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2108</title><requirement>If requested the component shall have algorithms for aligment within the factory under special conditions, e.g. defined radar target, etc. In the following the necessary requirement for such an algorithm are described.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

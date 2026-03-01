@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2018</title><requirement>The module must have the cabability to disable the rollover algorithm via diagnostics with a special treatment for the airbag warning lamp with this diagnostic service see diagnosis specification.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

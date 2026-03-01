@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1205</title><requirement>Since the HU may be used in different, incompatible car architectures, it is necessary to separate the vehicle domain from the telematic domain as much as possible.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

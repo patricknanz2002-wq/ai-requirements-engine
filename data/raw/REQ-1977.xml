@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1977</title><requirement>During special or synchronisation operation modes (see chapter `` Measures regarding the monitoring of special operation modes for P2 hybrid '') an additional extension of the +Offset1 or +Offset2 maps is necessary.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

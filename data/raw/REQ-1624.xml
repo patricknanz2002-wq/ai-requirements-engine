@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1624</title><requirement>If no falling edge occurrs a short circuit to VCC may be the reason or the driver has left the car.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

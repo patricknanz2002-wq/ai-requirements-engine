@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1152</title><requirement>As long as no valid vehicle parameter is received by the radar and not stored NVM / EEPROM value is available from previous ignition cycles,</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

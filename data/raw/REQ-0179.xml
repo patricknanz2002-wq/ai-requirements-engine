@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0179</title><requirement>All tests shall be performed and passed at the worst case automotive boundary conditions.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1484</title><requirement>The signal BSBFault indicates the significance of the power network evaluation and is built with several input-signals.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0442</title><requirement>Information: the combustion engine can be started via the starter when NAK is open or via the electric motor with closed / sliping NAK and open B2 clutch.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

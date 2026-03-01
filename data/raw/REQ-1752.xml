@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1752</title><requirement>Function execution with precondition, function trigger, etc., is carried out similar to the function ``ITS Deselection Acknowledge'', instead of flashing the LED is switched on for 2 seconds.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

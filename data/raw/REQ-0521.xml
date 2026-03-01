@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0521</title><requirement>If isolation measurement has been disabled by CAN signal PNHV_SupBat_IsoMeas_Enbl or by diagnostic BMS may disregard the command to close contactors.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

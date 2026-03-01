@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0496</title><requirement>If the real hardware / software on which the component is finally deployed is not available yet, the contractor shall use a reference hardware / software which is as close as possible to the real hardware / software.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

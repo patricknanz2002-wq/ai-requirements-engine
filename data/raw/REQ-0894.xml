@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0894</title><requirement>The end of line alignment as described in ``End of Line Alignment'' (FBR-2644) shall also be developed for safe launch purpose and to secure alignment in an early stage of the component development.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

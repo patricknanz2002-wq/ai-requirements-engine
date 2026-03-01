@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1165</title><requirement>Base software modules which are not provided by SLP 10 may be not fully AUTOSAR compliant as long as they do not compromise the RTE and SLP 10 module interfaces and functionalities (see SPEC 10730).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1566</title><requirement>Definition: A short circuit of a load output is defined by a lower Ohm load case as with a specified load to the limit 0 ohm.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

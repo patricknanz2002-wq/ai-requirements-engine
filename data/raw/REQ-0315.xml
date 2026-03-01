@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0315</title><requirement>In case of a CAN communication failure while the contactors are already closed the contactors remain closed until a small battery current is measured.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

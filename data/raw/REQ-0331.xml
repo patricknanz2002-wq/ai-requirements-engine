@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0331</title><requirement>Contactors of the EVSE do not close (within a session upload)</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

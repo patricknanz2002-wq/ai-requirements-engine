@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0944</title><requirement>Signal which describes the fast task sample time, inverse of the switching frequency</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

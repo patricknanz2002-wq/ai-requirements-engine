@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0961</title><requirement>The crash acceleration signals must be available to the central unit with a takt time which is fast enough to meet the requirements of the firing process.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

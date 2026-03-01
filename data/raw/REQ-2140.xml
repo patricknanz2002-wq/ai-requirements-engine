@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2140</title><requirement>In case that the isolation resistance is measured on vehicle side only a special sequence is required to locate an error inside the battery.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

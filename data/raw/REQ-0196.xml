@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0196</title><requirement>BSBRange1 equal 1 is set when the power network state is bad.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

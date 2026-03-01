@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0107</title><requirement>The part number, the software version and where appropriate the diagnostic information of a flashware are allocated in the first 128 byte of the first segment.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

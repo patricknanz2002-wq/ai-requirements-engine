@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1258</title><requirement>To select the nearest object in path (the relevant object) the component calculates the predicted path of the own vehicle from yaw rate, wheel speeds, steering angle and detected stationary objects from both sides of the road.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

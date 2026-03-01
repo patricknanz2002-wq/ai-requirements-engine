@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1224</title><requirement>The start of the engine has also to be assured on hybrid systems that might have much higher engine speed gradients while starting.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

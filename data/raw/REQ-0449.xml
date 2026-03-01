@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0449</title><requirement>The relay has to be closed if the IODCClosingRq changes its value from 0 to 1 and the relay is open.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

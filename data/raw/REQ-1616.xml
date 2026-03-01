@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1616</title><requirement>All internal and external Sensor- / Actuator-Input / Output signals shall be monitored for short circuit to ground, to battery and for open load.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

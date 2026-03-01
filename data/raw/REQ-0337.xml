@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0337</title><requirement>If there is a fault detected in the charging system the PEC will not close S2 in any case.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

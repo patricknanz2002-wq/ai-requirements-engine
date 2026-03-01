@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0344</title><requirement>In case of a CAN error precharging is not allowed and the contactors must not close.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

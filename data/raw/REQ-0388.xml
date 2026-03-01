@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0388</title><requirement>2 CLOSE: Charger shall close S2, e.g. indicate State C according to IEC 61851-1</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

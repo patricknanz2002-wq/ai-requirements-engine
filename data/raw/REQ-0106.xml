@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0106</title><requirement>In order to be able to rapidly assign the impaired components to a fault image, appropriate routines shall be implemented in the ECU.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

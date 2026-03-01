@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0558</title><requirement>In the end of signal processing, the microphone signals are mixed to one common signal.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1704</title><requirement>After detection of tG the recharging thresholds of IP and IS have to be activated and realized as short as possible to assure fast follow-on ignitions.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1608</title><requirement>The purpose of the HV fuse is to ensure overall safety in case of short circuit events or overcurrent within the HV circuit.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

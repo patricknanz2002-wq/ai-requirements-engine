@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1043</title><requirement>The results of the algorithm shall not be negatively influenced by large vehicle acceleration, decelerations or steering interactions.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

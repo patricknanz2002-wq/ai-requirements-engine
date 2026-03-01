@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1898</title><requirement>If the state of the Vehicle Inlet LEDs is `` Locking fault '' AND as soon as the trigger `` using service release '' occures, the locking LED shall be switched on.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

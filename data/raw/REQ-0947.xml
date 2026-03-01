@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0947</title><requirement>AND the fast charging is over (BCMFastChargeOver equal 1)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0216</title><requirement>When received the response UDE shall save the file with a certain name (tbd) in a certain directory (tbd) on the USB stick.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

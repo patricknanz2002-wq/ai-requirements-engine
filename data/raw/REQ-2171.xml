@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2171</title><requirement>In general, a maximum supply voltage offset of 0.5 volts between the various operating grounds and voltages may not result in functional errors.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1543</title><requirement>The CPS shall provide the diagnosis of interruption or short circuits of the sensor lines (supply, output and gnd.) or any internal failure mode in consideration of possible shunt resistances (see chapter 8.3.2)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

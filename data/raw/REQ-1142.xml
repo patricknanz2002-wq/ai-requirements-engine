@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1142</title><requirement>If an object leaves the ODAs, the sensor shall deliver the corresponding sensor object as long as the sensor object is verified by sensor measurements.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

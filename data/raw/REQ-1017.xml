@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1017</title><requirement>Internal tracked objects with lateral relative distance larger than the specified maximum (102.3m, left hand side of vehicle) are masked and therefore not signalized on bus (all object attributes except Object ID are default values).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

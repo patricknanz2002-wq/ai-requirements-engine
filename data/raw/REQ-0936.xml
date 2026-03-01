@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0936</title><requirement>In case that the measurement of all single cell voltages is fast enough and the sum of all values is updated at least every 40 milliseconds the measured battery voltage is required only for plausibilization.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

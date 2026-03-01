@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1032</title><requirement>- Safe operation of the sensor must be possible with airgaps from 0,2 to2,1 millimetres (reduced accuracy for gaps larger than 1,4 millimetres will be accepted)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2123</title><requirement>The `` measurement interface '' cited in LH-129 includes (it needed) the separate converter box, which can be connected to special prepared radar samples and to the measurement PC (if needed, i.e XCP measurement interface box for connection between component and measurement PC).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

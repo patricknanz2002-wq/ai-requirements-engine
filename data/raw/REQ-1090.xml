@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1090</title><requirement>The sensor must not miss more than 50 objects of object category TAF-Ordinary per hour in ODA-Standing, where the objects movement category is either Moving or Stationary and the object is missed for longer than 1 sensor cycle and less than 8 sensor cycles.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

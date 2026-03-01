@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1678</title><requirement>E.g. a shorter button press of 90 milliseconds during the 100 milliseconds cycle is also transferred, for example.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

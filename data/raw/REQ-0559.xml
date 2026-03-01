@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0559</title><requirement>If CCC certification is applied, certification is required for all component variants and for all subcomponents (substructure parts) of these components that have been defined as replacement parts (see requirements ID CRQ-363 in the Common Requirements [OEM 310 00x]).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

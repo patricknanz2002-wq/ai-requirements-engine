@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1890</title><requirement>The change from UpStatUa1 to UpStatUa0 happens, as soon as ISPBatVoltFilt1 greater than PPNMBSBUpLim1.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

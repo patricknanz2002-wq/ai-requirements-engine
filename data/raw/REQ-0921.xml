@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0921</title><requirement>In certain critical states of the car (e.g. emergency braking or an accident) some convenience consumers can be switched off very fast to guarantee the safety functions.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

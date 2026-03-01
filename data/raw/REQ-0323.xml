@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0323</title><requirement>100 seconds after removing the key and closing the last door and the Deck Lid, the VTA should be automatically activated.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

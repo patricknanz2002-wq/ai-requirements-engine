@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1671</title><requirement>The GPS-Receiver shall offer autonomous aid for ephemeris prediction, leading to shorter "time to first fix warm" values of 15 s</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

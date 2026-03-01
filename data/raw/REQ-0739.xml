@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0739</title><requirement>If the OCM_Frm1 message is no longer received (LIN-timeout) see the "Technical Specifications for Algorithms" for details.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

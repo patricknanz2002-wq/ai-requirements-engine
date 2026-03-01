@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1908</title><requirement>As soon as the conditions with respect to data security are state of the art, replication of the database contents must be enabled online via the internet.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

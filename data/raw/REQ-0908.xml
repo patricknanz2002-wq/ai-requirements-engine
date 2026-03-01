@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0908</title><requirement>The access to the system for diagnosis and software download purposes is realized by a Fast Ethernet link to the system.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

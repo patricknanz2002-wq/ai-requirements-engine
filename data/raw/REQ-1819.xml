@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1819</title><requirement>To compensate small yaw rate offsets, the yaw rate used to calculate the lane radius has to be compensated using information from standing objects.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

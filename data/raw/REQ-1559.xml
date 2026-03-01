@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1559</title><requirement>The OBC shall monitor the Proximity Input voltage level for undershoot of the threshold for short circuit to Gnd.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

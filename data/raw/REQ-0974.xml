@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0974</title><requirement>The sensor shall deliver fewer than 1 false alarm sensor object with Obj_LongDoubleFusion_Qual set continuously to 1 equal LOW or 2 equal HIGH per hour in all ODAs, where the number of sensor cycles the false alarm is delivered as sensor object is less than or equal to 2.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

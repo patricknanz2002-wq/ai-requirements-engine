@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1004</title><requirement>The sensor shall calculate the standard deviation of the estimated distance to the road border and report a correction value for which the reported distance to the road border may be larger.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

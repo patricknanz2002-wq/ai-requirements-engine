@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0137</title><requirement>This could be realised, by physically erasing the certificate or by changing the content of the certificate, e.g. length information of the certificate or appropriate control information of the NvM.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

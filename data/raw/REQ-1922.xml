@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1922</title><requirement>In case that a CAN-Limphome-Mode or a CAN-error is identified, the charge coupler is unlocked as soon as the charger has terminated the charging mode.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

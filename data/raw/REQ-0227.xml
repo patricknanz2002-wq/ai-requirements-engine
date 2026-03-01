@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0227</title><requirement>For validation of certain component functions a function specific data base may be necessary, e.g. tunnels and bridges, pedestrians, oncoming or crossing objects, situations with high yaw dynamic, lane radius verification, etc.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

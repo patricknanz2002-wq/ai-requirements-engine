@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1749</title><requirement>With M:ITS SlaveEnable greater than or equal to 2, function execution takes place in a similar way to the function ``ITS Set Sensitivity''</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

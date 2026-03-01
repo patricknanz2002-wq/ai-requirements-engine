@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0324</title><requirement>For each contact, the function checks whether it has an uninterrupted closed status for 10 seconds following activation of the VTA.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

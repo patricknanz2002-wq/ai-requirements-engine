@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1285</title><requirement>The algorithms shall calculate for each sampling point the confidence based on the presence of measured targets near the sampling point and is signalize the confidence on bus with the signal `` DTR_PolyRightY0_conf '' for the first and `` DTR_PolyRightYi_conf '' for the following sampling points.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

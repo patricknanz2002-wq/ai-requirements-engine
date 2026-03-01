@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0108</title><requirement>The receiving component has to implement an appropriate parser to map the CANTP structure to internal variables.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

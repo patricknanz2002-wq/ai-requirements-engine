@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1727</title><requirement>Example: the heater control only works if the engine is running (PT_ready or similar signal).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1051</title><requirement>The long range radar shall support the function by the detection of PD ahead of the system vehicle and by providing necessary information like position (x, y), velocity (vx, vy) and quality measures.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

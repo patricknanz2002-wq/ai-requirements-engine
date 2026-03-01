@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1073</title><requirement>The fading between peak and long term current threshold must be based on the specification of the components inside the battery system.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

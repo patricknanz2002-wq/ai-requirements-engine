@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1588</title><requirement>For shut off in the situation of short circuit in the battery or the hv-net, the contractor may implement an additional fuse.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

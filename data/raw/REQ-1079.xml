@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1079</title><requirement>The signal state TUNNEL or TUNNEL_SENSITIV or CARPARK shall not applied after leaving the tunnel if there is no curve typically after 40m, in curves the states could be hold longer to avoid missed detection</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1470</title><requirement>During a time span of T_assoc_response the PLC Driver shall be able to receive multiple CM_SLAC_PARM.CNF confirmations addressed to the local PLC node from several EVSEs.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

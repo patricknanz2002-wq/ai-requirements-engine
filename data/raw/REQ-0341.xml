@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0341</title><requirement>If EAC turns off, BMS may not close the battery cooling valve for the adjustable time AV_BCOOL_TIME_VLV_DELAY.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

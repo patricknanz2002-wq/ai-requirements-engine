@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0390</title><requirement>((Control Pilot is equal to COMREQ || COMOPT) AND SCC StateCoammand is equal to CLOSE)</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

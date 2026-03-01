@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1831</title><requirement>If a small approaching object e.g. a motorcycle is driving in front of a larger object e.g. a truck in a relative distance larger than 3 m, both objects have to be detected unambiguously.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

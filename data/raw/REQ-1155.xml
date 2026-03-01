@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1155</title><requirement>Hint: A monitoring of SNA, DEFAULT values or OutOfRange of the operating parameters is only present as long as no values could be stored successfully in the NVM.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

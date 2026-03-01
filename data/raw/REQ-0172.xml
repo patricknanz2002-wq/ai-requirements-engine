@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0172</title><requirement>An engine stalling due to synchronisation problems and without bad driver behaviour must not occur without a fault.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

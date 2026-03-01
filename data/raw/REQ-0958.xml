@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0958</title><requirement>The used interface between the host processer of the component and the WLAN device shall be fast enough to support high datarates.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

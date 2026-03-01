@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1936</title><requirement>If PNHV_EMM_LHOM is set and contactors are closed, the contactors shall open as soon as low current (e.g. 3 A) has been reached.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

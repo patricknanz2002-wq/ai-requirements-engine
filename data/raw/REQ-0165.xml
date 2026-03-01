@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0165</title><requirement>(To avoid significant overshoot and oscillation of ouput voltage, and to fulfill the dynamic behaviour requirements, it is allowed to reduce output power, as appropriate, in case the actual LV voltage is close to the SDC 's LV voltage set point.)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

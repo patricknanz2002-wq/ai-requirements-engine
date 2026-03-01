@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0425</title><requirement>The status information includes the condition (open / closed) of doors, engine hood and tailgate when the alarm is triggered.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

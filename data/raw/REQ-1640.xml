@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1640</title><requirement>The temperature sensor input shall allow the following diagnostics: open load short to bat short to gnd out of range (low) out of range (high) general electrical error</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0950</title><requirement>Fast route calculation, i.e. calculation of 500km distance in less than 10 s, and reroute calculation in less than 1 s.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

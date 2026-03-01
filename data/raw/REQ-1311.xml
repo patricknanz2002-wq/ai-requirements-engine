@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1311</title><requirement>Therefore, particular security measures (redundancy + checksum) are to be taken when storing the ID code in the siren and master.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

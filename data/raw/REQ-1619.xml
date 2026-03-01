@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1619</title><requirement>If theres a short circuit in the backup battery path (BackupShortCirctuit equal 1), the test sequence is aborted in any state and the following values are set:</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

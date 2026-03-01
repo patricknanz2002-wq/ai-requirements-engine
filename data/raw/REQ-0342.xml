@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0342</title><requirement>After the adjustable time AV_BCOOL_TIME_VLV_DELAY, BCC may close the cooling valve.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

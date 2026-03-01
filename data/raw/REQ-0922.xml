@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0922</title><requirement>To prevent a very fast consumer deacitivation by the DLM when the windshield heater is turned on, there is a certain offset voltage which is allowed during the defrosting cycle.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

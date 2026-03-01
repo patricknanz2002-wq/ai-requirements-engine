@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1147</title><requirement>The events shall be active in diagnosis as long as SRD_SysDamp is NO_DAMP again.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1353</title><requirement>Denotation of the signal state 0 has not to be carried out if the angle tolerance assessment by using the difference angle leads to an ambiguousness between several neighboring lanes to the left (1., 2.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

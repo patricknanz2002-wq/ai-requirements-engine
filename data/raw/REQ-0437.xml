@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0437</title><requirement>If the diagnostic sercvice `` ADSE_READ_INTERFACE_STATE '' is received the state of the ADSE interface (open / close and working / error) must be received.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

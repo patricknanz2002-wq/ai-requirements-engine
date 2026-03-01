@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2126</title><requirement>The corresponding data and operations of those applications that can be displayed on the IC or be operated via the IC shall be sent between the Head Unit and the IC using a special protocol.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

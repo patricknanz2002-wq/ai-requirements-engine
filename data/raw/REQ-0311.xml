@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0311</title><requirement>If at least one of the battery contactors is closed (stay awake reason) the BMS requires further CAN communication.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

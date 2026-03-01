@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1416</title><requirement>Therefore it can use several methods or combinations of it, depending on target types and goals of the algorithms (e.g. low-pass filter, alpha-beta tracker, Kalman filter, evidence grid etc.).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

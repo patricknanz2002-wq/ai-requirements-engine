@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1769</title><requirement>For transmitting data packets to SCC and SCO the component shall use the diagnostic write services 0x2E similar to the definition in ISO 14229-1.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

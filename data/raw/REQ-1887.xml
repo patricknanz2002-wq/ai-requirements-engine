@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1887</title><requirement>In case of a CAN error the contactors are opened as soon as a small current is measured (for example 7 ampere, application parameter).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

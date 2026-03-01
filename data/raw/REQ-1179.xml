@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1179</title><requirement>As long as the belt buckle status cannot be recorded, the message `` Signal Not Available '' is present on the CAN.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

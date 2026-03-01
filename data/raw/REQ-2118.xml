@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2118</title><requirement>The tool must be adapted continuously to changes of level 1 functionality.Based on the tool, the supplier must create a '' black list?Â of level 1 relevant data for the monitoring, to allow a check of changes relevant for the monitoring.Additionally to that list, in the supplier documentation all level 1 labels influencing level 2 / 3 labels must be marked specially.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

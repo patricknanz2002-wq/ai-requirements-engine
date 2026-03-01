@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0948</title><requirement>While the car is parked, the fast deflation warning shall be suppressed as long as the pressure is above (P_MIN - DP_TOLERANCE).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0672</title><requirement>The diagnostic information supported on the control-unit side, such as fault codes, measured values, etc. shall be described in detail with regard to the diagnostic services used and the data transferred with them, including the conversion method.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

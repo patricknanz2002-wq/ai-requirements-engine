@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1232</title><requirement>The radial maximum detection and tracking range of the near range scan shall be large enough to safeguard the deliverance of sensor objects up to the maximum longitudinal distance of ODA-Near including the required over/underdrivable classification and without ambiguities (distance, velocity, angle etc.), i.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

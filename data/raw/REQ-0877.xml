@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0877</title><requirement>If an object stops, which was detected earlier as moving and an orientation angle could be determined, the orientation angle of the object has to be compensated, as long as the object is standing, by the movement of the ego vehicle (aim: determination of the potential driving direction of the object in case it is moving again).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

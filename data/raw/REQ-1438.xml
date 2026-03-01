@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1438</title><requirement>Several hardkeys and a rotary controller for volume control in the middle console as well as additional hardkeys for direct access to telematic applications located in the dashboard are connected to the CTRL_C via LIN.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

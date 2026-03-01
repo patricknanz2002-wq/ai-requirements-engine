@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0952</title><requirement>If PPNM_BCM48 volts Enable equal 1 AND SSAEngSp equal 1 then BCMFastChargeOver equal 1 else BCMFastChargeOver is set as described in chapter ``fast charge calculation for lead-acid batteries'' are valid</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

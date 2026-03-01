@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1024</title><requirement>For all objects, the angle between the connecting lines from left edge point to middle edge point and from middle edge point to right edge point shall be not larger than 180° (acute angle), as seen from the system vehicle, i.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

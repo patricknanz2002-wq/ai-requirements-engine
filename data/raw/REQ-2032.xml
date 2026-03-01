@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2032</title><requirement>Filtering of object values (distance, relative speed and relative acceleration) has to be specially trimmed for smooth system operation of the ACC Longitudinal Control if object relative speed is around +/- 5 km/h.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1270</title><requirement>The signal state may only be LONG_COLLISON_BRAKE, if the object is located in the overlap area of near range scan and far range scan AND the object has been detected in both scans at the same position.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

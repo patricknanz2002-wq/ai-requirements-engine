@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1145</title><requirement>In case the normal functionality (object detection) for the DTR sensor caused by over or under temperature (temperature range see component requirement specification: FBR5_Component Req english) not guaranteed / not possible and only restricted operation incl. FR communication possible, this bit has to be set to `` 1 '' as long as the temperature extreme value is exceeded.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

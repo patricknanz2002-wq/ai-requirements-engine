@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1169</title><requirement>The precharge current shall be limited by the OBC itself (e.g. 2 ampere DC) as long as the actual HV Bus Voltage is lower than 50 volts DC, even if a higher Value is commanded.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

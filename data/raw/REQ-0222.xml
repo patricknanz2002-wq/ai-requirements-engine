@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0222</title><requirement>If the component possesses an internal discrete or integrated voltage regulator, it must be certain that safety is maintained in the event of loss of function of the voltage regulator and no damage or errors in control unit function result.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

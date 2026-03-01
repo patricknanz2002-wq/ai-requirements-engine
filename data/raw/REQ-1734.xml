@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1734</title><requirement>The BMC shall provide a real time clock or similar equipment to ensure the calculation of self-discharge, control balancing and serve for diagnostic reasons.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

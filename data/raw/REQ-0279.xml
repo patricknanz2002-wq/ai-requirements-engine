@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0279</title><requirement>If the Control pilot signal changes the state from `` charging allowed '' to `` not allowed '' the OBC shall fall asleep after a number of changes in a certain time.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

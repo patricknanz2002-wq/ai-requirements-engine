@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0954</title><requirement>The component shall implement high performance MOST communication which is required for several features (e.g. fast software download, entertainment metadata transfer).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1647</title><requirement>Full diagnostic capability is expected to be supported (open circuit diagnostics continously and short to battery / short to ground at initialization) for the AHR output.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

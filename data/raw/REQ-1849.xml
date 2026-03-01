@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1849</title><requirement>It has to be assured that the signalized error (Dist_RoadBorder_Lt) corresponding to the signalized distance is not smaller than the real error, even for driving situations as sharp turns.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

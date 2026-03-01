@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0125</title><requirement>Then, the allocation to appropriate objects has to be carried out directly in the current system cycle as long as no other detections can be allocated to this object.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

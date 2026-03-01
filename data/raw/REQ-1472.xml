@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1472</title><requirement>In several steps of rhe association sequence random numbers are required to handle the EV-EVSE message handshake.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

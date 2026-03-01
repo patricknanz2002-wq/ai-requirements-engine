@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1175</title><requirement>For not supported processors the standard software modules shall be purchased from Vector Informatik by the contractor, as long as no accredited AUTOSAR conformance test is available.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

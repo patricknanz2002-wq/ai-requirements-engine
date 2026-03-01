@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1506</title><requirement>As soon as the DCB receives the request to unlock the Vehicle Inlet again from the EMM, the DCB shall unlock the Vehicle Inlet several times.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

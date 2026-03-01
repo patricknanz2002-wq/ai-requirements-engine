@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1886</title><requirement>As soon as the component receives a response according to [PLGW-6832] it shall either confirm the successful reception to the TCU by sending a data packet specific `` .Status '' message with the Invalid_Parameter equal `` normal '' or when a negative response is received it shall send a data packet specific `` .Status message '' with the Invalid_Parameter equal `` out of range ''.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

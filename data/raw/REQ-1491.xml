@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1491</title><requirement>In case the component consists of several circuit boards or sub-components, the run-in may be performed separately for each circuit board or sub-component.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

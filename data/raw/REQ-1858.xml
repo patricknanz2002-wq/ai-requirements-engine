@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1858</title><requirement>In case that the CAN-signal PNHV_Energy_Req is missing the contactors are opened as soon as the current is smaller than a predefined limit (for example 5 ampere, calibration value).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

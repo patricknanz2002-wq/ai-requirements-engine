@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1101</title><requirement>The OBC shall detect a Circuit Low fault, if the output current of pin R_U exceeds 3.5 ampere for longer than 20 milliseconds.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

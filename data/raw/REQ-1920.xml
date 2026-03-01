@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1920</title><requirement>As soon as the network management stops communication, the interlock loop is no longer supervised.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

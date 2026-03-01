@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0655</title><requirement>If a condition to activate the PLC chipset is present (for details see [PLGW_R-109] chapter "Starting the PLC modem" [SCC-6187]) the component shall go to state "PLC enabled".</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

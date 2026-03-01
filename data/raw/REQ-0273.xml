@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0273</title><requirement>Depending on the acutal SOC of the vehicle's battery, the PNM sends a signal, which shows the communication unit if flashing is possible for a certain time during the parkcycle.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

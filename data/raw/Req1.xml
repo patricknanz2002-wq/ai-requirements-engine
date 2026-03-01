@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<requirement>
+    <title>Implement Login Feature</title>
+    <description>
+        The user shall be able to log in using email and password.
+    </description>
+    <status>Open</status>
+    <owner>John Smith</owner>
+</requirement>

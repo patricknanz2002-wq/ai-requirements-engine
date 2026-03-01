@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0973</title><requirement>This system shall warn the driver of fast approaching vehicles on adjacent lanes if a lane change is intended and brake if a collision could occur.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

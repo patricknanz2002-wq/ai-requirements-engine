@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1947</title><requirement>If the state of the Vehicle Inlet LEDs is `` Vehicle Inlet unlocked, no connector '' AND as soon as the trigger `` plugging the connector and locking the Vehicle Inlet '' occures with a locking fault, the locking LED shall be blinking.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

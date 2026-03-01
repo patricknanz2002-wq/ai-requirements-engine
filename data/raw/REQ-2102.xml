@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2102</title><requirement>The output of an object of interest (with PreSelect) may be restricted to special driving situations and has to be agreed with the client.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

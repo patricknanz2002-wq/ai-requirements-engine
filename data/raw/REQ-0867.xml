@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0867</title><requirement>The autonomous full braking intervention will be started earlier than that of CMS2, if a crash situation is no longer or just avoidable by a full braking and an escape route is missing.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

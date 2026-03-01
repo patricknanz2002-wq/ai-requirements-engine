@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1826</title><requirement>Exceeding the long term current limit by a small amount shall expand the duration of higher current.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

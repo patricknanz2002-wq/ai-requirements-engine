@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0418</title><requirement>If the decouple relay opens by a defect while the car is driving or in an automatic stop the backup relay has to be closed immediately and power is provided to the powernet by the backup battery</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

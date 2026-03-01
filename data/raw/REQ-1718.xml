@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1718</title><requirement>The OBC output circuitry shall provide a short overcurrent capability matching at least the current-time characteristic of its HVDC output fuse.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

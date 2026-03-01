@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1589</title><requirement>If a fuse is used for shut off of a short circuit, the fuse shall be located between cell 17 and cell 18 to ensure a disconnection of the half block of the battery.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

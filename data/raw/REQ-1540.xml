@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1540</title><requirement>This power consumption must be maintained in all operating states, including cases of faults, such as incorrect polarity, overvoltage, short circuits, etc.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

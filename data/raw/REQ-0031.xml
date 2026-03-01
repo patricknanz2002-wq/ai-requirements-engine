@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0031</title><requirement>If the EMM receives the information about an invalid Control Pilot (via the corresponding coupler states) while transferring energy, the EMM shall use adequate substitute values.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

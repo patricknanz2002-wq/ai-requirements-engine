@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1630</title><requirement>Each microphone input shall tolerate a permanent short circuit to terminal 31.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

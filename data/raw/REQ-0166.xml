@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0166</title><requirement>It has to be assured that it is not possible to get a badly calculated engine position (and as a result injections at incorrect angular positions) even if the crank signal is disrupted intermittently.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

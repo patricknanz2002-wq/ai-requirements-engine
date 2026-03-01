@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1117</title><requirement>OR if (DDPHibernMdOpnRequest equal 1 AND DDPPreventHibernate equal 0)) for longer than PPNM_DDPOpenDelay then the Timer DDPTimerOpen is started and the internal signal DDPTimerOpenState is set to 1.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

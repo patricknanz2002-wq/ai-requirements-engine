@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1940</title><requirement>The evaluation of the interlock signal shall start as soon as the BMS is able to provide a valid interlock generator signal which is signaled by the rising edge of PNHV_Intrlk_Rdy.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

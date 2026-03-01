@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1124</title><requirement>If the error-condition existed longer than the pretime, it has to be logical false for at least the duration of the posttime to revoke the output signal.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

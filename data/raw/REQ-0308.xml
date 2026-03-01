@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0308</title><requirement>In case the EVSE AC Contactors are closed, the OBC is either in Ready to Charge or Charging Mode</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

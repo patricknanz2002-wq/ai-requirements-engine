@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0148</title><requirement>The ORC uses acceleration and air pressure signals, measured by appropriate sensors to determine a crash event.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

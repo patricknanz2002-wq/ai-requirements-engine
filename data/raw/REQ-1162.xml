@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1162</title><requirement>Writing of VIN shall only be possible as long as the immobilizer has not the state "activated" (equal locked).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

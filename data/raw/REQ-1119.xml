@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1119</title><requirement>(PPNM_ICCSOCWarnHybridEnable equal 1 and VehSpeedDisp equal 0 and ISPBatCurr less than 0 for longer than PPNM_ICCSOCWarnDebTmHybrid)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1667</title><requirement>The algorithm shall calculate the accuracy less than 1.0° for a valid alignment with an accuracy of less than 0.3° at a short as possible driving distance (less than 500m).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

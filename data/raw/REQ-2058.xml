@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2058</title><requirement>CMS_P has no special requirements on the accuracy of the lateral width of the CMS_P relevant object, as the width of the object will be determined by the function using additional camera information.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0976</title><requirement>The sensor shall deliver fewer than 100 false alarm sensor objects per hour in all ODAs, where the number of sensor cycles the false alarm is delivered as sensor object is less than or equal 2.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

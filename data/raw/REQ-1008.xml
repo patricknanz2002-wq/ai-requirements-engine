@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1008</title><requirement>Vehicle odometry data from the ESP to the radar sensor, may have a larger delay due to routing from Flexray to Ethernet via gateways and switches in between; to date one gateway (EIS) and one switch (IDC) is planned.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

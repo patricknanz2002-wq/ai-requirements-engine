@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0590</title><requirement>When VCC receives in the signal the request to `` stop '' it shall perform a common transition to ''stop? (see VC-241).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

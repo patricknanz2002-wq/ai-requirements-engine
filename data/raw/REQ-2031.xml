@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2031</title><requirement>- that automatically measured ground truth infos (i.e. ADMA reference sensor on bord, automatically recogniced reference objects/specially marked surrounding cars) can be read and processed</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

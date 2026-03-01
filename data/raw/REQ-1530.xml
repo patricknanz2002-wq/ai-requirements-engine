@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1530</title><requirement>A short circuit or a wire break of an output does not impair the function of the other outputs.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

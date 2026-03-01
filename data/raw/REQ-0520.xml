@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0520</title><requirement>The BMS shall provide the possibility to close the main contactors, when SoC less than 10% if: the client / application permits this action diagnostic request occurs</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

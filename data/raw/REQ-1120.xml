@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1120</title><requirement>If ISASDCDCFlt equal 1 for longer than 10 s, then an error has to be stored</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

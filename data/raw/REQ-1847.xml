@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1847</title><requirement>The accuracy of the determined distance to the roadborder shall always be smaller than 0.5m over the whole detection range.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

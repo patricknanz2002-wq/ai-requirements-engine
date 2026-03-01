@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1433</title><requirement>The length and width information is used to separate the tracked objects into several object classes.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

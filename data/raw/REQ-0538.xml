@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0538</title><requirement>It defines a number of wiring and signaling standards for the Physical Layer of the OSI networking model, through means of network access at the Media Access Control (MAC) / Data Link Layer, and a common addressing format.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

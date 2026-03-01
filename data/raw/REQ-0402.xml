@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0402</title><requirement>The throttle is to be implemented in such a way that in the entire operating temperature and operating voltage range each angle position between completely open and closed can be accessed.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

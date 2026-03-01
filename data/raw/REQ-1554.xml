@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1554</title><requirement>Signal loop closed with valid HVIL Signal signal loop interrupted or no HVIL signal short circuit against LV+ short circuit against vehicle ground</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

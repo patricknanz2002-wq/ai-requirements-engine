@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0663</title><requirement>- relaxation behaviour vs temperature and SOC in relation to the capacity determined (HVBATT-23435), for more details see chapter Test related for Specific parts / Characterization of Cell</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

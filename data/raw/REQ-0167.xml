@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0167</title><requirement>The fault will be set if the temperature of the Charge Coupler does rise too fast, indicating e.g. a badly conditioned contact on vehicle or cordset side.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0798</title><requirement>The parameter set and details of the measurements (resolution, sampling rate, etc.) must be coordinated with the client and documented in the technical specifications or in the component test specifications.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

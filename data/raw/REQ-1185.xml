@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1185</title><requirement>If IBS_ParkingTime - EPNM_BCD_LastParkingTime greater than PPNM_BCDLongParkTime and PPNM_BCDUseLongPark equal 1 the parking time is long enough to trust the discharge LUT, i.e. an internal signal LongPark is true while the conditions are true</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

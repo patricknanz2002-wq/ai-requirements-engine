@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0339</title><requirement>The BMS shall close the second main contactors if precharging was succesfull and if there is still a valid CAN-signal PNHV_Energy-Rq equal 1.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

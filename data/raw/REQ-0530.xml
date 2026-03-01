@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0530</title><requirement>The ACCSW shall send the signal `` almaCC_ActvComf_Rq '' to activate the system Comfort Closing to close the sunroof blind, window blinds and rear window blind.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

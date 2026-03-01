@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0446</title><requirement>When the energy request becomes inactive while the main contactors are closed, the main contactors shall be opened.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1044</title><requirement>If the residual segment computation (e.g. inside a kalman filter least square ?Â&amp;brvbar;) gets too large, the radar sensor shall start with a new segment. This parameter has to be agreed with OEM.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

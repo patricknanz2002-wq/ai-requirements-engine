@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1906</title><requirement>When the player is paused because of `` Vehicle in motion '', the system shall resume playing the current video file as soon as `` Vehicle in motion '' does not apply anymore.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1702</title><requirement>After ignition on or after a reset, the component signalizes for a short time the signal state SNA until the component works in the usual system cycle and is able to read NVM data.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

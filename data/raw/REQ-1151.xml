@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1151</title><requirement>As long as no valid vehicle parameter is received by the radar a default value shall be used instead: 0 m</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

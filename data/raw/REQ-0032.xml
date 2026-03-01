@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0032</title><requirement>If TBCC_Reg_Actv is 2 then the acceleration requests must be implemented by an adequate control algorithm.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

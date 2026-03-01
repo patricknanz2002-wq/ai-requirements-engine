@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1049</title><requirement>If output power is not longer reduced and detection of an object is possible in the same system cycle the component has to set the signal '' DTR_SensOut_Rdc equal 0?Â on bus object interface.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

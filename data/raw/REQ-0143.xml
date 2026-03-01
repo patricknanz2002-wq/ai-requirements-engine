@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0143</title><requirement>- At functional points positioned on different components, direct tolerance dependencies must be taken into consideration and verified in production by appropriate measures.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0561</title><requirement>The ID is contained in the field "Common Name" (CN) of Scc_ProvisioningCertificate.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

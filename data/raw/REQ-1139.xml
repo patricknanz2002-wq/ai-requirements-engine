@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1139</title><requirement>An active panic alarm may also be terminated by long pressing (greater than 1 seconds).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

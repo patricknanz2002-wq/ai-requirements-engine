@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0298</title><requirement>All radiation pattern measurements shall contain N_phi equidistant azimuth angles within the closed interval [0°- 360°].</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

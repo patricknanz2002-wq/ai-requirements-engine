@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1404</title><requirement>If the present Component Requirement Specifications describe several variants of a component, the following tests shall be carried out for each variant using the number of DUTs required for each.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

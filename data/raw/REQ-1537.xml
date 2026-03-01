@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1537</title><requirement>The USB2.0 interfaces shall be protected against misuse (e.g. IT security issues, short cut or load, defect file systems ,..)</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0306</title><requirement>In this case the starter magnet relay, which is located at the component itself, closes the connection to clamp 30 which results in the power supply of the starter (normal pinion starter or PES), following the starting process of the engine.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

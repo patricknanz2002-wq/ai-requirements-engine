@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1856</title><requirement>OR the expiration date of one of the received certificates in Scc_SAProvisioningCertificateChaein is smaller than Scc_EvEVSETimeStamp.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1002</title><requirement>The signals state 1 equal TRUE has to be transmitted if the `` distance within ego lane '' is fulfilled sufficiently for a stationary object, independent of whether it is the object with the lowest distance or an object with larger distance or a hidden object.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

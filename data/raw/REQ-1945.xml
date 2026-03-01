@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1945</title><requirement>As soon as a crash threshold has been crossed, a crash telegram is to be stored in the memory area allocated for this purpose according to the `` Technical Specifications for Diagnosis ''.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

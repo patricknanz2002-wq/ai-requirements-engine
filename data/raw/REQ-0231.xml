@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0231</title><requirement>Certain vehicle lines will have the Button interface status sent over the CAN bus to the TCU.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

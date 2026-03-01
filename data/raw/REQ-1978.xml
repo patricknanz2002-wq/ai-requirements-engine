@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1978</title><requirement>To compensate influences like component drifts, aging and dirt, in special operating modes like foot-off operation, learning methods (adaptive controllers) have to be utilised.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1163</title><requirement>If there is no message lost or SNA information from TCM before the first calibratable time is elapsed, then a key start is allowed as long as there is a valid starter release from the TCM</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

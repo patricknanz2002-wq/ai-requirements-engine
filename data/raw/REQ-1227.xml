@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1227</title><requirement>Due to higher electrical power when DC-charging Mode 4, the cooling power needed is much higher than the AC-cooling power.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

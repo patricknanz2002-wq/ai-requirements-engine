@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0028</title><requirement>The sensors integrated in the central unit (via electronic technology, e.g. via piezo-electronics, piezo-resistance, micromechanics etc.) for crash detection must be sensitive enough to detect collisions of the vehicle with adequate promptness.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

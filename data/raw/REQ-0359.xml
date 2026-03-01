@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0359</title><requirement>The accuracy of obj_y for objects having object extension category PointTarget shall be at least 0.05 m for objects closer than 10m (Euclidean distance from the center point of the sensor 's front face), where the accuracy is compared to a point on the object 's contour.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

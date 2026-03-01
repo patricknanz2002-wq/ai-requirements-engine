@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0243</title><requirement>Therefore the load and the maximum alternator current at certain engine speeds is calculated and the desired engine speed is sent to the engine controller.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

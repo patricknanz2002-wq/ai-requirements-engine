@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1248</title><requirement>The component should have an improved measurement in the near field less than 10 meters, a wide horizontal field of view up to 20 meters and a high update rate of data.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

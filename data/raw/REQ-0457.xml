@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0457</title><requirement>If no left neighbouring lane existent (physically or measured), this signal state has nevertheless to be allocated to an object, in the case that the object is located close to the own lane of the system vehicle, for example maximal up to the middle of an estimated neighboring lane, but maximal up to a measured physical road border to the left.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

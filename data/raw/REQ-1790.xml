@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1790</title><requirement>The percental load is calculated by dividing the actual Iv-current by the smallest available current limit (derating / thermal limit or client current limit).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

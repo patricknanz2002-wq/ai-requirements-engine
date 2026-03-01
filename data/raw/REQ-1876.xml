@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1876</title><requirement>A complete voltage vector has to be provided as soon as possible during cranking phase.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

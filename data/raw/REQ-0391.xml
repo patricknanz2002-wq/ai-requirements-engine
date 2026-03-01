@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0391</title><requirement>If the signal `` Scc_61851StateCommand '' is equal to CLOSE (2h) set to `` Charge authorized '' (2h).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

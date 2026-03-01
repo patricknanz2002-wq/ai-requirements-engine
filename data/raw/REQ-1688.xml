@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1688</title><requirement>The IDC shall send the DTR+ trace instead of the DTR+Q lateral guidance trajectory in situations in which the steering angle is greater a specific value or the quality of the lateral guidance is not sufficient or the range of sight is shorter than a specific value.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

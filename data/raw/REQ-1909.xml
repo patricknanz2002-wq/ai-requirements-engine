@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1909</title><requirement>Vehicles with RAS (actors, sensors, ECU, interface communication) shall be used as development vehicles as soon as they are available.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

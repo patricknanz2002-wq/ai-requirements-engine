@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0090</title><requirement>If the video player participates in the program `` Activation '', the system shall communicate to ACCSW that the requested activating playlist is still about to be played afterwards by sending the appropriate value of signal `` Play_MusicProgr ''.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

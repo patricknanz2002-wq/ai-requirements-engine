@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0327</title><requirement>If the value is less than or equal to tbd, the window is closed.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

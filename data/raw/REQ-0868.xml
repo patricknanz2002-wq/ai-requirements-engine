@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0868</title><requirement>The information if the IOD relay opened early (IODOpenedEarly) is stored in a flag, therefore needing 1 Bit of memory and is therefore stored into Bit 31 of ParkCycleMem4.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

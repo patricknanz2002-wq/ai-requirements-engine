@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1546</title><requirement>In this way any sharp current rise will be detected (primary short circuit, secondary ECU defect).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

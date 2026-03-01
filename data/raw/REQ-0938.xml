@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0938</title><requirement>A fast prediction of the state of charge has to be started by a diagnostics service</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

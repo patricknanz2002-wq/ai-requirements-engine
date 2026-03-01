@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0200</title><requirement>It is diconnected if the generator management ist switched on or the powernet state is too bad.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

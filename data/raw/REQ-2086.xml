@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2086</title><requirement>The selected design points include typical FCS operation points (no 1 -10), special FCS operating points (no 11 -14) and stop mode (15).</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

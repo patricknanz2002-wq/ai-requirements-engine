@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1095</title><requirement>3. Static control deviation (offset): if the offset is longer out of range of the specifications than the fault tolerance time, the control behaviour must be given (threshold, error message, temporal resolution, temporal correcting errors )?Â&amp;brvbar;</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

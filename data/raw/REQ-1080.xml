@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1080</title><requirement>The driver shall support test pulses in order to provide testability of otherwise '' not-detectable?Â failures in case of a power stage being switched into a defined state for a longer time.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

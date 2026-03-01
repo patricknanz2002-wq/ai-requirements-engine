@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1023</title><requirement>Large amounts of data (in dimensions of megabytes) can easily and quickly be put on a USB stick when they were first written to a local file.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0115</title><requirement>The central activation device uses the crash acceleration and pressure forces measured by appropriate sensors and the resulting values to determine whether the threshold value for firing the seat belt tightener and / or the airbag firing squibs or for activation of the crash switches has been reached (see the `` Technical Specifications for Algorithms '').</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

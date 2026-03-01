@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0776</title><requirement>If this parameter is false no internet details will be requested.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1628</title><requirement>A short circuit to terminal 30 or terminal 31 or a wire break on one microphone input shall not impact the functionality of the other microphone input.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

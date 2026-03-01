@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1307</title><requirement>The DTC requirement of the other module overrides the DTC requirement in the ADSE system requirement specification for this particular condition.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1096</title><requirement>4. Position limits (voltage value position feedback unit): if the plausibility check of the positions limits is longer out of the range of the specifications than the fault tolerance time, the control behaviour must be given (threshold, error message, temporal resolution, temporal correcting errors ).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1204</title><requirement>Shielding effectiveness of the total system: greater than 40 dB (this means, the cables have to provide much higher shielding effectiveness, typical: greater than 60 db), also after PV / DV</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

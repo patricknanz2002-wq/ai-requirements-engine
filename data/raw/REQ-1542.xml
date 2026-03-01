@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1542</title><requirement>In case of short circuit against GND at the output the current must not exceed 50 milliampere.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

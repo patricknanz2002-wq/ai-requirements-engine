@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1213</title><requirement>If a battery change was detected mileage and time of this change are stored with the information, how much the old battery has been discharged.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

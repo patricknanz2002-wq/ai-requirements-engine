@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0506</title><requirement>V2G2-860 ensures that the EVSE has to close the contactors prior sending the PowerDeliveryRes, in case of START.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

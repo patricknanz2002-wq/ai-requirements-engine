@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1891</title><requirement>As soon as one of the following signals becomes 1, a timer with the value PPNM_BSBFailDebounceTime is started.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

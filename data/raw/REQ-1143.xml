@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1143</title><requirement>A failure rate is accepted for the signal states 1, 2 and 3 in case that the object is not located on the ego lane afterwards as long as the following conditions are existent:</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1592</title><requirement>Otherwise, the main contactors open at over currents and in case of short circuit, the fuse is designed to interrupt the TV path and after actuate, the main contactors must open.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

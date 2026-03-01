@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0335</title><requirement>- When the LV-Voltage increases above 9 volts the HV-Battery Contactors can close and the regular charging procedure begins.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

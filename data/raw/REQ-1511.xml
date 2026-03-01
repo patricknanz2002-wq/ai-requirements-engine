@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1511</title><requirement>If the diagnostic service '' ADSE_DISABLE_ASâ? is received while the ADSE interface is open several driver assistance systems must be disabled.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

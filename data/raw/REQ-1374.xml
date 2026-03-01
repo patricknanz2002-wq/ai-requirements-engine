@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1374</title><requirement>The component shall provide the ability to switch off the power supply for several subcomponents (0 milliampere) such as:</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

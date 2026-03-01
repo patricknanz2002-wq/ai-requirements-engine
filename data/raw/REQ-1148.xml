@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1148</title><requirement>The signal DTR_VehSpdCorrFctr_Qual shall set to FQUAL (2) as long as the plausibility of the used correction factor is valid.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

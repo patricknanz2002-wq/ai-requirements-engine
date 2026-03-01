@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1942</title><requirement>The CAN-error is reset automatically as soon as a valid signal PNHV_Energy_Rq is available.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

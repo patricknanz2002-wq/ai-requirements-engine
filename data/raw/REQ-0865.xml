@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0865</title><requirement>Fault paths with safety-critical impact (S equal 10 and imminent danger to life) whose occurences cannot be ruled out (O greater than 1ppm over lifetime) and whose on-board diagnosis does not permit early detection (D greater than 3), so that severe injury to people or danger to life must be expected.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

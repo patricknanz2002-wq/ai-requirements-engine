@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0469</title><requirement>The coaxial measurement cables shall be routed close to the car body and close to the original cabling (at least in the vicinity of the antennas) to suppress the generation and transmission of sheath waves and avoid interaction with the antenna under test.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

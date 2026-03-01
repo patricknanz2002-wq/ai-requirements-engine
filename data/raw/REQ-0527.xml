@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0527</title><requirement>As soon as the EMM receives the confirmation of the request to prepare the charging process, the EMM sends the request to close the battery contactors (PNHV_Energy_Rq equal CLS), received by the BMS.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

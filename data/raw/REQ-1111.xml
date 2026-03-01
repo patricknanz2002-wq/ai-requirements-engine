@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1111</title><requirement>If (BCMDCDCChrgFlt equal 1 for longer than 10 seconds) OR BCMDCDCChrgStop equal 1 for longer than 60 seconds) a nonvolatile flag `` DCDCNoCharge '' is set.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

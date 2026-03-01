@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0775</title><requirement>GenChallenge information received in Payment details response and used in AuthorizationRequest</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

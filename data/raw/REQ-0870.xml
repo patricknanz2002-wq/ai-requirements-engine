@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0870</title><requirement>THEN TSA display content shall be updated according to TSA display strategy earliest 200 milliseconds before passing the sign and no later than the EV is passing the sign.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

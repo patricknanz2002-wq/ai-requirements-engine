@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1739</title><requirement>The sensor shall separate objects with similar RCS values (for example 2 cars) with equal velocity (velocity difference less than or equal to 0.5m / s) in a distance of 30 meters when the two objects are more or equal than 1 meter apart from each other.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

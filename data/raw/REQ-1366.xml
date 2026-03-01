@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1366</title><requirement>Several engine tests or service routines (e.g. DPF service regeneration) can cause an increased idle speed which might be higher than the permissible tolerances of Level 2.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

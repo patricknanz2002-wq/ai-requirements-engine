@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0280</title><requirement>For the case a vehicle starts hurtling on the street before the restraint system gets activated and therefore an OEM eCall gets triggered, a memory always contains the direction of travel from a certain timeframe in the past.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

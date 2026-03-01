@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0795</title><requirement>Additional details indicating how a fault is to be set, stored, and cleared are to be determined by the supplier and OEM and must comply with the DTC criteria document.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

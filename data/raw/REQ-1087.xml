@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1087</title><requirement>If a button is kept pressed the RCU shall set the Long Press Bit 0 in Key Identifier Byte.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

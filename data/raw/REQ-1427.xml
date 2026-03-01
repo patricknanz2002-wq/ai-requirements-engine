@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1427</title><requirement>Each communication configuration consists of a set of several network settings, each with a vehicle message matrix (VMM) and a link to AUTOSAR-NM and / or OSEK-NM.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

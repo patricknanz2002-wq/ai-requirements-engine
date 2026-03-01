@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1497</title><requirement>There may be several variants of the parameter database at the same time which are compatible with all hardware variants and markets.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

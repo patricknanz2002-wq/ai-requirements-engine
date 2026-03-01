@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0953</title><requirement>Therefore the component is supported by vehicle parameters e.g. wheel base, front wheel angle, front and rear track width etc. All signals used for path prediction have to be compensated well and fast in the component e.g. offset, drift of an offset etc. regarding the specifications.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

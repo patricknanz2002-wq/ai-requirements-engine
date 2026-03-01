@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1862</title><requirement>The y-axis displays the frequent occurrence (in percent) of this level, which means the probability that the received level is equal or smaller than the x-axis value.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1030</title><requirement>For a velocity equal or larger than 266 km/h (corrected speedometer velocity which is displayed to the driver) this bit is set to `` 1 ''.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

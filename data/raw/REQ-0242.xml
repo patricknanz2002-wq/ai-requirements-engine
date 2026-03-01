@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0242</title><requirement>If the battery charge sum since the last time a full charge has been detected exceeds a certain value, the battery has to be charged until it is detected as full.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

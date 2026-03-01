@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0313</title><requirement>After CAN initialization the duration since the contactors were opened shall be sent to the energy management at least for 200 milliseconds even if in the meantime the contactors are closed.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

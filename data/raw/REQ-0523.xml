@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0523</title><requirement>One series means to precharge, to close the main contactors, to open the main contactors after a specified delay and to precharge once again.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

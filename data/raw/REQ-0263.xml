@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0263</title><requirement>If the battery charge resistance is high, the integrator is limited on a certain lower level.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

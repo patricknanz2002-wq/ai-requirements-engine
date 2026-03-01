@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0989</title><requirement>The polygon shall consist of 30 sampling points wherein the sampling point with the largest distance in driving direction signalized on bus with signal `` DTR_PolyRightXmax ''.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

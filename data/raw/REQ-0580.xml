@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0580</title><requirement>The auxiliary audio input line shall be realized / implemented with a common mode rejection ratio (CMRR) of greater than 70 dB.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

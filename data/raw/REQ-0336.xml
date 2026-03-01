@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0336</title><requirement>If the signal `` SC_ChargingAuthorizationS2Request '' is set to `` Charge Authorized '' and the Pilot Duty Cycle value is between 8 %-97%, the PEC will close the S2.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

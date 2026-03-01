@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1696</title><requirement>This fault filter could delay or suppress the occurrence of a fault in the fault memory if the component is interfered by the fault only for a short time with no critical results to the system function.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0262</title><requirement>Further it is possible to reset Production Mode, Transport Mode, EU5 Manipulation Protection, Charge Current Evaluation and IOD Measurement when certain conditions are given.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

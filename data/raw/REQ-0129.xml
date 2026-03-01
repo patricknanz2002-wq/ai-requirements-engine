@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0129</title><requirement>The misuse analysis results shall be taken into account in the test concept in order to cover the identified risks by appropriate quality assurance measures.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

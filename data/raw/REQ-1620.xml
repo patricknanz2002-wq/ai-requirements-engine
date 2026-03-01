@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1620</title><requirement>Exception: PN14_BackupRelay_Rq is set to 2 (open) while a short circuit in the backup battery path occurs (BackupShortCircuit equal 1)</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1202</title><requirement>The returned table shall contain as much entries as specified by the returned value of TblEntries.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

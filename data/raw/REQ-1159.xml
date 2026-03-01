@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1159</title><requirement>The actuators shall be controllable also during under- and overvoltage as long as the control unit does not get damaged hereby.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

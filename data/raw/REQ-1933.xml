@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1933</title><requirement>As soon as the HV battery charging is complete (SOC ~ 100 %), the dc / dc converter will be used to charge the LV battery via power net and on board charger.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

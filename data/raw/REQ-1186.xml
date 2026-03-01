@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1186</title><requirement>At the end of a long enough (i.e. t greater than 60 seconds) drive cycle the percentages of the times the rpm value was in the different categories compared to the duration of the whole drive cycle is calculated.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

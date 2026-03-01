@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1140</title><requirement>If an active panic alarm is terminated, the alarm can be restarted immediately by subsequent long pressing (greater than or equal to 1 seconds).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

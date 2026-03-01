@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2107</title><requirement>Special hardware decoders shall only be used and agreed by the client in case the performance of the Main CPU does not allow software decoding.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

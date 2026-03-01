@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1541</title><requirement>In cases of faults such as incorrect polarity, overvoltage, short circuits, etc. the component must not be damaged.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0316</title><requirement>While energy request is active, the BMS shall keep the main contactors closed.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

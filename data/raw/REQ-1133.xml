@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1133</title><requirement>Under all circumstances the sensor 's output pulses must be a true image of the moving target teeth, e.g. while change of rotational direction at any angle position, under vibration effects or at strong temperature change no "missing tooth" or additional pulse may occur, also after longer stop-periods and temperature changes (stop-start-mode of the engine).</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

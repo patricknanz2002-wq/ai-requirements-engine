@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0957</title><requirement>If this can not be excluded, the on-board detection must be so fast, that the vehicle behaviour remains controllable by normal drivers.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

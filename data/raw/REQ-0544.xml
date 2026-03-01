@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0544</title><requirement>All signal names of a common system should start with the same keyword, e.g. engine speed equal eng_spd or engine torque equal eng_trq.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

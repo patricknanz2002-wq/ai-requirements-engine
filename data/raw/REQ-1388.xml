@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1388</title><requirement>These report the logical state of a signal as one of several values based on the discrete state of a controller signal.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

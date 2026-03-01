@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1222</title><requirement>This "switch off" will happen in normal cases 1 to 6 hours after switching off terminal 15, but when the battery has a bad charge condition this "Switch off" might happen much earlier.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

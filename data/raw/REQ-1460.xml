@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1460</title><requirement>The KOM-module shall operate as a communication device between a Backend-Server (AppGW) and several ECUs within the vehicle.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

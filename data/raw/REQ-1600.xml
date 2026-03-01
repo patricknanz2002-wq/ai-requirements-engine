@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1600</title><requirement>The cell or battery to be tested shall be temperature stabilized so that its external case temperature reaches 55 ± 2°C and then the cell or battery shall be subjected to a short circuit condition with a total external resistance of less than 0.1 ohm at 55 ± 2 °C.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

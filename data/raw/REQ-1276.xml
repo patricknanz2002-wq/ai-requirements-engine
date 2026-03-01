@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1276</title><requirement>In case the object was measured using more than one scan within the same radar system cycle, e.g. from a wider near range scan, the object object time stamp, as well as the other object attributes, shall be predicted to the master scan, e.g. to the far range scan.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

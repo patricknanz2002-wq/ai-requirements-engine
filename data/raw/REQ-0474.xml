@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0474</title><requirement>A gradient for the logic for switching the unit on and off prevents switching on or off from taking place too quickly when driving into a tunnel or when operating the system close to the threshold for switching the unit on and off.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

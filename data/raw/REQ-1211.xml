@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1211</title><requirement>· CPU load measurement under worst case condition (CCp, regeneration active, high engine speed, ...) with detailed information which new function is consuming how much CPULoad in %</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

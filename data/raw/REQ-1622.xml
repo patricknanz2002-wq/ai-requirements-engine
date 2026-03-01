@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1622</title><requirement>If the backup battery is fully discharged, has an internal short circuit or an external short circuit occurs the backup relay must never be closed.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0395</title><requirement>The EMM shall receive OBL_Chrg_Flap_Stat equal CLOSE from the OBC.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0696</title><requirement>The CAN transceivers for CAN shall be selected according to `` FV CAN Networking Details '' [RD2240]</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

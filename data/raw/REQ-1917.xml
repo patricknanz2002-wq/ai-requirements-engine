@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1917</title><requirement>The charge system shall indicate to SCC to start a RENEGOTIATIONotiation of the charge schedule, as soon as the last SalesTariffEntry becomes active within the active charge profile.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

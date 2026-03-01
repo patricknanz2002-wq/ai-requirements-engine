@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0416</title><requirement>If a correctly opened relay was detected and ISPBatVoltFilt1 greater than PPNM_SSMUDiagStart, the relay is now closed by setting DiagBackupRelayRq equal 1</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

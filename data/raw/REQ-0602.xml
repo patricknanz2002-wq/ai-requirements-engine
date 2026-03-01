@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0602</title><requirement>Non-flashable modules (comparable to a BIOS) are not described in this section, as changes in these modules are only permissible along with new hardware development steppings (B,B/C,C stepping).</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

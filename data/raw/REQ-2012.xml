@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-2012</title><requirement>It could be that the normal fault debouncing and healing would never raise a fault in special cases although there are many sync losts ?Â? in those circumstances a fault has to be raised.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

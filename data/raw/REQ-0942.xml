@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0942</title><requirement>The fast switching to the backup mode using the cam signal without having completely debounced the crank defect has to be only activated if the engine speed and the engine tourque is below a calibrateable threshold.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

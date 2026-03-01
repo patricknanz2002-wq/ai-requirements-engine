@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1256</title><requirement>This signal state signalizes the nearest object (Dist_X) on the ego lane of the system vehicle which fulfills the object criteria for DTR+ and CMS for RADAR based only system function.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

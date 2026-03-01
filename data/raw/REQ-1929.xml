@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1929</title><requirement>As soon as the copy process is finished, the MPDT transmission Handler shall confirm the reception of the data packet by sending a positive response answering the right request.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

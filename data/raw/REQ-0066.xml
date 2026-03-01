@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0066</title><requirement>The sensor shall label the detected objects which fulfill the qualification criteria (valid status DTR_Obj_x_PreSelect possible) for oncoming traffic out of the object list with the appropriate status of DTR_Obj_x_xxxQual.</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

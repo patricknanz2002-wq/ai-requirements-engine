@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1817</title><requirement>The data has to be stored in several small application specific data segments.</requirement><status>In Progress</status><owner>Max Mustermann</owner></requirement>

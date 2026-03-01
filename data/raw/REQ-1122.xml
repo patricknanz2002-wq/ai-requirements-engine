@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-1122</title><requirement>If PPNM_HWSSMTimeoutFltEnbl equal 1 and the hot start wire stays at low level for longer than the time PPNM_HWTMaxHotStart the output signal PN14_BackupRelay_HW_Fail is set to 1 until the next falling edge of ignition accessory</requirement><status>Open</status><owner>Max Mustermann</owner></requirement>

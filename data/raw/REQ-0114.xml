@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<requirement><title>REQ-0114</title><requirement>If the failure is recoverable and an appropriate condition is met, the LBC must continue to operate in the mode commanded via CAN.</requirement><status>Approved</status><owner>Max Mustermann</owner></requirement>

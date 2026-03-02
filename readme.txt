@@ -30,6 +30,26 @@ Requirements are stored as individual XML files (simulating ALM/PLM systems like
 → In-Memory Vector Store  
 → Cosine Similarity Search  
 
+```mermaid
+
+flowchart LR
+
+User[User / Client]
+API[FastAPI Service]
+Embedder[Embedding Service]
+VectorStore[Vector Index]
+Data[(XML Requirements)]
+
+User -->|Search Request| API
+API -->|Startup| Data
+API --> Embedder
+Embedder --> VectorStore
+VectorStore -->|Top-K Results| API
+API --> User
+```
+
+For a detailed architecture overview see /docs/architecture
+
 
 #########################
 ##

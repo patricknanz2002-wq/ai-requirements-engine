@@ -68,10 +68,66 @@ Enter a requirement text when prompted.
 
 #########################
 ##
-## 6. Next Steps
+## 6. API Layer
 ##
 #########################
-- API Layer (FastAPI)
+The retrieval engine is exposed via a REST API using FastAPI.
+
+### Startup Behavior
+
+On application startup:
+
+- All XML requirements are loaded
+- Text content is extracted
+- Embeddings are generated once
+- An in-memory vector index is built
+- Documents remain cached in RAM for fast retrieval
+
+### Available Endpoints
+
+#### Health Check
+
+GET /health
+
+Response:
+	{
+  		"status": "ready"
+	}
+
+#### Semantic Search
+
+POST /search
+
+Request Body:
+	{
+  		"query": "customer requirement text",
+  		"top_k": 3
+	}
+
+Response:
+	[
+  		{
+    			"id": "REQ-1191",
+    			"similarity": 0.87,
+    			"text": "To ensure a long battery life..."
+  		}
+	]
+
+### Run API
+
+Start the API server:
+
+uvicorn src.api.main:app --reload
+
+Open Swagger UI:
+http://127.0.0.1:8000/docs
+
+
+#########################
+##
+## 7. Next Steps
+##
+#########################
 - Docker containerization
 - Cloud deployment
 - Extension to full RAG architecture

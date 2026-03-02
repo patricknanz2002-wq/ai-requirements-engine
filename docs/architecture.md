@@ -17,7 +17,7 @@ The system is designed as the retrieval component of a Retrieval-Augmented Gener
 ```mermaid
 flowchart TB
 
-User[Client Application\n(Swagger UI / REST Client)]
+User["Client Application<br/>(Swagger UI / REST Client)"]
 
 subgraph API Layer
     API[FastAPI Service]
@@ -25,8 +25,8 @@ end
 
 subgraph Processing
     Loader[XML Document Loader]
-    Embedder[Embedding Service\nSentenceTransformers]
-    VectorStore[In-Memory Vector Store\nCosine Similarity]
+    Embedder[Embedding Service<br/>SentenceTransformers]
+    VectorStore[In-Memory Vector Store<br/>Cosine Similarity]
 end
 
 subgraph Data

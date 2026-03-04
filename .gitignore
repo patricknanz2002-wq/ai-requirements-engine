@@ -9,3 +9,4 @@ venv/
 # OS stuff
 .DS_Store
 Thumbs.db
+ai_requirements_engine.egg-info/

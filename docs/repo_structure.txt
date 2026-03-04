@@ -1,18 +1,20 @@
 ai-requirements-engine/
 │
 ├── README.md
-├── requirements.txt
+├── pyproject.toml
 ├── .gitignore
-├── run.py
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   └── raw/
 │
-├── src/
-│   ├── config.py
-│   ├── ingestion/
-│   ├── embeddings/
-│   ├── retrieval/
+├── docs/
 │
-└── notebooks/
+└── src/
+    ├── api/
+    ├── embedding/
+    ├── retrieval/
+    ├── pipeline/
+    └── tests/
+        ├── api/
+        ├── embedding/
+        └── retrieval/

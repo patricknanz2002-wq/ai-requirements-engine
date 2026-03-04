@@ -6,6 +6,9 @@ __pycache__/
 venv/
 .env/
 
+# Dev environments
+.vscode/
+
 # OS stuff
 .DS_Store
 Thumbs.db

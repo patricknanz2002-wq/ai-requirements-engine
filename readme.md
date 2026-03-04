@@ -40,7 +40,7 @@ VectorStore -->|Top-K Results| API
 API --> User
 ```
 
-For a detailed architecture overview see /docs/architecture
+For a detailed architecture overview see /docs/architecture.md
 
 
 ## 3. Tech Stack
@@ -53,13 +53,14 @@ For a detailed architecture overview see /docs/architecture
 
 ## 4. How to Run
 
-1. Install dependencies:
+Install dependencies:
+pip install -r requirements.txt
 
-Bash:	pip install -r requirements.txt
-Add: 	add .xml requirement files to: "data/raw/"
-Run:	python -m src.pipeline.run
+Add `.xml` requirement files to:
+data/raw/
 
-Enter a requirement text when prompted.
+Run the retrieval prototype:
+python -m src.pipeline.run
 
 
 
@@ -70,11 +71,9 @@ Enter a requirement text when prompted.
 - pipeline/ → Retrieval orchestration logic
 
 
-#########################
-##
+
 ## 6. API Layer
-##
-#########################
+
 The retrieval engine is exposed via a REST API using FastAPI.
 
 ### Startup Behavior
@@ -127,11 +126,37 @@ Open Swagger UI:
 http://127.0.0.1:8000/docs
 
 
-#########################
-##
-## 7. Next Steps
-##
-#########################
+
+## 7. Testing
+
+The project includes automated tests using pytest.
+
+Run tests with:
+
+pytest
+
+Test coverage includes:
+- API health endpoint
+- embedding service behavior
+- API request handling
+
+
+
+## 8. Project Structure
+
+src/
+ ├── api/           FastAPI application
+ ├── embedding/     Embedding service
+ ├── retrieval/     Vector store implementation
+ ├── pipeline/      Data loading and processing
+ └── tests/         Automated tests
+
+docs/
+ └── architecture.md
+
+
+## 9. Next Steps
+
 - Docker containerization
 - Cloud deployment
 - Extension to full RAG architecture

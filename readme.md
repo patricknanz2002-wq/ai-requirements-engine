@@ -59,9 +59,20 @@ pip install -r requirements.txt
 Add `.xml` requirement files to:
 data/raw/
 
-Run the retrieval prototype:
-python -m src.pipeline.run
+### Run CLI Demo
 
+You can run an interactive demo of the retrieval engine:
+
+```bash 
+python demo.py
+```
+
+The demo will:
+
+1. Load all XML requirements from data/raw/
+2. Generate embeddings for the requirements
+3. Build an in-memory vector index
+4. Allow interactive similarity search via the command line
 
 
 ## 5. Core Components
@@ -144,15 +155,25 @@ Test coverage includes:
 
 ## 8. Project Structure
 
-src/
- ├── api/           FastAPI application
- ├── embedding/     Embedding service
- ├── retrieval/     Vector store implementation
- ├── pipeline/      Data loading and processing
- └── tests/         Automated tests
+ai-requirements-engine/
+│
+├── demo.py               CLI demo for semantic requirement search
+├── README.md
+├── pyproject.toml
+│
+├── data/
+│   └── raw/              XML requirement documents
+│
+├── docs/
+│   └── architecture.md
+│
+└── src/
+    ├── api/              FastAPI service layer
+    ├── embedding/        Embedding generation (SentenceTransformers)
+    ├── retrieval/        Vector store and similarity search
+    ├── pipeline/         Document loading and retrieval pipeline
+    └── tests/            Automated tests
 
-docs/
- └── architecture.md
 
 
 ## 9. Next Steps

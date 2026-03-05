@@ -1,5 +1,6 @@
 ai-requirements-engine/
 │
+├── demo.py
 ├── README.md
 ├── pyproject.toml
 ├── .gitignore
@@ -8,6 +9,7 @@ ai-requirements-engine/
 │   └── raw/
 │
 ├── docs/
+│   └── architecture.md
 │
 └── src/
     ├── api/

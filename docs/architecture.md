@@ -34,6 +34,7 @@ subgraph Data
     Memory[(Vectors in RAM)]
 end
 
+User -->|CLI Input| Loader
 User -->|Search Request| API
 
 API -->|Startup| Loader
@@ -47,6 +48,25 @@ Embedder --> VectorStore
 VectorStore -->|Top-K Results| API
 API --> User
 ```
+
+### CLI Demo Interface
+
+In addition to the REST API, the system also provides a simple command-line demo (`demo.py`).
+
+The CLI demo directly invokes the retrieval pipeline and allows users to test semantic search interactively without starting the API server.
+
+Flow:
+
+    User Input (CLI)
+          ↓
+    Retrieval Pipeline
+          ↓
+    Embedding Service
+          ↓
+    Vector Store Search
+          ↓
+    Console Output (Top-K Matches)
+
 
 
 ## 3. Components

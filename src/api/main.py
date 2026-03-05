@@ -4,7 +4,7 @@ from fastapi import FastAPI, Request
 from pydantic import BaseModel
 
 from embedding.embedder import RequirementsEmbedder
-from pipeline.run import load_documents_recursive
+from pipeline.retrieval_pipeline import load_documents_recursive
 from retrieval.vector_Store import InMemoryVectorStore
 
 app = FastAPI()

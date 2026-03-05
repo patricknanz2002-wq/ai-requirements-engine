@@ -64,6 +64,21 @@ For a detailed architecture overview see /docs/architecture.md
 
 ## 4. How to Run
 
+### Run with Docker Compose
+
+Start the API service:
+```bash 
+docker compose up --build
+```
+
+The API will be available at:
+http://localhost:8000/docs
+
+Stop the service with:
+```bash 
+docker compose down
+```
+
 ### Run with Docker
 
 Build the container:

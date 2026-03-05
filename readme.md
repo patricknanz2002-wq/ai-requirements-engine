@@ -1,10 +1,10 @@
 ## 	AI Requirements Engine
 
-
+A prototype AI system for semantic requirement retrieval using embedding-based similarity search.
+The system indexes structured XML requirements and exposes semantic search via a REST API and CLI demo.
 
 Author: Patrick Nanz
 
-A modular semantic retrieval engine for comparing and reusing textual requirements using embedding-based similarity search.
 
 
 ## 1. Project Goal
@@ -23,7 +23,6 @@ Requirements are stored as individual XML files (simulating ALM/PLM systems like
 → Cosine Similarity Search  
 
 ```mermaid
-
 flowchart LR
 
 User[User / Client]
@@ -46,9 +45,14 @@ For a detailed architecture overview see /docs/architecture.md
 ## 3. Tech Stack
 
 - Python
-- sentence-transformers
+- SentenceTransformers
+- FastAPI
+- Pydantic
+- Uvicorn
 - NumPy
-- Modular src-based architecture
+- Vector Similarity Search
+- REST API Architecture
+
 
 
 ## 4. How to Run
@@ -104,28 +108,32 @@ On application startup:
 GET /health
 
 Response:
-	{
-  		"status": "ready"
-	}
-
+```json
+{
+	"status": "ready"
+}
+```
 #### Semantic Search
 
 POST /search
 
 Request Body:
-	{
-  		"query": "customer requirement text",
-  		"top_k": 3
-	}
-
+```json
+{
+	"query": "customer requirement text",
+	"top_k": 3
+}
+```
 Response:
-	[
-  		{
-    			"id": "REQ-1191",
-    			"similarity": 0.87,
-    			"text": "To ensure a long battery life..."
-  		}
-	]
+```json
+[
+	{
+		"id": "REQ-1191",
+		"similarity": 0.87,
+		"text": "To ensure a long battery life..."
+	}
+]
+```
 
 ### Run API
 
@@ -155,6 +163,7 @@ Test coverage includes:
 
 ## 8. Project Structure
 
+```
 ai-requirements-engine/
 │
 ├── demo.py               CLI demo for semantic requirement search
@@ -168,12 +177,12 @@ ai-requirements-engine/
 │   └── architecture.md
 │
 └── src/
-    ├── api/              FastAPI service layer
-    ├── embedding/        Embedding generation (SentenceTransformers)
-    ├── retrieval/        Vector store and similarity search
-    ├── pipeline/         Document loading and retrieval pipeline
-    └── tests/            Automated tests
-
+	├── api/              FastAPI service layer
+	├── embedding/        Embedding generation (SentenceTransformers)
+	├── retrieval/        Vector store and similarity search
+	├── pipeline/         Document loading and retrieval pipeline
+	└── tests/            Automated tests
+```
 
 
 ## 9. Next Steps

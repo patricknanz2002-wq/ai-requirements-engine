@@ -44,30 +44,44 @@ def load_documents_recursive(target_path: Path) -> list[dict]:
 ############################################
 def run_retrieval_pipeline(documents):
 
-    # Creating two lists out of the documents list containing the dictionaries
+    print("[✓] Creating embeddings...")
+
+    # Creating two different lists for ids and texts
     ids = [doc["id"] for doc in documents]
     texts = [doc["text"] for doc in documents]
 
-    # Encode all texts getting a list with vectors
     embedder = RequirementsEmbedder()
     vectorized_texts = embedder.encode(texts)
 
-    # Saving vectors
     store = InMemoryVectorStore()
     store.add(ids, vectorized_texts)
 
-    # Creating, encoding and comparing search term
-    query_text = input("Please enter the customer requirement text to compare: ")
-    vectorized_query = embedder.encode([query_text])[0]
-    top_search_results = store.search(vectorized_query, 5)
-
-    # Creating a dictionary, loading id and text of each entry in documents list
+    # Optimization for faster access
     doc_lookup = {doc["id"]: doc["text"] for doc in documents}
 
-    # Getting text for each top_search_result
-    for reqId, score in top_search_results:
-        text = doc_lookup[reqId]
-        print(f'"{text}" — Similarity: {score * 100:.2f}%')
+    print("[✓] System ready\n")
+
+    while True:
+        print("\n\nEnter a requirement, which shall be compared (or type 'exit'):\n")
+        query_text = input("> ")
+
+        if query_text.lower() == "exit":
+            print("\nExiting demo.")
+            break
+
+        vectorized_query = embedder.encode([query_text])[0]
+        top_search_results = store.search(vectorized_query, 5)
+
+        print("\nTop matches:\n")
+
+        for i, (reqId, score) in enumerate(top_search_results, start=1):
+            text = doc_lookup.get(reqId, "[Text not found]")
+
+            print(
+                f"""{i}. Requirement. Similarity: {score * 100:.2f}%
+            "{text}"
+            """
+            )
 
 
 ############################################

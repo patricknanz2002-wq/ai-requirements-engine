@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+
+# virtual environments
+venv
+.venv
+.env
+
+# development
+.vscode
+tests
+
+# build artifacts
+*.egg-info
+dist
+build
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,11 +1,17 @@
-## 	AI Requirements Engine
+# AI Requirements Engine
 
 A prototype AI system for semantic requirement retrieval using embedding-based similarity search.
 The system indexes structured XML requirements and exposes semantic search via a REST API and CLI demo.
 
 Author: Patrick Nanz
 
+## Quickstart
 
+Run the interactive demo:
+
+```bash 
+python demo.py
+```
 
 ## 1. Project Goal
 
@@ -42,26 +48,36 @@ API --> User
 For a detailed architecture overview see /docs/architecture.md
 
 
+
 ## 3. Tech Stack
 
 - Python
-- SentenceTransformers
 - FastAPI
-- Pydantic
-- Uvicorn
+- SentenceTransformers
 - NumPy
-- Vector Similarity Search
-- REST API Architecture
+- Uvicorn
+- Pydantic
+- In-memory vector similarity search
+- REST API
 
 
 
 ## 4. How to Run
 
-Install dependencies:
-pip install -r requirements.txt
+### Run with Docker
 
-Add `.xml` requirement files to:
-data/raw/
+Build the container:
+```bash
+docker build -t ai-requirements-engine .
+```
+
+Run the API:
+```bash 
+docker run -p 8000:8000 ai-requirements-engine
+```
+
+The API will be available at:
+http://localhost:8000/docs
 
 ### Run CLI Demo
 
@@ -77,6 +93,7 @@ The demo will:
 2. Generate embeddings for the requirements
 3. Build an in-memory vector index
 4. Allow interactive similarity search via the command line
+
 
 
 ## 5. Core Components
@@ -142,7 +159,7 @@ Start the API server:
 uvicorn src.api.main:app --reload
 
 Open Swagger UI:
-http://127.0.0.1:8000/docs
+http://localhost:8000/docs
 
 
 
@@ -187,6 +204,6 @@ ai-requirements-engine/
 
 ## 9. Next Steps
 
-- Docker containerization
-- Cloud deployment
+- Docker Compose orchestration
+- Vector database integration
 - Extension to full RAG architecture

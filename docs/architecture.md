@@ -9,6 +9,7 @@ The AI Requirements Engine is a modular semantic retrieval service.
 It loads structured requirement documents, converts them into vector embeddings, and performs similarity-based search via a REST API.
 
 The system is designed as the retrieval component of a Retrieval-Augmented Generation (RAG) architecture.
+In the LLM variant, the system can optionally generate explanations for similar requirements using an additional LLM layer.
 
 ---
 
@@ -27,6 +28,7 @@ subgraph Processing
     Loader[XML Document Loader]
     Embedder[Embedding Service<br/>SentenceTransformers]
     VectorStore[In-Memory Vector Store<br/>Cosine Similarity]
+    LLM[LLM Explanation Service<br/>(optional)]
 end
 
 subgraph Data
@@ -46,6 +48,10 @@ VectorStore --> Memory
 API -->|Query Text| Embedder
 Embedder --> VectorStore
 VectorStore -->|Top-K Results| API
+
+API -->|Optional Explanation| LLM
+LLM --> API
+
 API --> User
 ```
 
@@ -141,7 +147,8 @@ For each search request:
 1. The query text is converted into an embedding  
 2. Similarity scores are computed  
 3. The Top-K most similar requirements are identified  
-4. Results are returned via the API  
+4. (Optional) The retrieved results are passed to the LLM layer to generate an explanation  
+5. Results are returned via the API  
 
 ---
 
@@ -151,5 +158,6 @@ The system follows a simple modular structure:
 
 - Clear separation between API, processing logic, and data  
 - Startup-time preprocessing for runtime efficiency  
-- In-memory retrieval for simplicity and performance  
-- Designed to be extendable towards a full RAG pipeline  
+- In-memory retrieval for simplicity and performance
+- Optional LLM explanation layer for semantic interpretation of retrieved results
+- Designed to be extendable towards a full RAG pipeline

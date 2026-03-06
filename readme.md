@@ -5,11 +5,29 @@ The system indexes structured XML requirements and exposes semantic search via a
 
 Author: Patrick Nanz
 
+## Contents
+
+- [Quickstart](#quickstart)
+- [Project Goal](#1-project-goal)
+- [Architecture Overview](#2-architecture-overview)
+- [Tech Stack](#3-tech-stack)
+- [Project Variants](#4-project-variants)
+- [How to Run](#5-how-to-run)
+- [API Layer](#6-api-layer)
+- [Core Components](#7-core-components)
+- [Testing](#8-testing)
+- [Project Structure](#9-project-structure)
+
 ## Quickstart
 
-Run the interactive demo:
+Clone the repository and install dependencies:
 
 ```bash 
+pip install -e .
+```
+Run the interactive demo:
+
+```bash
 python demo.py
 ```
 
@@ -22,9 +40,9 @@ It enables semantic comparison of customer requirements to identify previously i
 
 ## 2. Architecture Overview
 
-Requirements are stored as individual XML files (simulating ALM/PLM systems like Polarion or Doors), containing structured metadata (title, status, owner, description).
+Requirements are stored as individual XML files (simulating ALM/PLM systems such as Polarion or DOORS), containing structured metadata (title, status, owner, description).
 → Document Loader  
-→ SentenceTransformer Embeddings  
+→ SentenceTransformers Embeddings  
 → In-Memory Vector Store  
 → Cosine Similarity Search  
 
@@ -61,8 +79,38 @@ For a detailed architecture overview see /docs/architecture.md
 - REST API
 
 
+## 4. Project Variants
 
-## 4. How to Run
+The repository currently contains two variants of the system:
+
+### main branch
+Core semantic requirement retrieval engine using embedding-based similarity search.
+
+### llm branch
+Experimental extension that integrates an LLM (OpenAI GPT-4o-mini) to generate explanations for retrieved requirements.
+
+
+The LLM branch requires an OpenAI API key:
+
+```bash
+export OPENAI_API_KEY=<your_api_key>
+```
+
+### API Differences
+
+The LLM variant extends the API.
+
+main branch:
+
+POST /search  
+Returns the most similar requirements based on embedding similarity.
+
+llm branch:
+
+POST /analyze  
+Returns the similar requirements along with an LLM-generated explanation of why they are semantically related.
+
+## 5. How to Run
 
 ### Run with Docker Compose
 
@@ -109,13 +157,15 @@ The demo will:
 3. Build an in-memory vector index
 4. Allow interactive similarity search via the command line
 
+### Run LLM Variant
 
+To try the LLM-based explanation layer:
 
-## 5. Core Components
-
-- embedding/ → Embedding service using SentenceTransformers
-- retrieval/ → Custom in-memory vector store
-- pipeline/ → Retrieval orchestration logic
+```bash
+git checkout llm
+pip install -e .
+python demo.py
+```
 
 
 
@@ -167,6 +217,13 @@ Response:
 ]
 ```
 
+Note:  
+In the **llm branch** the search endpoint is extended by an additional endpoint:
+
+POST /analyze
+
+This endpoint returns the retrieved requirements along with an LLM-generated explanation of their semantic similarity.
+
 ### Run API
 
 Start the API server:
@@ -178,7 +235,15 @@ http://localhost:8000/docs
 
 
 
-## 7. Testing
+## 7. Core Components
+
+- embedding/ → Embedding service using SentenceTransformers
+- retrieval/ → Custom in-memory vector store
+- pipeline/ → Retrieval orchestration logic
+
+
+
+## 8. Testing
 
 The project includes automated tests using pytest.
 
@@ -193,7 +258,7 @@ Test coverage includes:
 
 
 
-## 8. Project Structure
+## 9. Project Structure
 
 ```
 ai-requirements-engine/
@@ -215,10 +280,3 @@ ai-requirements-engine/
 	├── pipeline/         Document loading and retrieval pipeline
 	└── tests/            Automated tests
 ```
-
-
-## 9. Next Steps
-
-- Docker Compose orchestration
-- Vector database integration
-- Extension to full RAG architecture

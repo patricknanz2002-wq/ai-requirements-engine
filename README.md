@@ -42,7 +42,7 @@ It enables semantic comparison of customer requirements to identify previously i
 
 Requirements are stored as individual XML files (simulating ALM/PLM systems such as Polarion or DOORS), containing structured metadata (title, status, owner, description).
 → Document Loader  
-→ SentenceTransformers Embeddings  
+→ SentenceTransformers embeddings  
 → In-Memory Vector Store  
 → Cosine Similarity Search  
 
@@ -100,7 +100,7 @@ export OPENAI_API_KEY=<your_api_key>
 
 The LLM variant extends the API.
 
-main branch:
+main branch endpoint:
 
 POST /search  
 Returns the most similar requirements based on embedding similarity.

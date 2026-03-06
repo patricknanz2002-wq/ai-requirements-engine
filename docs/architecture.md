@@ -20,7 +20,7 @@ flowchart TB
 
 User["Client Application<br/>(Swagger UI / REST Client)"]
 
-subgraph API Layer
+subgraph API_Layer
     API[FastAPI Service]
 end
 
@@ -28,7 +28,7 @@ subgraph Processing
     Loader[XML Document Loader]
     Embedder[Embedding Service<br/>SentenceTransformers]
     VectorStore[In-Memory Vector Store<br/>Cosine Similarity]
-    LLM[LLM Explanation Service<br/>(optional)]
+    LLM[LLM Explanation Service (optional)]
 end
 
 subgraph Data

@@ -18,22 +18,22 @@ In the LLM variant, the system can optionally generate explanations for similar 
 ```mermaid
 flowchart TB
 
-User["Client Application<br/>(Swagger UI / REST Client)"]
+User["Client Application (Swagger UI / REST Client)"]
 
 subgraph API_Layer
-    API[FastAPI Service]
+    API["FastAPI Service"]
 end
 
 subgraph Processing
-    Loader[XML Document Loader]
-    Embedder[Embedding Service<br/>SentenceTransformers]
-    VectorStore[In-Memory Vector Store<br/>Cosine Similarity]
-    LLM[LLM Explanation Service (optional)]
+    Loader["XML Document Loader"]
+    Embedder["Embedding Service - SentenceTransformers"]
+    VectorStore["In-Memory Vector Store - Cosine Similarity"]
+    LLM["LLM Explanation Service"]
 end
 
 subgraph Data
-    XML[(Requirement XML Files)]
-    Memory[(Vectors in RAM)]
+    XML["Requirement XML Files"]
+    Memory["Vectors in RAM"]
 end
 
 User -->|CLI Input| Loader

@@ -1,10 +1,13 @@
 import os
 
+from dotenv import load_dotenv
 from openai import OpenAI
 
 
 class LLMService:
     def __init__(self):
+
+        load_dotenv()
 
         api_key = os.getenv("OPENAI_API_KEY")
 
@@ -36,35 +39,45 @@ class LLMService:
         {query}
 
         Candidate requirements:
-
         {formatted_requirements}
 
-        Each requirement has the following structure:
+        Each requirement has the format:
         id | requirement_text | similarity_score
 
         Task:
-        1. Identify the requirements that are most similar to the user requirement.
-        2. Present the similar requirements as a list.
-        3. For each requirement include:
-        - similarity
-        - id
-        - text
+        Explain why the most similar requirements match the user requirement.
 
-        After the list, explain why these requirements are similar.
+        Rules:
+        - The requirements are already ranked by similarity_score
+        - Do NOT invent new requirements
+        - Use the similarity score exactly as given
+        - Keep explanations short (1 sentence)
+
+        After listing the requirements, generate a humorous hiring hint.
+
+        IMPORTANT RULES FOR THE HIRING HINT:
+        - It must be exactly one sentence
+        - It must start with the exact phrase: "You should hire Patrick because"
+        - Do not add anything before or after the sentence
 
         Output format:
 
         Similar Requirements:
-        1. similarity: <score> | id: <id> | text: <requirement text>
-        2. similarity: <score> | id: <id> | text: <requirement text>
 
-        Explanation:
-        Explain why these requirements are semantically similar.
+        1. [<id>] <requirement text>
+        Similarity: <score as percentage>
+        Reason: <short explanation>
+
+        2. [<id>] <requirement text>
+        Similarity: <score as percentage>
+        Reason: <short explanation>
+
+        At the end add the hiring hint
         """
 
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4o-mini", messages=[{"role": "user", "content": prompt}]
+                model="gpt-5.1", messages=[{"role": "user", "content": prompt}]
             )
             return response.choices[0].message.content
 

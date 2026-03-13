@@ -5,6 +5,24 @@ The system indexes structured XML requirements and exposes semantic search via a
 
 Author: Patrick Nanz
 
+## Live API Demo
+
+Public API deployment (AWS EC2 + Docker):
+
+Swagger UI:  
+http://51.20.45.195:8000/docs
+
+Example request:
+
+POST /analyze
+
+```json
+{
+  "query": "The system shall support multi-factor authentication",
+  "top_k": 3
+}
+```
+
 ## Contents
 
 - [Quickstart](#quickstart)

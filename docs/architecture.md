@@ -8,6 +8,9 @@ The AI Requirements Engine is a modular semantic retrieval service.
 
 It loads structured requirement documents, converts them into vector embeddings, and performs similarity-based search via a REST API.
 
+The system can be accessed through different clients, including a CLI demo, a Streamlit-based web interface, and standard REST clients such as Swagger UI.
+All clients communicate with the FastAPI service, which exposes the semantic retrieval functionality.
+
 The system is designed as the retrieval component of a Retrieval-Augmented Generation (RAG) architecture.
 In the LLM variant, the system can optionally generate explanations for similar requirements using an additional LLM layer.
 
@@ -16,9 +19,9 @@ In the LLM variant, the system can optionally generate explanations for similar 
 ## 2. System Architecture
 
 ```mermaid
-flowchart TB
-
-User["Client Application (Swagger UI / REST Client)"]
+CLI["CLI Demo"]
+UI["Streamlit Web UI"]
+REST["REST Client / Swagger UI"]
 
 subgraph API_Layer
     API["FastAPI Service"]
@@ -36,8 +39,9 @@ subgraph Data
     Memory["Vectors in RAM"]
 end
 
-User -->|CLI Input| Loader
-User -->|Search Request| API
+CLI -->|CLI Query| API
+UI -->|Search Request| API
+REST -->|HTTP Request| API
 
 API -->|Startup| Loader
 Loader --> XML
@@ -52,7 +56,9 @@ VectorStore -->|Top-K Results| API
 API -->|Optional Explanation| LLM
 LLM --> API
 
-API --> User
+API --> CLI
+API --> UI
+API --> REST
 ```
 
 ### CLI Demo Interface
@@ -122,6 +128,16 @@ Responsibilities:
 - Maintain ID-to-vector mapping  
 - Compute cosine similarity  
 - Return Top-K most similar results  
+
+---
+
+### Streamlit Web Interface
+
+In addition to the CLI demo and REST API access, the system also provides a lightweight web interface implemented with Streamlit (`src/ui/app.py`).
+
+The Streamlit UI acts as a client for the FastAPI service and allows users to interactively submit requirement queries, configure the number of results, and inspect retrieved requirements together with their similarity scores.
+
+The UI communicates with the API via HTTP requests to the `/analyze` endpoint.
 
 ---
 

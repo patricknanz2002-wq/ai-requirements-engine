@@ -35,6 +35,7 @@ POST /analyze
 - [Core Components](#7-core-components)
 - [Testing](#8-testing)
 - [Project Structure](#9-project-structure)
+- [User Interface](#10-user-interface)
 
 ## Quickstart
 
@@ -49,6 +50,12 @@ Run the interactive demo:
 python demo.py
 ```
 
+Run the web interface:
+
+```bash
+streamlit run src/ui/app.py
+```
+
 ## 1. Project Goal
 
 This project implements the core retrieval component of a Retrieval-Augmented Generation (RAG) architecture.  
@@ -58,7 +65,7 @@ It enables semantic comparison of customer requirements to identify previously i
 
 ## 2. Architecture Overview
 
-Requirements are stored as individual XML files (simulating ALM/PLM systems such as Polarion or DOORS), containing structured metadata (title, status, owner, description).
+Requirements are stored as individual XML files (simulating ALM/PLM systems such as Polarion or DOORS), containing structured metadata (title, status, owner, description). The retrieval engine can be accessed through different clients, including a CLI demo and a Streamlit-based web interface, both communicating with the FastAPI service.
 → Document Loader  
 → SentenceTransformers embeddings  
 → In-Memory Vector Store  
@@ -67,18 +74,23 @@ Requirements are stored as individual XML files (simulating ALM/PLM systems such
 ```mermaid
 flowchart LR
 
-User[User / Client]
+CLI[CLI Demo]
+UI[Streamlit UI]
 API[FastAPI Service]
 Embedder[Embedding Service]
 VectorStore[Vector Index]
 Data[(XML Requirements)]
 
-User -->|Search Request| API
+CLI -->|Search Request| API
+UI -->|Search Request| API
+
 API -->|Startup| Data
 API --> Embedder
 Embedder --> VectorStore
 VectorStore -->|Top-K Results| API
-API --> User
+
+API --> CLI
+API --> UI
 ```
 
 For a detailed architecture overview see /docs/architecture.md
@@ -95,6 +107,7 @@ For a detailed architecture overview see /docs/architecture.md
 - Pydantic
 - In-memory vector similarity search
 - REST API
+- Streamlit (web UI)
 
 
 ## 4. Project Variants
@@ -184,6 +197,19 @@ git checkout llm
 pip install -e .
 python demo.py
 ```
+
+### Run Web UI
+
+The project also includes a Streamlit-based web interface for interacting with the API.
+
+Start the UI:
+
+```bash
+streamlit run src/ui/app.py
+```
+
+The interface will be available at:
+http://localhost:8501
 
 
 
@@ -275,8 +301,19 @@ Test coverage includes:
 - API request handling
 
 
+### 9. User Interface
 
-## 9. Project Structure
+The project includes a Streamlit-based web interface that allows users to interactively query the retrieval API.
+
+The interface provides a simple way to enter requirement text, configure the number of returned results, and inspect semantically similar requirements identified by the embedding-based retrieval engine. 
+
+For each retrieved requirement, the UI displays the similarity score and the original requirement text.  
+In the LLM variant, the interface additionally shows an automatically generated explanation describing why the retrieved requirements are semantically related to the query.
+
+The UI communicates with the FastAPI backend via the `/analyze` endpoint and serves as a lightweight demonstration layer for the retrieval system.
+
+
+## 10. Project Structure
 
 ```
 ai-requirements-engine/
@@ -296,5 +333,6 @@ ai-requirements-engine/
 	├── embedding/        Embedding generation (SentenceTransformers)
 	├── retrieval/        Vector store and similarity search
 	├── pipeline/         Document loading and retrieval pipeline
-	└── tests/            Automated tests
+	├── tests/            Automated tests
+	└── ui/				  Streamlit web interface           
 ```

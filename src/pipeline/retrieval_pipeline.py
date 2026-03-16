@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from embedding.embedder import RequirementsEmbedder
+from lm_output.LLMService import LLMService
 from retrieval.vector_Store import InMemoryVectorStore
 
 
@@ -61,6 +62,14 @@ def run_retrieval_pipeline(documents):
 
     print("[✓] System ready\n")
 
+    try:
+        llm = LLMService()
+        llm_available = True
+    except RuntimeError as e:
+        print(e)
+        print("[!] LLM disabled. Showing retrieval results only.\n")
+        llm_available = False
+
     while True:
         print("\n\nEnter a requirement, which shall be compared (or type 'exit'):\n")
         query_text = input("> ")
@@ -72,16 +81,22 @@ def run_retrieval_pipeline(documents):
         vectorized_query = embedder.encode([query_text])[0]
         top_search_results = store.search(vectorized_query, 5)
 
-        print("\nTop matches:\n")
+        lmArray = []
 
         for i, (reqId, score) in enumerate(top_search_results, start=1):
             text = doc_lookup.get(reqId, "[Text not found]")
+            lmArray.append((reqId, text, score))
 
-            print(
-                f"""{i}. Requirement. Similarity: {score * 100:.2f}%
-            "{text}"
-            """
-            )
+        print("\nTop similar requirements:\n")
+        
+        for req_id, text, score in lmArray:
+            print(f"{req_id} | {score:.3f}")
+            print(text)
+            print()
+
+        if llm_available:
+            answer = llm.output_answer(query_text, lmArray)
+            print(answer)
 
 
 ############################################

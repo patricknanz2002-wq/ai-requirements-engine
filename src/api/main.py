@@ -4,6 +4,7 @@ from fastapi import FastAPI, Request
 from pydantic import BaseModel
 
 from embedding.embedder import RequirementsEmbedder
+from lm_output.LLMService import LLMService
 from pipeline.retrieval_pipeline import load_documents_recursive
 from retrieval.vector_Store import InMemoryVectorStore
 
@@ -19,6 +20,11 @@ class SearchResult(BaseModel):
     id: str
     similarity: float
     text: str
+
+
+class AnalyzeResponse(BaseModel):
+    results: list[SearchResult]
+    llm_explanation: str
 
 
 @app.on_event("startup")
@@ -37,28 +43,35 @@ def startup_event():
 
     app.state.store = InMemoryVectorStore()
     app.state.store.add(ids, vectors)
+    app.state.llm = LLMService()
 
     app.state.doc_lookup = {doc["id"]: doc["text"] for doc in documents}
 
 
-@app.post("/search", response_model=list[SearchResult])
-def search(request: Request, payload: Query):
+@app.post("/analyze", response_model=AnalyzeResponse)
+def analyze(request: Request, payload: Query):
 
     query_vector = request.app.state.embedder.encode([payload.query])[0]
-    results = request.app.state.store.search(query_vector, payload.top_k)
+    top_search_results = request.app.state.store.search(query_vector, payload.top_k)
 
     response = []
+    lmArray = []
 
-    for req_id, score in results:
+    for req_id, score in top_search_results:
+        text = request.app.state.doc_lookup.get(req_id, "[Text not found]")
+
         response.append(
             SearchResult(
                 id=req_id,
                 similarity=float(score),
-                text=request.app.state.doc_lookup[req_id],
+                text=text,
             )
         )
+        lmArray.append((req_id, text, score))
 
-    return response
+    answer = request.app.state.llm.output_answer(payload.query, lmArray)
+
+    return {"results": response, "llm_explanation": answer}
 
 
 @app.get("/health")

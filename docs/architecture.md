@@ -6,59 +6,44 @@
 
 The AI Requirements Engine is a modular semantic retrieval service.
 
-It loads structured requirement documents, converts them into vector embeddings, and performs similarity-based search via a REST API.
+It loads structured requirement documents, converts them into vector embeddings and performs similarity-based search via a REST API.
 
-The system can be accessed through different clients, including a CLI demo, a Streamlit-based web interface, and standard REST clients such as Swagger UI.
+The system can be accessed through different clients, including a CLI demo, a Streamlit-based web interface, and standard REST clients such as Swagger UI.  
 All clients communicate with the FastAPI service, which exposes the semantic retrieval functionality.
 
-The system is designed as the retrieval component of a Retrieval-Augmented Generation (RAG) architecture.
-In the LLM variant, the system can optionally generate explanations for similar requirements using an additional LLM layer.
+The system is designed as the retrieval component of a Retrieval-Augmented Generation (RAG) architecture.  
+It can optionally generate explanations for retrieved requirements using an additional LLM service.
 
 ---
 
 ## 2. System Architecture
 
 ```mermaid
+flowchart LR
+
 CLI["CLI Demo"]
-UI["Streamlit Web UI"]
-REST["REST Client / Swagger UI"]
-
-subgraph API_Layer
-    API["FastAPI Service"]
-end
-
-subgraph Processing
-    Loader["XML Document Loader"]
-    Embedder["Embedding Service - SentenceTransformers"]
-    VectorStore["In-Memory Vector Store - Cosine Similarity"]
-    LLM["LLM Explanation Service"]
-end
-
-subgraph Data
-    XML["Requirement XML Files"]
-    Memory["Vectors in RAM"]
-end
-
-CLI -->|CLI Query| API
-UI -->|Search Request| API
-REST -->|HTTP Request| API
+UI["Streamlit UI"]
+API["FastAPI Service"]
+Loader["XML Document Loader"]
+Embedder["Embedding Service"]
+VectorStore["Vector Index"]
+LLM["LLM Explanation Service"]
+Data[(XML Requirements)]
 
 API -->|Startup| Loader
-Loader --> XML
+Loader --> Data
 Loader --> Embedder
-Embedder --> VectorStore
-VectorStore --> Memory
 
-API -->|Query Text| Embedder
 Embedder --> VectorStore
 VectorStore -->|Top-K Results| API
 
 API -->|Optional Explanation| LLM
 LLM --> API
 
-API --> CLI
-API --> UI
-API --> REST
+CLI -->|CLI Query| Loader
+UI -->|Search Request| API
+
+API -->|Results| UI
 ```
 
 ### CLI Demo Interface
@@ -68,7 +53,7 @@ In addition to the REST API, the system also provides a simple command-line demo
 The CLI demo directly invokes the retrieval pipeline and allows users to test semantic search interactively without starting the API server.
 
 Flow:
-
+```
     User Input (CLI)
           ↓
     Retrieval Pipeline
@@ -78,7 +63,7 @@ Flow:
     Vector Store Search
           ↓
     Console Output (Top-K Matches)
-
+```
 
 
 ## 3. Components
@@ -89,10 +74,10 @@ Provides REST endpoints for search and health checks.
 
 Responsibilities:
 
-- Accept search requests  
-- Trigger embedding of query text  
-- Return structured JSON responses  
-- Perform startup initialization  
+- Accept search requests
+- Trigger embedding of query text
+- Return structured JSON responses
+- Perform startup initialization
 
 ---
 
@@ -131,6 +116,19 @@ Responsibilities:
 
 ---
 
+### LLM Output Service
+
+Generates explanations for retrieved requirements using a large language model.
+
+Responsibilities:
+
+- Format retrieved requirements for the prompt
+- Generate short explanations for semantic similarity
+- Produce a structured explanation output
+- Call the OpenAI API to generate the response
+
+---
+
 ### Streamlit Web Interface
 
 In addition to the CLI demo and REST API access, the system also provides a lightweight web interface implemented with Streamlit (`src/ui/app.py`).
@@ -163,7 +161,7 @@ For each search request:
 1. The query text is converted into an embedding  
 2. Similarity scores are computed  
 3. The Top-K most similar requirements are identified  
-4. (Optional) The retrieved results are passed to the LLM layer to generate an explanation  
+4. The retrieved results can optionally be passed to the LLM service to generate an explanation  
 5. Results are returned via the API  
 
 ---

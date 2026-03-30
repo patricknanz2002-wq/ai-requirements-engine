@@ -5,29 +5,30 @@ from httpx import AsyncClient
 # Happy path test
 @pytest.mark.anyio
 async def test_search_endpoint(async_client: AsyncClient):
-    response = await async_client.post("/search", json={"query": "test", "top_k": 1})
+    response = await async_client.post("/analyze", json={"query": "test", "top_k": 1})
     data = response.json()
 
-    assert len(data) == 1
+    assert len(data) == 2
     assert response.status_code == 200
 
 
 # Happy response structure test
 @pytest.mark.anyio
 async def test_search_response_structure(async_client):
-    response = await async_client.post("/search", json={"query": "test", "top_k": 2})
+    response = await async_client.post("/analyze", json={"query": "test", "top_k": 2})
 
-    data = response.json()
+    response = response.json()
+    detailed_results = response["results"][0]
 
-    assert "id" in data[0]
-    assert "similarity" in data[0]
-    assert "text" in data[0]
-
+    assert "llm_explanation" in response
+    assert "id" in detailed_results
+    assert "similarity" in detailed_results
+    assert "text" in detailed_results
 
 # Missing requirement test
 @pytest.mark.anyio
 async def test_search_missing_query(async_client):
-    response = await async_client.post("/search", json={"top_k": 2})
+    response = await async_client.post("/analyze", json={"top_k": 2})
 
     assert response.status_code == 422
 
@@ -36,7 +37,7 @@ async def test_search_missing_query(async_client):
 @pytest.mark.anyio
 async def test_search_invalid_topk(async_client):
     response = await async_client.post(
-        "/search", json={"query": "test", "top_k": "invalid"}
+        "/analyze", json={"query": "test", "top_k": "invalid"}
     )
 
     assert response.status_code == 422

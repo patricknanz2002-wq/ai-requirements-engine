@@ -16,7 +16,7 @@ class FakeEmbedder:
 class FakeStore:
     def search(self, query_vector, top_k):
         # Returns two fake results
-        return [("1", 0.9), ("2", 0.8)][:top_k]
+        return [("1", "Requirement Text", 0.9), ("2", "Requirement Text", 0.8)][:top_k]
 
 
 @pytest.fixture(scope="session")
@@ -35,10 +35,7 @@ def mock_app_state():
 
     app.state.embedder = FakeEmbedder()
     app.state.store = FakeStore()
-    app.state.doc_lookup = {
-        "1": "Requirement 1",
-        "2": "Requirement 2",
-    }
+    app.state.llm_available = False
 
     yield
 

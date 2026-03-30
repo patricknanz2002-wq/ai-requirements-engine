@@ -1,7 +1,7 @@
 # AI Requirements Engine
 
-A prototype AI system for semantic requirement retrieval using embedding-based similarity search.
-The system indexes structured XML requirements and exposes semantic search via a REST API, a CLI demo, and a Streamlit web interface.
+An AI system for semantic requirement retrieval using embedding-based similarity search and a persistent vector database, designed as a core component of a Retrieval-Augmented Generation (RAG) pipeline.
+The system indexes structured XML requirements, stores embeddings in a Qdrant vector database, and exposes semantic search via a REST API, a CLI demo, and a Streamlit web interface.
 
 Author: Patrick Nanz
 
@@ -52,6 +52,12 @@ Set the environment variable before running the application:
 export OPENAI_API_KEY=<your_api_key>
 ```
 
+Start the system (API + Qdrant):
+
+```bash
+docker compose up --build
+```
+
 Run the interactive demo:
 
 ```bash
@@ -78,7 +84,7 @@ Requirements are stored as individual XML files (simulating ALM/PLM systems such
 
 → Document Loader  
 → SentenceTransformers embeddings  
-→ In-Memory Vector Store  
+→ Qdrant Vector Database (persistent)
 → Cosine Similarity Search  
 
 ```mermaid
@@ -88,7 +94,7 @@ CLI["CLI Demo"]
 UI["Streamlit UI"]
 API["FastAPI Service"]
 Embedder["Embedding Service"]
-VectorStore["Vector Index"]
+VectorDB["Qdrant Vector DB"]
 LLM["LLM Explanation Service"]
 Data[(XML Requirements)]
 Loader["XML Document Loader"]
@@ -96,8 +102,8 @@ Loader["XML Document Loader"]
 API -->|Startup| Data
 API --> Embedder
 
-Embedder --> VectorStore
-VectorStore -->|Top-K Results| API
+Embedder --> VectorDB
+VectorDB -->|Top-K Results| API
 
 API -->|Optional Explanation| LLM
 LLM --> API
@@ -116,11 +122,11 @@ For a detailed architecture overview see [docs/architecture.md](docs/architectur
 
 - Python
 - FastAPI
-- SentenceTransformers
+- SentenceTransformers (all-MiniLM-L6-v2)
 - NumPy
 - Uvicorn
 - Pydantic
-- In-memory vector similarity search
+- Qdrant (vector database)
 - REST API
 - Streamlit (web UI)
 
@@ -135,6 +141,10 @@ If no API key is provided, the `/analyze` endpoint will not be available.
 
 ### Run with Docker Compose
 
+This setup starts:
+- FastAPI application
+- Qdrant vector database (for persistent embedding storage)
+
 Start the API service:
 ```bash 
 docker compose up --build
@@ -148,24 +158,18 @@ Stop the service with:
 docker compose down
 ```
 
-### Run with Docker
-
-Build the container:
-```bash
-docker build -t ai-requirements-engine .
-```
-
-Run the API:
-```bash 
-docker run -p 8000:8000 ai-requirements-engine
-```
-
-The API will be available at:
-http://localhost:8000/docs
-
 ### Run CLI Demo
 
-You can run an interactive demo of the retrieval engine:
+The CLI demo uses the same Qdrant vector database as the API.
+Make sure the Qdrant service is running (e.g. via Docker Compose).
+
+Start the system (API + Qdrant):
+
+```bash
+docker compose up --build
+```
+
+Run the interactive demo (in a separate terminal):
 
 ```bash 
 python demo.py
@@ -175,8 +179,11 @@ The demo will:
 
 1. Load all XML requirements from data/raw/
 2. Generate embeddings for the requirements
-3. Build an in-memory vector index
-4. Allow interactive similarity search via the command line
+3. Store embeddings in the Qdrant vector database
+4. Perform semantic similarity search via vector queries
+5. Allow interactive similarity search via the command line
+
+Note: The demo relies on the running Qdrant service. Without it, the retrieval pipeline cannot be executed.
 
 ### Run Web UI
 
@@ -202,9 +209,9 @@ On application startup:
 
 - All XML requirements are loaded
 - Text content is extracted
-- Embeddings are generated once
-- An in-memory vector index is built
-- Documents remain cached in RAM for fast retrieval
+- Embeddings are generated and stored in the Qdrant vector database
+- Existing embeddings are reused across restarts
+- Only new requirements are embedded and indexed (incremental indexing)
 
 ### Available Endpoints
 
@@ -257,7 +264,7 @@ uvicorn src.api.main:app --reload
 ## 6. Core Components
 
 - embedding/ → Embedding service using SentenceTransformers
-- retrieval/ → Custom in-memory vector store
+- retrieval/ → Qdrant-based vector database integration
 - pipeline/ → Retrieval orchestration logic
 
 

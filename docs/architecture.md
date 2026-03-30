@@ -4,9 +4,11 @@
 
 ## 1. Overview
 
-The AI Requirements Engine is a modular semantic retrieval service.
+The AI Requirements Engine is a modular semantic retrieval system built around a persistent vector database.
 
-It loads structured requirement documents, converts them into vector embeddings and performs similarity-based search via a REST API.
+It loads structured requirement documents, converts them into vector embeddings using SentenceTransformers (all-MiniLM-L6-v2), and stores them in a Qdrant vector database. Semantic similarity search is exposed via a FastAPI-based REST API.
+
+The system supports incremental indexing, meaning only new or previously unseen requirements are embedded and stored.
 
 The system can be accessed through different clients, including a CLI demo, a Streamlit-based web interface, and standard REST clients such as Swagger UI.  
 All clients communicate with the FastAPI service, which exposes the semantic retrieval functionality.
@@ -24,25 +26,29 @@ flowchart LR
 CLI["CLI Demo"]
 UI["Streamlit UI"]
 API["FastAPI Service"]
+
 Loader["XML Document Loader"]
-Embedder["Embedding Service"]
-VectorStore["Vector Index"]
+Embedder["Embedding Service (all-MiniLM)"]
+VectorDB["Qdrant Vector DB"]
+
 LLM["LLM Explanation Service"]
+
 Data[(XML Requirements)]
 
 API -->|Startup| Loader
 Loader --> Data
 Loader --> Embedder
 
-Embedder --> VectorStore
-VectorStore -->|Top-K Results| API
+Embedder -->|Upsert embeddings| VectorDB
+VectorDB -->|Top-K similarity search| API
 
-API -->|Optional Explanation| LLM
+API -->|Optional explanation| LLM
 LLM --> API
 
-CLI -->|CLI Query| Loader
-UI -->|Search Request| API
+CLI -->|Query| Embedder
+Embedder -->|Vector query| VectorDB
 
+UI -->|HTTP request| API
 API -->|Results| UI
 ```
 
@@ -60,7 +66,7 @@ Flow:
           ↓
     Embedding Service
           ↓
-    Vector Store Search
+    Vector Database Search (Qdrant)
           ↓
     Console Output (Top-K Matches)
 ```
@@ -78,6 +84,7 @@ Responsibilities:
 - Trigger embedding of query text
 - Return structured JSON responses
 - Perform startup initialization
+- Interface to the vector database for retrieval operations
 
 ---
 
@@ -95,24 +102,27 @@ Responsibilities:
 
 ### Embedding Service
 
-Generates normalized vector embeddings using SentenceTransformers.
+Generates dense vector embeddings for semantic similarity search  
 
 Responsibilities:
 
 - Convert text into semantic vector representations  
 - Normalize embeddings for cosine similarity search  
+- Uses the SentenceTransformers model `all-MiniLM-L6-v2` to generate dense vector embeddings optimized for semantic similarity tasks.
 
 ---
 
-### Vector Store
+### Vector Database (Qdrant)
 
-Stores embeddings in memory and performs similarity search.
+Stores embeddings in a persistent vector database and performs similarity search.
 
 Responsibilities:
 
-- Maintain ID-to-vector mapping  
-- Compute cosine similarity  
-- Return Top-K most similar results  
+- Maintain vector representations of requirements  
+- Store embeddings together with metadata (ID, text)  
+- Perform cosine similarity search via vector queries  
+- Persist embeddings across application restarts  
+- Support incremental indexing by avoiding duplicate entries
 
 ---
 
@@ -147,10 +157,11 @@ When the application starts:
 
 1. XML files are loaded  
 2. Text fields are extracted  
-3. Embeddings are generated  
-4. The in-memory vector index is built  
+3. Existing requirement IDs are retrieved from the vector database  
+4. Only new (previously unseen) requirements are embedded  
+5. New embeddings are stored in Qdrant  
 
-This preprocessing step ensures fast runtime queries.
+This incremental indexing strategy avoids redundant computation and improves startup performance.
 
 ---
 
@@ -159,7 +170,7 @@ This preprocessing step ensures fast runtime queries.
 For each search request:
 
 1. The query text is converted into an embedding  
-2. Similarity scores are computed  
+2. A vector similarity search is performed in Qdrant 
 3. The Top-K most similar requirements are identified  
 4. The retrieved results can optionally be passed to the LLM service to generate an explanation  
 5. Results are returned via the API  
@@ -170,8 +181,9 @@ For each search request:
 
 The system follows a simple modular structure:
 
-- Clear separation between API, processing logic, and data  
-- Startup-time preprocessing for runtime efficiency  
-- In-memory retrieval for simplicity and performance
-- Optional LLM explanation layer for semantic interpretation of retrieved results
-- Designed to be extendable towards a full RAG pipeline
+- Persistent vector storage using Qdrant for scalability  
+- Incremental indexing to avoid redundant embedding computation  
+- Clear separation between data ingestion, embedding, and retrieval  
+- API-first design enabling multiple clients (CLI, UI, REST)  
+- Optional LLM layer for semantic explanation of results  
+- Designed as a foundation for scalable RAG systems

@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from embedding.embedder import RequirementsEmbedder
 from lm_output.LLMService import LLMService
 from pipeline.retrieval_pipeline import load_documents_recursive
-from retrieval.vector_Store import InMemoryVectorStore
+from retrieval.vector_Database import DatabaseVectorStore
 
 app = FastAPI()
 
@@ -26,61 +26,99 @@ class AnalyzeResponse(BaseModel):
     results: list[SearchResult]
     llm_explanation: str
 
-
+############################################
+##
+## Startup
+##
+############################################
 @app.on_event("startup")
 def startup_event():
 
     base_path = Path(__file__).resolve().parent.parent.parent
     target_path = (base_path / "data/raw").resolve()
 
+    app.state.embedder = RequirementsEmbedder()
+    app.state.store = DatabaseVectorStore("requirements")
+
+    # Loads .xml files from data/raw (simulates req tool api)
     documents = load_documents_recursive(target_path)
 
     ids = [doc["id"] for doc in documents]
     texts = [doc["text"] for doc in documents]
 
-    app.state.embedder = RequirementsEmbedder()
-    vectors = app.state.embedder.encode(texts)
+    # Detect new requirement files by comparing IDs with existing DB entries    
+    # Only embed and store documents that are not already indexed (performance optimization)
+    database_ids = set(app.state.store.get_req_ids_of_collection())
 
-    app.state.store = InMemoryVectorStore()
-    app.state.store.add(ids, vectors)
-    app.state.llm = LLMService()
+    missing_docs = [
+        doc for doc in documents
+        if doc["id"] not in database_ids
+    ]
 
-    app.state.doc_lookup = {doc["id"]: doc["text"] for doc in documents}
+    if missing_docs: 
+        print("[✓] Creating embeddings...") 
+        ids = [doc["id"] for doc in missing_docs] 
+        texts = [doc["text"] for doc in missing_docs] 
+        
+        vectorized_texts = app.state.embedder.encode(texts) 
+        app.state.store.add(ids,texts,vectorized_texts)
 
 
+    # Initialize LLM service if API key is configured
+    app.state.llm_available = False
+    try:
+        app.state.llm = LLMService()
+        app.state.llm_available = True
+    except RuntimeError as e:
+        print(e)
+        print("[!] LLM disabled. Showing retrieval results only.\n")
+
+
+############################################
+##
+## Route: Analyze User Input
+##
+############################################
 @app.post("/analyze", response_model=AnalyzeResponse)
 def analyze(request: Request, payload: Query):
 
+    # Convert user query into embedding to perform semantic similarity search
     query_vector = request.app.state.embedder.encode([payload.query])[0]
     top_search_results = request.app.state.store.search(query_vector, payload.top_k)
 
     response = []
     lmArray = []
 
-    for req_id, score in top_search_results:
-        text = request.app.state.doc_lookup.get(req_id, "[Text not found]")
-
+    # Transform search results into API response format
+    for req_id, text, score in top_search_results:
         response.append(
             SearchResult(
                 id=req_id,
                 similarity=float(score),
-                text=text,
+                text=text
             )
         )
         lmArray.append((req_id, text, score))
 
-    answer = request.app.state.llm.output_answer(payload.query, lmArray)
+    # Generating llm output.
+    answer = "[!] LLM disabled."
+    if request.app.state.llm_available:
+        answer = request.app.state.llm.output_answer(payload.query, lmArray)
 
     return {"results": response, "llm_explanation": answer}
 
 
+############################################
+##
+## Route: Health Check
+##
+############################################
 @app.get("/health")
 def health():
 
     if (
         not hasattr(app.state, "embedder")
         or not hasattr(app.state, "store")
-        or not hasattr(app.state, "doc_lookup")
     ):
         return {"status": "not_ready"}
     else:

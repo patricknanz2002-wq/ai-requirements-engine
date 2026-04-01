@@ -8,7 +8,7 @@ async def test_search_endpoint(async_client: AsyncClient):
     response = await async_client.post("/analyze", json={"query": "test", "top_k": 1})
     data = response.json()
 
-    assert len(data) == 2
+    assert len(data) == 3
     assert response.status_code == 200
 
 
@@ -19,11 +19,16 @@ async def test_search_response_structure(async_client):
 
     response = response.json()
     detailed_results = response["results"][0]
+    compliance = response["compliance_message"]
 
     assert "llm_explanation" in response
     assert "id" in detailed_results
     assert "similarity" in detailed_results
     assert "text" in detailed_results
+    assert "ai_notice" in compliance
+    assert "data_use_summary" in compliance
+    assert "version" in compliance
+
 
 # Missing requirement test
 @pytest.mark.anyio

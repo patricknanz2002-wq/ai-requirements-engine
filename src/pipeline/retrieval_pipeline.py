@@ -4,6 +4,7 @@ from pathlib import Path
 from embedding.embedder import RequirementsEmbedder
 from lm_output.LLMService import LLMService
 from retrieval.vector_Database import DatabaseVectorStore
+from compliance.disclosures import ComplianceDisclosures
 
 ############################################
 ##
@@ -86,8 +87,11 @@ def run_retrieval_pipeline(documents):
         print("[!] LLM disabled. Showing retrieval results only.\n")
         llm_available = False
 
+    compliance = ComplianceDisclosures(llm_available,30)
     # Interactive CLI loop for manual testing
+
     while True:
+        print("\n\n"+compliance.ai_notice())
         print("\n\nEnter a requirement, which shall be compared (or type 'exit'):\n")
         query_text = input("> ")
 
@@ -116,6 +120,8 @@ def run_retrieval_pipeline(documents):
         if llm_available:
             answer = llm.output_answer(query_text, top_search_results)
             print(answer)
+        
+        print("\n\n"+compliance.data_use_summary())
 
 
 ############################################

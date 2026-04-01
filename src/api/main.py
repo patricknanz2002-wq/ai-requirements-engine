@@ -1,3 +1,5 @@
+import time
+
 from pathlib import Path
 
 from fastapi import FastAPI, Request
@@ -7,6 +9,7 @@ from embedding.embedder import RequirementsEmbedder
 from lm_output.LLMService import LLMService
 from pipeline.retrieval_pipeline import load_documents_recursive
 from retrieval.vector_Database import DatabaseVectorStore
+from compliance.disclosures import ComplianceDisclosures
 
 app = FastAPI()
 
@@ -25,6 +28,8 @@ class SearchResult(BaseModel):
 class AnalyzeResponse(BaseModel):
     results: list[SearchResult]
     llm_explanation: str
+    compliance_message: dict
+
 
 ############################################
 ##
@@ -43,19 +48,30 @@ def startup_event():
     # Loads .xml files from data/raw (simulates req tool api)
     documents = load_documents_recursive(target_path)
 
-    ids = [doc["id"] for doc in documents]
-    texts = [doc["text"] for doc in documents]
+    # Check Qdrant availability qdrant_available = True
+    qdrant_available = True
 
     # Detect new requirement files by comparing IDs with existing DB entries    
     # Only embed and store documents that are not already indexed (performance optimization)
-    database_ids = set(app.state.store.get_req_ids_of_collection())
+    for i in range(30):
+        try:
+            database_ids = set(app.state.store.get_req_ids_of_collection())
+            break
+        except Exception:
+            print(f"Waiting for Qdrant in startup... ({i+1}/30)")
+            time.sleep(2)
+    else:
+        print("Qdrant not available – skipping sync")
+        database_ids = set()
+        qdrant_available = False
 
+    # Detect missing documents
     missing_docs = [
         doc for doc in documents
         if doc["id"] not in database_ids
     ]
 
-    if missing_docs: 
+    if missing_docs and qdrant_available: 
         print("[✓] Creating embeddings...") 
         ids = [doc["id"] for doc in missing_docs] 
         texts = [doc["text"] for doc in missing_docs] 
@@ -105,7 +121,10 @@ def analyze(request: Request, payload: Query):
     if request.app.state.llm_available:
         answer = request.app.state.llm.output_answer(payload.query, lmArray)
 
-    return {"results": response, "llm_explanation": answer}
+    # Generating compliance output.
+    compliance = ComplianceDisclosures(app.state.llm_available,30).compliance_dict()
+
+    return {"results": response, "llm_explanation": answer, "compliance_message": compliance}
 
 
 ############################################

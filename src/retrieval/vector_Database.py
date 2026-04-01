@@ -5,8 +5,25 @@ import numpy as np
 
 class DatabaseVectorStore:
     def __init__(self, collection_name: str):
-        self.client = QdrantClient(host="qdrant", port=6333)
+        self.client = self._connect_with_retry()
         self.collection_name = collection_name
+
+
+    # Waits for qdrant service.
+    def _connect_with_retry(self):
+        import time
+
+        for i in range(30):
+            try:
+                client = QdrantClient(host="qdrant", port=6333)
+                client.get_collections()  # Health check
+                print("Connected to Qdrant")
+                return client
+            except Exception:
+                print(f"Waiting for Qdrant... ({i+1}/30)")
+                time.sleep(2)
+
+        raise Exception("Could not connect to Qdrant after retries")
 
 
     # Check if the target collection already exists in Qdrant
@@ -83,6 +100,7 @@ class DatabaseVectorStore:
         )
         for p in results.points
         ]
+
 
     # Retrieve all stored requirement IDs from the collection
     # Uses pagination (scroll) to handle large datasets

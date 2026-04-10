@@ -354,6 +354,15 @@ class LLMEvaluator:
         print("============ LLM Evaluation ===========")
         print("=======================================")
 
+        try:
+            llm_evaluator = LLMEvaluator()
+            llm_available = True
+            print("[✓] LLM evaluation enabled")
+        except RuntimeError:
+            llm_available = False
+            print("[i] No OPENAI_API_KEY configured")
+            print("[i] Skipping LLM-based evaluation")
+            
         print("\n============= Groundness =============")
         print(f"Overlap Ratio: {summary['common_words_ratio']:.2f}")
         print(f"ID Coverage: {summary['retrieved_id_coverage']:.2f}")

@@ -61,10 +61,14 @@ def main():
     print("======== Starting LLM Evaluation =======")
     print("==== This may take a few minutes... ====")
     print("========================================")
-    llm_evaluator = LLMEvaluator()
-    evaluation = llm_evaluator.summarize_llm(results)
-    llm_evaluator.print_llm_output(evaluation)
-
+    try:
+        llm_evaluator = LLMEvaluator()
+        print("[✓] LLM evaluation enabled")
+        evaluation = llm_evaluator.summarize_llm(results)
+        llm_evaluator.print_llm_output(evaluation)
+    except RuntimeError:
+        print("[i] No OPENAI_API_KEY configured")
+        print("[i] Skipping LLM-based evaluation")
 
 if __name__ == "__main__":
     main()

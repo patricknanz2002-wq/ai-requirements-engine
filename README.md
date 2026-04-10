@@ -35,6 +35,7 @@ POST /analyze
 - [Testing](#7-testing)
 - [User Interface](#8-user-interface)
 - [Project Structure](#9-project-structure)
+- [Evaluation](#10-evaluation)
 
 
 ## Quickstart
@@ -316,3 +317,153 @@ ai-requirements-engine/
     ├── tests/            Automated tests
     └── ui/               Streamlit web interface
 ```
+
+## 10. Evaluation
+
+The project includes an evaluation framework for both the retrieval component and the LLM-based explanation layer.
+
+The evaluation is designed to assess:
+
+* Retrieval quality (semantic similarity performance)
+* LLM grounding and correctness
+* Overall system reliability
+
+### Evaluation Pipeline
+
+The evaluation pipeline consists of two stages:
+
+1. Retrieval Evaluation
+2. LLM Evaluation
+
+It uses a predefined test set of queries with expected requirement IDs.
+
+Run the evaluation with:
+
+```bash
+python src/evaluation/run_evaluation.py
+```
+
+---
+
+### Test Set Definition
+
+Test queries and expected results are defined in:
+
+src/evaluation/test_set_definition.py
+
+Each test case contains:
+
+* A natural language query
+* A set of expected requirement IDs
+
+Example:
+
+```python
+{
+    "query": "system protection and security mechanisms",
+    "expected_ids": ["REQ-0134", "REQ-0042"]
+}
+```
+
+---
+
+### Retrieval Evaluation
+
+The retrieval evaluation measures how well the vector search returns relevant requirements.
+
+Implemented in:
+retrieval_evaluator.py
+
+#### Metrics
+
+* Hit Rate @ K
+  Fraction of queries where at least one correct requirement is retrieved
+
+* Recall
+  Fraction of expected requirements that were retrieved
+
+* Precision
+  Fraction of retrieved requirements that are correct
+
+* Top-1 Accuracy
+  Whether the top result is correct
+
+* Top-K Accuracy
+  Whether any result in top-K is correct
+
+* Confidence Metrics
+
+  * Score difference between top results
+  * Retrieval confidence score
+  * Score distribution analysis
+
+#### Additional Analysis
+
+* Identification of low-confidence queries
+* Detection of unsafe retrieval cases (small score gaps)
+* Extraction of cases of interest for debugging
+
+---
+
+### LLM Evaluation
+
+The LLM evaluation assesses whether the generated explanations are correct and grounded in the retrieved requirements.
+
+Implemented in:
+llm_evaluator.py
+
+#### Evaluation Dimensions
+
+* Answer Correctness (LLM-as-a-Judge)
+
+  * Uses a secondary LLM to verify correctness
+  * Detects hallucinations and incorrect mappings
+
+* Semantic Grounding
+
+  * Compares explanation text to requirement text using embeddings
+  * Computes a mismatch rate
+
+* ID Consistency
+
+  * Detects usage of invalid or hallucinated requirement IDs
+
+* Groundness Metrics
+
+  * Word overlap between explanations and source texts
+  * Coverage of retrieved requirement IDs
+
+#### Output
+
+The evaluation produces:
+
+* Accuracy statistics (correct / incorrect / unknown)
+* Grounding metrics
+* Invalid ID rate
+* List of incorrect cases with explanations
+
+---
+
+### End-to-End Evaluation Flow
+
+The full evaluation process:
+
+1. Load XML requirements
+2. Encode requirements into embeddings
+3. Store embeddings in vector database
+4. Execute test queries
+5. Evaluate retrieval results
+6. Generate LLM explanations
+7. Evaluate LLM outputs
+
+Main script:
+run_evaluation.py
+
+---
+
+### Notes
+
+* The LLM evaluation requires a valid OpenAI API key
+* Evaluation runtime depends on the number of test queries
+* LLM-based evaluation may take several minutes
+

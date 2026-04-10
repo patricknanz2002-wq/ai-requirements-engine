@@ -13,9 +13,7 @@ class LLMService:
 
         if not api_key or api_key.strip() == "":
             raise RuntimeError(
-                "\n\nNo OPENAI_API_KEY configured.\n"
-                "To use the LLM, set the environment variable:\n\n"
-                "export OPENAI_API_KEY=<your_api_key>\n"
+                "No OPENAI_API_KEY configured.\n"
             )
 
         try:

@@ -13,30 +13,39 @@ class ComplianceDisclosures:
         self.retention_days = retention_days
 
     def ai_notice(self) -> str:
-        
+
         if self.llm_active:
-            return ("Notice: You are interacting with an AI assistant. "
-                    "Suggestions are generated using semantic search and a language model. "
-                    "Outputs may contain errors and must be reviewed before use.")
+            return (
+                "========== EU AI Act – Limited Risk System ==========\n\n"
+                "You are interacting with an AI system combining semantic search and a language model. "
+                "Outputs may be inaccurate and should be reviewed before use."
+            )
         else:
-            return ("Notice: You are interacting with an AI assistant.   "
-                    "This system uses semantic search to retrieve similar requirements. "
-                    "Results may be incomplete or inaccurate and must be reviewed before use.")
+            return (
+                "========== EU AI Act – Limited Risk System ==========\n\n"
+                "You are interacting with an AI system using semantic search. "
+                "Results may be incomplete or inaccurate and should be reviewed before use."
+        )
 
         
     def data_use_summary(self) -> str:
 
-        preamble = ("This assistant uses AI to propose similar requirements. "
-                "Sources are shown for your review. Do not rely on the output without human verification; "
-                "you remain responsible for final decisions. \n\n")
-        
+        preamble = (
+            "This system suggests similar requirements. "
+            "Sources are shown for review. Final responsibility remains with the user.\n"
+        )
+
         if self.llm_active:
-            return (preamble + 
-                    f"Data use: Your query and selected snippets are processed by an external LLM provider. "
-                    f"Inputs are retained for {self.retention_days} days. Suggestions are based on internal requirements documents.")
+            return (
+                preamble +
+                f"Data use: Queries and selected content are processed by an external LLM provider "
+                f"(retained for {self.retention_days} days)."
+            )
         else:
-            return (preamble +
-                    "Data use: Your query is processed via semantic search against internal requirements documents.")
+            return (
+                preamble +
+                "Data use: Queries are processed locally via semantic search."
+            )
 
     
     def compliance_dict(self) -> dict:

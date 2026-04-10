@@ -14,43 +14,45 @@ class ComplianceDisclosures:
 
     def ai_notice(self) -> str:
 
-        if self.llm_active:
-            return (
-                "========== EU AI Act – Limited Risk System ==========\n\n"
-                "You are interacting with an AI system combining semantic search and a language model. "
-                "Outputs may be inaccurate and should be reviewed before use."
-            )
-        else:
-            return (
-                "========== EU AI Act – Limited Risk System ==========\n\n"
-                "You are interacting with an AI system using semantic search. "
-                "Results may be incomplete or inaccurate and should be reviewed before use."
+        header = (
+            "----------------------------------------\n"
+            "AI Transparency Notice (EU AI Act)\n"
+            "----------------------------------------"
         )
 
+        if self.llm_active:
+            body = (
+                "[i] AI-assisted retrieval (semantic search + LLM)\n"
+                "[i] Results may be inaccurate\n"
+                "[i] Human review required"
+            )
+        else:
+            body = (
+                "[i] AI-assisted retrieval (semantic search)\n"
+                "[i] Results may be incomplete or inaccurate\n"
+                "[i] Human review required"
+            )
+
+        return f"{header}\n\n{body}"
         
     def data_use_summary(self) -> str:
 
-        preamble = (
-            "This system suggests similar requirements. "
-            "Sources are shown for review. Final responsibility remains with the user.\n"
-        )
-
         if self.llm_active:
             return (
-                preamble +
-                f"Data use: Queries and selected content are processed by an external LLM provider "
-                f"(retained for {self.retention_days} days)."
+                "Data use:\n"
+                "- Queries and selected content sent to external LLM\n"
+                f"- Retention: {self.retention_days} days"
             )
         else:
             return (
-                preamble +
-                "Data use: Queries are processed locally via semantic search."
-            )
-
-    
+                "\nData use:\n"
+                "- Queries are processed locally\n"
+                "- Based on internal requirements"
+            )    
+        
     def compliance_dict(self) -> dict:
         return {
             "ai_notice": self.ai_notice(),
             "data_use_summary": self.data_use_summary(),
-            "version": "2026-03"
+            "version": "ai-act-disclosure-v1"
         }

@@ -58,7 +58,7 @@ def run_retrieval_pipeline(documents):
     requirements_store = InMemoryVectorStore()
     embedder = RequirementsEmbedder() 
 
-    print("\n[✓] Creating embeddings...") 
+    print("[✓] Creating embeddings...") 
     ids = [doc["id"] for doc in documents] 
     texts = [doc["text"] for doc in documents] 
         
@@ -73,22 +73,26 @@ def run_retrieval_pipeline(documents):
 
     print("[✓] System ready\n")
 
+    print("----------------------------------------")
+    print("LLM Status")
+    print("----------------------------------------\n")
     # Try to initialize LLM for explanation generation
     try:
         llm = LLMService()
         llm_available = True
-    except RuntimeError as e:
-        print(e)
-        print("[!] LLM disabled. Showing retrieval results only.")
+        print("[✓] LLM enabled (OPENAI_API_KEY configured)")
+    except RuntimeError:
         llm_available = False
+        print("[i] No OPENAI_API_KEY configured")
+        print("[i] Running in retrieval-only mode")
 
     compliance = ComplianceDisclosures(llm_available,30)
     # Interactive CLI loop for manual testing
     print("\n"+compliance.ai_notice())
-    print("\n"+compliance.data_use_summary())
+    print(compliance.data_use_summary())
 
     while True:
-        print("\n\nEnter a requirement, which shall be compared (or type 'exit'):\n")
+        print("\n\nEnter a requirement to compare (or type 'exit'):\n")
         query_text = input("> ")
 
         if not query_text.strip():
@@ -114,7 +118,7 @@ def run_retrieval_pipeline(documents):
         print("\nTop similar requirements:\n")
 
         for req_id, text, score in retrieved_results:
-            print(f"{req_id} | {score:.3f}")
+            print(f"{req_id} | Similarity Score: {score:.3f}")
             print(text)
             print()
 

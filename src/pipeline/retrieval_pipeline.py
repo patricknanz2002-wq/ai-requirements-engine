@@ -3,8 +3,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from embedding.embedder import RequirementsEmbedder
 from lm_output.LLMService import LLMService
-from retrieval.vector_Database import DatabaseVectorStore
+from retrieval.vector_Store import InMemoryVectorStore
 from compliance.disclosures import ComplianceDisclosures
+
 
 ############################################
 ##
@@ -29,12 +30,18 @@ def load_documents_recursive(target_path: Path) -> list[dict]:
         description_element = root.find("requirement")
 
         # Fallback to filename if no title is provided
-        req_id = title_element.text.strip() if title_element is not None else file.stem
+        req_id = (
+            title_element.text.strip()
+            if title_element is not None and title_element.text
+            else file.stem
+            )
 
         # Empty string fallback avoids None issues during embedding
         text = (
-            description_element.text.strip() if description_element is not None else ""
-        )
+            description_element.text.strip()
+            if description_element is not None and description_element.text
+            else ""
+            )
 
         documents.append({"id": req_id, "text": text})
 
@@ -48,33 +55,21 @@ def load_documents_recursive(target_path: Path) -> list[dict]:
 ############################################
 def run_retrieval_pipeline(documents):
 
-    requirements_store = DatabaseVectorStore("requirements")
+    requirements_store = InMemoryVectorStore()
     embedder = RequirementsEmbedder() 
 
-    print("[✓] Checking collection...")
-    requirements_store.create_collection()
-
-    print("[✓] Checking for new requirements...")
-    database_ids = set(requirements_store.get_req_ids_of_collection())
-
-    # Identify documents that are not yet stored in the vector database
-    missing_docs = [
-        doc for doc in documents
-        if doc["id"] not in database_ids
-    ]
-
-    print(f"[✓] {len(missing_docs)} new requirements found")
-
-    if missing_docs: 
-        print("[✓] Creating embeddings...") 
-        ids = [doc["id"] for doc in missing_docs] 
-        texts = [doc["text"] for doc in missing_docs] 
+    print("\n[✓] Creating embeddings...") 
+    ids = [doc["id"] for doc in documents] 
+    texts = [doc["text"] for doc in documents] 
         
-        # Convert texts into vector embeddings for similarity search
-        vectorized_texts = embedder.encode(texts) 
+    # Convert texts into vector embeddings for similarity search
+    vectorized_texts = embedder.encode(texts) 
 
-        # Store embeddings together with original metadata
-        requirements_store.add(ids,texts,vectorized_texts)
+    # Store embeddings together with original metadata
+    requirements_store.add(ids,vectorized_texts)
+
+    # Optimization for faster access
+    doc_lookup = {doc["id"]: doc["text"] for doc in documents}
 
     print("[✓] System ready\n")
 
@@ -84,14 +79,15 @@ def run_retrieval_pipeline(documents):
         llm_available = True
     except RuntimeError as e:
         print(e)
-        print("[!] LLM disabled. Showing retrieval results only.\n")
+        print("[!] LLM disabled. Showing retrieval results only.")
         llm_available = False
 
     compliance = ComplianceDisclosures(llm_available,30)
     # Interactive CLI loop for manual testing
+    print("\n"+compliance.ai_notice())
+    print("\n"+compliance.data_use_summary())
 
     while True:
-        print("\n\n"+compliance.ai_notice())
         print("\n\nEnter a requirement, which shall be compared (or type 'exit'):\n")
         query_text = input("> ")
 
@@ -103,25 +99,29 @@ def run_retrieval_pipeline(documents):
             print("\nExiting demo.")
             break
 
-        print("Searching similar requirements...")
-
         # Embed query and perform semantic search
         vectorized_query = embedder.encode([query_text])[0]
         top_search_results = requirements_store.search(vectorized_query, 5)
 
+        retrieved_results = []
+
+        print("Searching similar requirements...")
+
+        for i, (reqId, score) in enumerate(top_search_results, start=1):
+            text = doc_lookup.get(reqId, "[Text not found]")
+            retrieved_results.append((reqId, text, score))
+
         print("\nTop similar requirements:\n")
 
-        for req_id, text, score in top_search_results:
+        for req_id, text, score in retrieved_results:
             print(f"{req_id} | {score:.3f}")
             print(text)
             print()
 
         # Optionally generate LLM-based explanation of results
         if llm_available:
-            answer = llm.output_answer(query_text, top_search_results)
+            answer = llm.output_answer(query_text, retrieved_results)
             print(answer)
-        
-        print("\n\n"+compliance.data_use_summary())
 
 
 ############################################
@@ -137,9 +137,7 @@ def main():
     target_path = (base_path / data_path).resolve()
 
     documents = load_documents_recursive(target_path)
-
     run_retrieval_pipeline(documents)
-
 
 
 if __name__ == "__main__":

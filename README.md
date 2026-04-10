@@ -1,7 +1,7 @@
 # AI Requirements Engine
 
-An AI system for semantic requirement retrieval using embedding-based similarity search and a persistent vector database, designed as a core component of a Retrieval-Augmented Generation (RAG) pipeline.
-The system indexes structured XML requirements, stores embeddings in a Qdrant vector database, and exposes semantic search via a REST API, a CLI demo, and a Streamlit web interface.
+An AI system for semantic requirement retrieval using embedding-based similarity search with both in-memory and persistent vector storage options, designed as a core component of a Retrieval-Augmented Generation (RAG) pipeline.
+The system indexes structured XML requirements and exposes semantic search via a REST API, a CLI demo, and a Streamlit web interface.
 
 Author: Patrick Nanz
 
@@ -41,34 +41,24 @@ POST /analyze
 
 Clone the repository and install dependencies:
 
-```bash 
+```bash
 pip install -e .
 ```
 
-This project requires an OpenAI API key for the LLM explanation feature.
-Set the environment variable before running the application:
+(Optional) Set your OpenAI API key for LLM-based explanations:
 
 ```bash
 export OPENAI_API_KEY=<your_api_key>
 ```
 
-Start the system (API + Qdrant):
-
-```bash
-docker compose up --build
-```
-
-Run the interactive demo:
+### Run CLI Demo (no setup required)
 
 ```bash
 python demo.py
 ```
 
-Run the web interface:
+The demo runs fully in-memory and does not require Docker or a database.
 
-```bash
-streamlit run src/ui/app.py
-```
 
 
 ## 1. Project Goal
@@ -84,7 +74,7 @@ Requirements are stored as individual XML files (simulating ALM/PLM systems such
 
 → Document Loader  
 → SentenceTransformers embeddings  
-→ Qdrant Vector Database (persistent)
+→ Vector Storage (Qdrant for persistent mode, in-memory for demo)
 → Cosine Similarity Search  
 
 ```mermaid
@@ -110,7 +100,8 @@ LLM --> API
 
 CLI -->|CLI Query| Loader
 Loader --> Embedder
-UI -->|Search Request| API
+Embedder --> CLIStore["In-Memory Vector Store"]
+CLIStore --> CLI
 
 API -->|Top-K Results| UI
 
@@ -160,30 +151,34 @@ docker compose down
 
 ### Run CLI Demo
 
-The CLI demo uses the same Qdrant vector database as the API.
-Make sure the Qdrant service is running (e.g. via Docker Compose).
+The CLI demo provides a simplified, self-contained version of the retrieval pipeline.
 
-Start the system (API + Qdrant):
+It uses:
+
+- An in-memory vector store
+- Local embedding generation
+- No external services
+
+Run the demo:
 
 ```bash
-docker compose up --build
-```
-
-Run the interactive demo (in a separate terminal):
-
-```bash 
 python demo.py
 ```
 
 The demo will:
 
-1. Load all XML requirements from data/raw/
+1. Load all XML requirements from `data/raw/`
 2. Generate embeddings for the requirements
-3. Store embeddings in the Qdrant vector database
-4. Perform semantic similarity search via vector queries
-5. Allow interactive similarity search via the command line
+3. Store embeddings in an in-memory vector store
+4. Perform semantic similarity search
+5. Allow interactive queries via the command line
 
-Note: The demo relies on the running Qdrant service. Without it, the retrieval pipeline cannot be executed.
+Notes:
+
+- No Docker setup is required
+- No Qdrant instance is needed
+- The demo is intended for quick local testing and experimentation
+
 
 ### Run Web UI
 

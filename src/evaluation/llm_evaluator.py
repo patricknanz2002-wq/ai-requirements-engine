@@ -343,42 +343,38 @@ class LLMEvaluator:
             "id_check": id_check
         }
     
-
     def print_llm_output(self, evaluation: dict):
 
         summary = evaluation["summary"]
         grounding = evaluation["grounding"]
         incorrect_cases = evaluation["incorrect_cases"]
+        id_check = evaluation["id_check"]
+
+        label_width = 22
+
+        def row(label, value):
+            print(f"{label:<{label_width}} : {value}")
 
         print("\n=======================================")
         print("============ LLM Evaluation ===========")
         print("=======================================")
 
-        try:
-            llm_evaluator = LLMEvaluator()
-            llm_available = True
-            print("[✓] LLM evaluation enabled")
-        except RuntimeError:
-            llm_available = False
-            print("[i] No OPENAI_API_KEY configured")
-            print("[i] Skipping LLM-based evaluation")
-            
         print("\n============= Groundness =============")
-        print(f"Overlap Ratio: {summary['common_words_ratio']:.2f}")
-        print(f"ID Coverage: {summary['retrieved_id_coverage']:.2f}")
+        row("Overlap Ratio", f"{summary['common_words_ratio']:.2f}")
+        row("ID Coverage", f"{summary['retrieved_id_coverage']:.2f}")
 
         print("\n============= LLM Score =============")
-        print(f"Accuracy: {summary['accuracy']:.2f}")
-        print(f"Correct: {summary['correct']}")
-        print(f"Incorrect: {summary['incorrect']}")
-        print(f"Unknown: {summary['unknown']}")
+        row("Accuracy", f"{summary['accuracy']:.2f}")
+        row("Correct", summary['correct'])
+        row("Incorrect", summary['incorrect'])
+        row("Unknown", summary['unknown'])
 
         print("\n============= Semantic Grounding =============")
-        print(f"Mismatch Rate: {grounding['mismatch_rate']:.2f}")
+        row("Mismatch Rate", f"{grounding['mismatch_rate']:.2f}")
 
         print("\n============= ID Consistency =============")
-        print(f"Invalid ID Rate: {evaluation['id_check']['rate']:.2f}")
-        print(f"Violations: {evaluation['id_check']['count']}")
+        row("Invalid ID Rate", f"{id_check['rate']:.2f}")
+        row("Violations", id_check['count'])
 
         print("\n============= Incorrect Cases =============")
 
@@ -386,5 +382,9 @@ class LLMEvaluator:
             print("All answers are correct.")
         else:
             for case in incorrect_cases:
-                print(f"\nQuery: {case['query']}")
-                print(f"Reason: {case['reason']}")
+                print(f"\nQuery   : {case['query']}")
+                print(f"Reason  : {case['reason']}")
+
+        print("\n========================================")
+        print("=========== End of Evaluation ==========")
+        print("========================================\n")

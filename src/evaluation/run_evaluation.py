@@ -4,9 +4,7 @@ from retrieval.vector_Store import InMemoryVectorStore
 from requirement_encoder import RequirementEncoder
 from retrieval_evaluator import RetrievalEvaluator
 from llm_evaluator import LLMEvaluator
-
-from test_set_definition import TEST_SETS, TOP_K, THRESHOLD
-
+from test_set_definition import TEST_SETS, TOP_K
 
 def collect_results(store, documents: list) -> list:
 
@@ -61,14 +59,15 @@ def main():
     print("======== Starting LLM Evaluation =======")
     print("==== This may take a few minutes... ====")
     print("========================================")
+
     try:
         llm_evaluator = LLMEvaluator()
-        print("[✓] LLM evaluation enabled")
         evaluation = llm_evaluator.summarize_llm(results)
         llm_evaluator.print_llm_output(evaluation)
     except RuntimeError:
         print("[i] No OPENAI_API_KEY configured")
         print("[i] Skipping LLM-based evaluation")
+
 
 if __name__ == "__main__":
     main()

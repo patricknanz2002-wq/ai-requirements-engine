@@ -212,40 +212,42 @@ class RetrievalEvaluator:
         distribution = evaluation["distribution"]
         cases = evaluation["cases_of_interest"]
 
+        label_width = 20
+
+        def row(label, value):
+            print(f"{label:<{label_width}} : {value}")
+
         print("\n=================================")
         print("====== Retrieval Evaluation =====")
         print("=================================\n")
 
-
         print("========== SUMMARY ==========")
-        print(f"Test Cases:        {summary['number_of_test_cases']}")
-        print(f"Hit Rate @{TOP_K}: {summary[f'hit_rate@{TOP_K}']:.2f}")
-        print(f"Recall Avg:        {summary['recall_avg']:.2f}")
-        print(f"Precision Avg:     {summary['precision_avg']:.2f}")
-        print(f"Top1 Accuracy:     {summary['top1_accuracy']:.2f}")
-        print(f"TopK Accuracy:     {summary['topk_accuracy']:.2f}")
-        print(f"Unsafe Ratio:      {summary['unsafe_ratio']:.2f}")
-        print(f"Low Confidence:    {summary['low_confidence_ratio']:.2f}")
-        print(f"Avg Confidence:    {summary['confidence_avg']:.2f}")
-
+        row("Test Cases", summary['number_of_test_cases'])
+        row(f"Hit Rate @{TOP_K}", f"{summary[f'hit_rate@{TOP_K}']:.2f}")
+        row("Recall Avg", f"{summary['recall_avg']:.2f}")
+        row("Precision Avg", f"{summary['precision_avg']:.2f}")
+        row("Top1 Accuracy", f"{summary['top1_accuracy']:.2f}")
+        row("TopK Accuracy", f"{summary['topk_accuracy']:.2f}")
+        row("Unsafe Ratio", f"{summary['unsafe_ratio']:.2f}")
+        row("Low Confidence", f"{summary['low_confidence_ratio']:.2f}")
+        row("Avg Confidence", f"{summary['confidence_avg']:.2f}")
 
         print("\n========== SCORE DISTRIBUTION ==========")
-        print(f"Avg Top Score:     {distribution['top_score_avg']:.2f}")
-        print(f"Avg Delta Top2:    {distribution['top2_delta_avg']:.2f}")
-        print(f"Avg Score Spread:  {distribution['score_spread_avg']:.2f}")
-
+        row("Avg Top Score", f"{distribution['top_score_avg']:.2f}")
+        row("Avg Delta Top2", f"{distribution['top2_delta_avg']:.2f}")
+        row("Avg Score Spread", f"{distribution['score_spread_avg']:.2f}")
 
         print("\n========== CASES OF INTEREST ==========")
 
         if not cases:
-            print("No problematic cases found 🎉")
+            print("No problematic cases found")
         else:
             for case in cases:
-                print(f"\nQuery: {case['query']}")
-                print(f"Top Score: {case['top_score']:.2f}")
-                print(f"Delta:     {case['delta']:.2f}")
-                print(f"Top1: {case['top1']} | TopK: {case['topk']}")
-                print(f"Reason: {case['reason']}")
+                print(f"\nQuery      : {case['query']}")
+                print(f"Top Score  : {case['top_score']:.2f}")
+                print(f"Delta      : {case['delta']:.2f}")
+                print(f"Top1/TopK  : {case['top1']} / {case['topk']}")
+                print(f"Reason     : {case['reason']}")
 
         print("\n========================================")
         print("===== End of Retrieval Evaluation ======")

@@ -5,6 +5,7 @@ from embedding.embedder import RequirementsEmbedder
 from lm_output.LLMService import LLMService
 from retrieval.vector_Store import InMemoryVectorStore
 from compliance.disclosures import ComplianceDisclosures
+from security.query_Security import SecurityLayer
 
 
 ############################################
@@ -57,6 +58,7 @@ def run_retrieval_pipeline(documents):
 
     requirements_store = InMemoryVectorStore()
     embedder = RequirementsEmbedder() 
+    security = SecurityLayer()
 
     print("[✓] Creating embeddings...") 
     ids = [doc["id"] for doc in documents] 
@@ -93,18 +95,32 @@ def run_retrieval_pipeline(documents):
 
     while True:
         print("\n\nEnter a requirement to compare (or type 'exit'):\n")
-        query_text = input("> ")
+        original_query = input("> ")
 
-        if not query_text.strip():
-            print("Please enter a valid query.")
-            continue
-
-        if query_text.lower() == "exit":
+        if original_query.lower() == "exit":
             print("\nExiting demo.")
             break
 
+        if not original_query.strip():
+            print("Please enter a valid query.")
+            continue
+    
+        security_answer = security.processQuery(original_query)
+        if security_answer["blocked"]:
+            print("\n[!] Sensitive data detected. Query blocked.\n")
+            continue
+        
+        sanitized_query = security_answer["sanitized_query"]
+
+        if security_answer["detections"]:
+            print("\n[i] Sensitive data was masked.")
+            for detection in security_answer["detections"]:
+                types = sorted(set(d["type"] for d in security_answer["detections"]))
+                print(f"[i] Masked: {types}")
+            print("")
+
         # Embed query and perform semantic search
-        vectorized_query = embedder.encode([query_text])[0]
+        vectorized_query = embedder.encode([sanitized_query])[0]
         top_search_results = requirements_store.search(vectorized_query, 5)
 
         retrieved_results = []
@@ -124,7 +140,7 @@ def run_retrieval_pipeline(documents):
 
         # Optionally generate LLM-based explanation of results
         if llm_available:
-            answer = llm.output_answer(query_text, retrieved_results)
+            answer = llm.output_answer(sanitized_query, retrieved_results)
             print(answer)
 
 

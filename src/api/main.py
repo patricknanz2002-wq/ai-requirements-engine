@@ -10,6 +10,7 @@ from lm_output.LLMService import LLMService
 from pipeline.retrieval_pipeline import load_documents_recursive
 from retrieval.vector_Database import DatabaseVectorStore
 from compliance.disclosures import ComplianceDisclosures
+from security.query_Security import SecurityLayer
 
 app = FastAPI()
 
@@ -25,10 +26,16 @@ class SearchResult(BaseModel):
     text: str
 
 
+class SecurityResponse(BaseModel):
+    masked: list
+    blocked: bool
+
+
 class AnalyzeResponse(BaseModel):
     results: list[SearchResult]
     llm_explanation: str
     compliance_message: dict
+    security_response: SecurityResponse
 
 
 ############################################
@@ -44,6 +51,7 @@ def startup_event():
 
     app.state.embedder = RequirementsEmbedder()
     app.state.store = DatabaseVectorStore("requirements")
+    app.state.security = SecurityLayer()
 
     # Loads .xml files from data/raw (simulates req tool api)
     documents = load_documents_recursive(target_path)
@@ -79,7 +87,6 @@ def startup_event():
         vectorized_texts = app.state.embedder.encode(texts) 
         app.state.store.add(ids,texts,vectorized_texts)
 
-
     # Initialize LLM service if API key is configured
     app.state.llm_available = False
     try:
@@ -99,7 +106,21 @@ def startup_event():
 def analyze(request: Request, payload: Query):
 
     # Convert user query into embedding to perform semantic similarity search
-    query_vector = request.app.state.embedder.encode([payload.query])[0]
+    security_answer = app.state.security.processQuery(payload.query)
+    if security_answer["blocked"]:
+        return {
+            "results": [],
+            "llm_explanation": "",
+            "compliance_message": {
+                "warning": "Sensitive input detected"
+            },
+            "security_response": {
+                "masked": [],
+                "blocked": True
+            }
+        }
+    
+    query_vector = request.app.state.embedder.encode([security_answer['sanitized_query']])[0]
     top_search_results = request.app.state.store.search(query_vector, payload.top_k)
 
     response = []
@@ -119,12 +140,18 @@ def analyze(request: Request, payload: Query):
     # Generating llm output.
     answer = "[!] LLM disabled."
     if request.app.state.llm_available:
-        answer = request.app.state.llm.output_answer(payload.query, lmArray)
+        answer = request.app.state.llm.output_answer(security_answer["sanitized_query"], lmArray)
 
     # Generating compliance output.
     compliance = ComplianceDisclosures(app.state.llm_available,30).compliance_dict()
 
-    return {"results": response, "llm_explanation": answer, "compliance_message": compliance}
+    masked_types = sorted(set(d["type"] for d in security_answer["detections"]))
+    security = SecurityResponse(
+        masked=masked_types,
+        blocked=security_answer["blocked"]
+    )
+
+    return {"results": response, "llm_explanation": answer, "compliance_message": compliance, "security_response": security}
 
 
 ############################################

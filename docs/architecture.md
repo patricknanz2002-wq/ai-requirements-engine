@@ -10,6 +10,8 @@ It loads structured requirement documents, converts them into vector embeddings 
 
 The system supports incremental indexing, meaning only new or previously unseen requirements are embedded and stored.
 
+All incoming queries are processed through a dedicated security layer that performs input sanitization and sensitive data detection before any downstream processing.
+
 The system can be accessed through different clients, including a CLI demo, a Streamlit-based web interface, and standard REST clients such as Swagger UI.  
 All clients communicate with the FastAPI service, which exposes the semantic retrieval functionality.
 
@@ -27,29 +29,46 @@ CLI["CLI Demo"]
 UI["Streamlit UI"]
 API["FastAPI Service"]
 
+Security["Security Layer"]
+Pipeline["Retrieval Pipeline"]
+
 Loader["XML Document Loader"]
 Embedder["Embedding Service (all-MiniLM)"]
 VectorDB["Qdrant Vector DB"]
 
 LLM["LLM Explanation Service"]
 
+Eval["Evaluation Pipeline (Offline)"]
+
 Data[(XML Requirements)]
 
+%% Startup Flow
 API -->|Startup| Loader
 Loader --> Data
 Loader --> Embedder
-
 Embedder -->|Upsert embeddings| VectorDB
-VectorDB -->|Top-K similarity search| API
 
+%% Query Flow (Unified Entry)
+API -->|Query| Security
+CLI -->|Query| Security
+
+Security --> Pipeline
+Pipeline --> Embedder
+Embedder -->|Vector Query| VectorDB
+VectorDB -->|Top-K Results| API
+
+%% Optional LLM
 API -->|Optional explanation| LLM
 LLM --> API
 
-CLI -->|Query| Embedder
-Embedder -->|Vector query| VectorDB
-
+%% UI
 UI -->|HTTP request| API
 API -->|Results| UI
+
+%% Evaluation (Offline, via API)
+Eval -->|Test Queries| API
+API -->|Results| Eval
+
 ```
 
 ### CLI Demo Interface
@@ -60,15 +79,18 @@ The CLI demo directly invokes the retrieval pipeline and allows users to test se
 
 Flow:
 ```
-    User Input (CLI)
-          ↓
-    Retrieval Pipeline
-          ↓
-    Embedding Service
-          ↓
-    Vector Database Search (Qdrant)
-          ↓
-    Console Output (Top-K Matches)
+      User Input (CLI)
+            ↓
+      Security Layer
+            ↓
+      Retrieval Pipeline
+            ↓
+      Embedding Service
+            ↓
+      Vector Database Search (Qdrant)
+            ↓
+      Console Output (Top-K Matches)
+
 ```
 
 
@@ -149,6 +171,35 @@ The UI communicates with the API via HTTP requests to the `/analyze` endpoint.
 
 ---
 
+### Evaluation Framework
+
+Provides an offline evaluation pipeline for assessing retrieval quality and LLM-generated explanations.
+
+Responsibilities:
+
+- Execute predefined test queries
+- Compare retrieved results against expected requirement IDs
+- Compute retrieval metrics (precision, recall, hit rate)
+- Evaluate LLM explanations for correctness and grounding
+- Identify failure cases and low-confidence results
+
+---
+
+### Security Layer
+
+Preprocesses all incoming queries before they are passed to embedding or LLM components.
+
+Responsibilities:
+
+- Detect sensitive data (API keys, emails, phone numbers)
+- Mask non-critical data (e.g. emails, phone numbers)
+- Block requests containing critical data (e.g. API keys)
+- Ensure no sensitive data reaches vector storage or LLM services
+- Provide sanitized query output for downstream processing
+- Enforce request rejection at the API level for blocked queries
+
+---
+
 ## 4. Runtime Flow
 
 ### Startup Phase
@@ -169,11 +220,13 @@ This incremental indexing strategy avoids redundant computation and improves sta
 
 For each search request:
 
-1. The query text is converted into an embedding  
-2. A vector similarity search is performed in Qdrant 
-3. The Top-K most similar requirements are identified  
-4. The retrieved results can optionally be passed to the LLM service to generate an explanation  
-5. Results are returned via the API  
+1. The query is processed by the security layer  
+2. Sensitive data is masked or the request is blocked  
+3. The sanitized query is converted into an embedding  
+4. A vector similarity search is performed in Qdrant  
+5. The Top-K most similar requirements are identified  
+6. The retrieved results can optionally be passed to the LLM service to generate an explanation  
+7. Results are returned via the API  
 
 ---
 
@@ -187,3 +240,7 @@ The system follows a simple modular structure:
 - API-first design enabling multiple clients (CLI, UI, REST)  
 - Optional LLM layer for semantic explanation of results  
 - Designed as a foundation for scalable RAG systems
+- Centralized security layer for input validation and data protection  
+- Stateless security layer applied consistently across all system entry points  
+- Dedicated evaluation pipeline for measuring retrieval and LLM performance 
+- Clear separation between online (runtime) and offline (evaluation) workflows

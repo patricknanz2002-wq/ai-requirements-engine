@@ -32,10 +32,11 @@ POST /analyze
 - [How to Run](#4-how-to-run)
 - [API Layer](#5-api-layer)
 - [Core Components](#6-core-components)
-- [Testing](#7-testing)
-- [User Interface](#8-user-interface)
-- [Project Structure](#9-project-structure)
-- [Evaluation](#10-evaluation)
+- [Security](#7-security)
+- [Testing](#8-testing)
+- [User Interface](#9-user-interface)
+- [Project Structure](#10-project-structure)
+- [Evaluation](#11-evaluation)
 
 
 ## Quickstart
@@ -74,6 +75,7 @@ It enables semantic comparison of customer requirements to identify previously i
 Requirements are stored as individual XML files (simulating ALM/PLM systems such as Polarion or DOORS), containing structured metadata (title, status, owner, description). The retrieval engine can be accessed through different clients, including a CLI demo and a Streamlit-based web interface, both communicating with the FastAPI service.
 
 → Document Loader  
+→ Security Layer (input sanitization & filtering)
 → SentenceTransformers embeddings  
 → Vector Storage (Qdrant for persistent mode, in-memory for demo)
 → Cosine Similarity Search  
@@ -91,7 +93,8 @@ Data[(XML Requirements)]
 Loader["XML Document Loader"]
 
 API -->|Startup| Data
-API --> Embedder
+API --> Security["Security Layer"]
+Security --> Embedder
 
 Embedder --> VectorDB
 VectorDB -->|Top-K Results| API
@@ -99,7 +102,8 @@ VectorDB -->|Top-K Results| API
 API -->|Optional Explanation| LLM
 LLM --> API
 
-CLI -->|CLI Query| Loader
+CLI -->|CLI Query| Security
+Security --> Loader
 Loader --> Embedder
 Embedder --> CLIStore["In-Memory Vector Store"]
 CLIStore --> CLI
@@ -248,6 +252,10 @@ Response:
 
 This endpoint returns the retrieved requirements along with an LLM-generated explanation of their semantic similarity.
 
+**Security Note:**  
+All incoming queries are processed by the security layer before retrieval.  
+Queries containing critical sensitive data (e.g. API keys) may be blocked.
+
 ### Run API
 
 Start the API server:
@@ -263,9 +271,56 @@ uvicorn src.api.main:app --reload
 - retrieval/ → Qdrant-based vector database integration
 - pipeline/ → Retrieval orchestration logic
 
+## 7. Security
 
+The system incorporates a dedicated security layer that enforces input sanitization and sensitive data protection before any downstream processing.
 
-## 7. Testing
+### Purpose
+
+The security layer ensures that sensitive information is not processed or leaked into downstream components such as vector storage or language models.
+
+### Features
+
+- Detection of sensitive data patterns:
+  - API keys (blocked)
+  - Email addresses (masked)
+  - Phone numbers (masked)
+
+- Priority-based conflict resolution for overlapping matches
+- Deterministic sanitization logic
+- Optional request blocking for critical data (e.g. API keys)
+
+### Processing Flow
+
+1. Input query is received via API
+2. Query is passed through the security layer
+3. Sensitive data is:
+   - masked (e.g. `[EMAIL]`)
+   - or triggers blocking (e.g. API keys)
+4. Sanitized query is forwarded to embedding pipeline
+5. If the query is flagged as blocked, the request is rejected and not processed further.
+
+### Output Format
+
+The security layer returns:
+
+```json
+{
+  "sanitized_query": "masked input",
+  "detections": [...],
+  "blocked": false
+}
+```
+
+### Implementation
+
+The security logic is implemented in:
+
+```bash
+src/security/query_Security.py
+```
+
+## 8. Testing
 
 The project includes automated tests using pytest.
 
@@ -281,7 +336,7 @@ Test coverage includes:
 - API request handling
 
 
-### 8. User Interface
+### 9. User Interface
 
 The project includes a Streamlit-based web interface that allows users to interactively query the retrieval API.
 
@@ -293,7 +348,7 @@ The interface additionally shows an automatically generated explanation describi
 The UI communicates with the FastAPI backend via the `/analyze` endpoint and serves as a lightweight demonstration layer for the retrieval system.
 
 
-## 9. Project Structure
+## 10. Project Structure
 
 ```
 ai-requirements-engine/
@@ -310,6 +365,7 @@ ai-requirements-engine/
 │
 └── src/
     ├── api/              FastAPI service layer
+    ├── security/         Query sanitization and filtering layer
     ├── embedding/        Embedding generation (SentenceTransformers)
     ├── lm_output/        LLM explanation service
     ├── retrieval/        Vector store and similarity search
@@ -318,7 +374,7 @@ ai-requirements-engine/
     └── ui/               Streamlit web interface
 ```
 
-## 10. Evaluation
+## 11. Evaluation
 
 The project includes an evaluation framework for both the retrieval component and the LLM-based explanation layer.
 

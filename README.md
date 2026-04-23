@@ -1,7 +1,8 @@
 # AI Requirements Engine
 
-An AI system for semantic requirement retrieval using embedding-based similarity search with both in-memory and persistent vector storage options, designed as a core component of a Retrieval-Augmented Generation (RAG) pipeline.
-The system indexes structured XML requirements and exposes semantic search via a REST API, a CLI demo, and a Streamlit web interface.
+An AI-powered requirements retrieval engine that enables semantic search over structured requirement data and exposes its functionality as a reusable tool for integration into Retrieval-Augmented Generation (RAG) and agent-based systems.
+The system indexes structured XML requirements and provides access via a REST API, a CLI demo, and a Streamlit web interface. It can be used both as a standalone application and as a tool backend for AI agents (e.g. MCP or tool-calling architectures).
+This design allows the system to be used as a modular component in agent pipelines, enabling external LLMs to retrieve and reason over structured requirement data.
 
 Author: Patrick Nanz
 
@@ -14,7 +15,7 @@ http://51.20.45.195:8000/docs
 
 Example request:
 
-POST /analyze
+POST /tools/answer_with_requirements
 
 ```json
 {
@@ -128,12 +129,12 @@ For a detailed architecture overview see [docs/architecture.md](docs/architectur
 
 ## 4. How to Run
 
-Before running the `/analyze` endpoint, configure your API key:
+Before running the `/tools/answer_with_requirements` endpoint, configure your API key:
 
 ```bash
 export OPENAI_API_KEY=<your_api_key>
 ```
-If no API key is provided, the `/analyze` endpoint will not be available.
+If no API key is provided, the `/tools/answer_with_requirements` endpoint will not be available.
 
 ### Run with Docker Compose
 
@@ -227,7 +228,7 @@ Response:
 ```
 #### Semantic Search
 
-POST /analyze
+POST /tools/answer_with_requirements
 
 Request Body:
 ```json
@@ -239,22 +240,28 @@ Request Body:
 Response:
 ```json
 {
-  "results": [
-    {
-      "id": "REQ-1191",
-      "similarity": 0.87,
-      "text": "To ensure a long battery life..."
-    }
-  ],
-  "llm_explanation": "Explanation why the retrieved requirements match the query."
+  "answer": "...",
+  "sources": [...],
+  "meta": {
+    "compliance": {...},
+    "security": {...}
+  }
 }
 ```
 
-This endpoint returns the retrieved requirements along with an LLM-generated explanation of their semantic similarity.
+This endpoint returns the retrieved requirements along with an optional LLM-generated explanation of their semantic similarity.
 
 **Security Note:**  
 All incoming queries are processed by the security layer before retrieval.  
 Queries containing critical sensitive data (e.g. API keys) may be blocked.
+
+### Tool Interface (Agent Integration)
+
+The API exposes the retrieval pipeline as a reusable tool endpoint designed for integration with AI agents (e.g. MCP or tool-calling systems).
+
+POST /tools/answer_with_requirements
+
+This allows external agents to call the system programmatically and incorporate requirement retrieval into larger reasoning workflows.
 
 ### Run API
 
@@ -345,7 +352,7 @@ The interface provides a simple way to enter requirement text, configure the num
 For each retrieved requirement, the UI displays the similarity score and the original requirement text.  
 The interface additionally shows an automatically generated explanation describing why the retrieved requirements are semantically related to the query.
 
-The UI communicates with the FastAPI backend via the `/analyze` endpoint and serves as a lightweight demonstration layer for the retrieval system.
+The UI communicates with the FastAPI backend via the `/tools/answer_with_requirements` endpoint and serves as a lightweight demonstration layer for the retrieval system.
 
 
 ## 10. Project Structure

@@ -129,7 +129,7 @@ if analyze_button and query:
     with st.spinner("Analyzing requirements..."):
 
         response = requests.post(
-            "http://localhost:8000/analyze",
+            "http://host.docker.internal:8000/tools/answer_with_requirements",
             json={
                 "query": query,
                 "top_k": top_k
@@ -149,9 +149,9 @@ if analyze_button and query:
 
     st.subheader("Similar Requirements")
 
-    for r in data["results"]:
+    for r in data["sources"]:
 
-        similarity_percent = r["similarity"] * 100
+        similarity_percent = r["score"] * 100
 
         st.markdown(f"""
         <div class="card">
@@ -162,7 +162,7 @@ if analyze_button and query:
         </div>
         """, unsafe_allow_html=True)
 
-        st.progress(r["similarity"])
+        st.progress(r["score"])
 
     # -------------------------------------------------
     # LLM EXPLANATION
@@ -172,7 +172,7 @@ if analyze_button and query:
 
     st.markdown(f"""
     <div class="llm-box">
-    {data["llm_explanation"]}
+    {data["answer"]}
     </div>
     """, unsafe_allow_html=True)
 

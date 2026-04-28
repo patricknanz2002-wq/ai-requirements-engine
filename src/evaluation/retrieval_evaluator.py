@@ -1,9 +1,23 @@
 from test_set_definition import TEST_SETS, TOP_K, THRESHOLD
 
+
+############################################
+##
+## Class: RetrievalEvaluator
+##
+############################################
 class RetrievalEvaluator:
     def __init__(self):
         pass
 
+
+    ############################################
+    ##
+    ## Method: hit_rate_at_k
+    ## Description: Measures how often at least one
+    ## expected document appears in the top-k results
+    ##
+    ############################################
     def hit_rate_at_k(self, results: list) -> float:
         count = 0
 
@@ -14,6 +28,14 @@ class RetrievalEvaluator:
 
         return count / len(results)
 
+
+    ############################################
+    ##
+    ## Method: failed_cases
+    ## Description: Returns all queries where
+    ## no expected result was retrieved
+    ##
+    ############################################
     def failed_cases(self, results: list) -> list:
         failed_queries = []
 
@@ -24,6 +46,14 @@ class RetrievalEvaluator:
 
         return failed_queries
 
+
+    ############################################
+    ##
+    ## Method: recall
+    ## Description: Recall per query
+    ## (fraction of relevant documents retrieved)
+    ##
+    ############################################
     def recall(self, results: list) -> list:
         recall_list = []
 
@@ -40,6 +70,14 @@ class RetrievalEvaluator:
 
         return recall_list
 
+
+    ############################################
+    ##
+    ## Method: precision
+    ## Description: Precision per query
+    ## (fraction of retrieved documents that are relevant)
+    ##
+    ############################################
     def precision(self, results: list) -> list:
         precision_list = []
 
@@ -56,20 +94,51 @@ class RetrievalEvaluator:
 
         return precision_list
 
+
+    ############################################
+    ##
+    ## Method: is_low_score
+    ## Description: Checks whether a score is below
+    ## the global threshold
+    ##
+    ############################################
     def is_low_score(self, value: float) -> bool:
         return value < THRESHOLD
     
+
+    ############################################
+    ##
+    ## Method: delta_top2
+    ## Description: Difference between top-1 and top-2 score
+    ## → indicates ranking stability
+    ##
+    ############################################
     def delta_top2(self, scores:list) -> float:
         if len(scores) < 2:
             return 0.0
         else:
             return scores[0] - scores[1]
         
+
+    ############################################
+    ##
+    ## Method: retrieval_confidence
+    ## Description: Combines absolute score and margin
+    ## → estimates confidence in top result
+    ##
+    ############################################
     def retrieval_confidence(self, scores: list) -> float:
         if len(scores) < 2:
             return 0.0
         return scores[0] * (scores[0] - scores[1])
     
+
+    ############################################
+    ##
+    ## Method: score_distribution
+    ## Description: Returns statistical overview of scores
+    ##
+    ############################################
     def score_distribution(self, scores: list) -> dict:
         if not scores:
             return {}
@@ -81,21 +150,58 @@ class RetrievalEvaluator:
             "spread": scores[0] - scores[-1]
         }
 
+
+    ############################################
+    ##
+    ## Method: is_confident
+    ## Description: Determines whether retrieval is reliable
+    ## based on threshold + score margin
+    ##
+    ############################################
     def is_confident(self, scores: list, threshold=THRESHOLD, delta=0.1) -> bool:
         if len(scores) < 2:
             return False
         return scores[0] >= threshold and (scores[0] - scores[1]) >= delta
 
+
+    ############################################
+    ##
+    ## Method: top1_hit
+    ## Description: Checks if the top-1 result is correct
+    ##
+    ############################################
     def top1_hit(self, entry: dict) -> bool:
         return entry["results"][0] in entry["expected"]
 
+
+    ############################################
+    ##
+    ## Method: topk_hit
+    ## Description: Checks if any top-k result is correct
+    ##
+    ############################################
     def topk_hit(self, entry: dict) -> bool:
         return not set(entry["expected"]).isdisjoint(entry["results"])
 
+
+    ############################################
+    ##
+    ## Method: false_positives
+    ## Description: Returns retrieved IDs that are incorrect
+    ##
+    ############################################
     def false_positives(self, entry: dict) -> list:
         expected = set(entry["expected"])
         return [rid for rid in entry["results"] if rid not in expected]
 
+
+    ############################################
+    ##
+    ## Method: score_evaluation
+    ## Description: Evaluates retrieval quality per query
+    ## using score-based heuristics
+    ##
+    ############################################
     def score_evaluation(self, results:list) -> list:
         return_list = []
 
@@ -130,6 +236,13 @@ class RetrievalEvaluator:
 
         return return_list
 
+
+    ############################################
+    ##
+    ## Method: summarize_retrieval
+    ## Description: Aggregates all metrics into a summary
+    ##
+    ############################################
     def summarize_retrieval(self, results: list) -> dict:
 
         return_dict = {}
@@ -152,7 +265,7 @@ class RetrievalEvaluator:
         precision_avg = sum(p["precision"] for p in precision_list) / len(precision_list)
         summary["precision_avg"] = precision_avg
 
-        # Detailed numbers
+        # Detailed metrics aggregation
         topk_count = 0
         top1_count = 0
         unsafe_count = 0
@@ -161,7 +274,9 @@ class RetrievalEvaluator:
         top2_delta = 0
         score_spread = 0
         low_confidence_count = 0
+
         score_evaluation_list = self.score_evaluation(results)
+
         for entry in score_evaluation_list:
             if entry['top1']:
                 top1_count += 1
@@ -171,6 +286,7 @@ class RetrievalEvaluator:
                 unsafe_count += 1
             if not entry['is_confident']:
                 low_confidence_count += 1
+
             confidence += entry['confidence']
             top_score += entry['top_score']
             top2_delta += entry['top2_delta']
@@ -206,6 +322,13 @@ class RetrievalEvaluator:
 
         return return_dict
 
+
+    ############################################
+    ##
+    ## Method: print_output
+    ## Description: Pretty-prints evaluation results
+    ##
+    ############################################
     def print_output(self, evaluation: dict):
 
         summary = evaluation["summary"]

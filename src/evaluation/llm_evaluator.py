@@ -6,6 +6,17 @@ from openai import OpenAI
 from embedding.embedder import RequirementsEmbedder
 
 
+############################################
+##
+## Class: LLMEvaluator
+## Description:
+## Evaluates LLM outputs with multiple strategies:
+## - ID consistency checks
+## - semantic grounding (embedding similarity)
+## - LLM-as-a-judge evaluation
+## - lexical overlap heuristics
+##
+############################################
 class LLMEvaluator:
     def __init__(self):
         api_key = os.getenv("OPENAI_API_KEY")
@@ -24,10 +35,32 @@ class LLMEvaluator:
             raise RuntimeError(f"\n[LLM initialization error]\n{str(e)}")
         
 
+    ############################################
+    ##
+    ## Method: cosine_similarity
+    ## Description:
+    ## Computes cosine similarity between two vectors
+    ## → used to measure semantic similarity between
+    ## generated explanations and source requirements
+    ##
+    ############################################
     def cosine_similarity(self, a, b):
         return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
 
+    ############################################
+    ##
+    ## Method: explanation_similarity_check
+    ## Description:
+    ## Checks whether LLM-generated explanations are
+    ## semantically aligned with the referenced requirements.
+    ##
+    ## Approach:
+    ## - Extract (REQ-ID, Reason) pairs from LLM output
+    ## - Compare reason vs. requirement text via embeddings
+    ## - Flag low-similarity cases as "suspicious"
+    ##
+    ############################################
     def explanation_similarity_check(self, llm_answers: list, results: list, threshold=0.75):
 
         encoder = RequirementsEmbedder()
@@ -57,18 +90,30 @@ class LLMEvaluator:
 
                 requirement_text = req_map[req_id]
 
-                # Embeddings
+                # Compute embeddings
                 vectors = encoder.encode([reason, requirement_text])
                 reason_vec, req_vec = vectors[0], vectors[1]
 
                 sim = self.cosine_similarity(reason_vec, req_vec)
 
+                # Count semantic mismatches
                 if sim < threshold:
                     suspicious += 1
 
         return suspicious / total if total else 0.0
 
 
+    ############################################
+    ##
+    ## Method: invalid_id_rate
+    ## Description:
+    ## Detects hallucinated or invalid requirement IDs.
+    ##
+    ## Idea:
+    ## - Compare IDs used in LLM answer vs allowed IDs
+    ## - Count how often invalid IDs appear per query
+    ##
+    ############################################
     def invalid_id_rate(self, llm_answers: list, results: list):
 
         total = 0
@@ -98,6 +143,18 @@ class LLMEvaluator:
         }
 
 
+    ############################################
+    ##
+    ## Method: judgement (LLM-as-a-judge)
+    ## Description:
+    ## Uses an LLM to evaluate another LLM’s output.
+    ##
+    ## The judge checks:
+    ## - grounding in context
+    ## - correctness of reasoning
+    ## - absence of hallucinated information
+    ##
+    ############################################
     def judgement(self, results:list, answers:list) -> list:
 
         return_list = []
@@ -146,6 +203,7 @@ class LLMEvaluator:
 
                 {{"verdict": "incorrect", "reason": "<short reason>"}}
             """
+
             response_content = ""
             try:
                 response = self.client.chat.completions.create(
@@ -164,6 +222,14 @@ class LLMEvaluator:
         return return_list
     
     
+    ############################################
+    ##
+    ## Method: parse_judgment
+    ## Description:
+    ## Parses structured JSON output from judge LLM.
+    ## Falls back to heuristic parsing if JSON fails.
+    ##
+    ############################################
     def parse_judgment(self, raw_judgment: str) -> tuple[str, str]:
 
         try:
@@ -173,7 +239,7 @@ class LLMEvaluator:
             return verdict, reason
 
         except Exception:
-            # fallback
+            # fallback parsing
             raw = raw_judgment.strip()
             is_incorrect = re.match(r"^\s*incorrect\b", raw.lower())
 
@@ -183,6 +249,14 @@ class LLMEvaluator:
             return "unknown", raw
 
 
+    ############################################
+    ##
+    ## Method: output_answer (LLM generation)
+    ## Description:
+    ## Generates explanations for retrieved requirements.
+    ## Used as input for evaluation pipeline.
+    ##
+    ############################################
     def output_answer(self, query, similar_requirements) -> str:
 
             lines = []
@@ -214,17 +288,7 @@ class LLMEvaluator:
             - You MUST ONLY use the provided requirement IDs. Do NOT generate new IDs. If unsure, use only the given ones.
 
             Output format:
-
-            LLM Response:
-
-            1. [<id>] <requirement text>
-            Similarity: <score as percentage>
-            Reason: <short explanation>
-
-            2. [<id>] <requirement text>
-            Similarity: <score as percentage>
-            Reason: <short explanation>
-
+            ...
             """
 
             try:
@@ -237,10 +301,24 @@ class LLMEvaluator:
                 return f"LLM error: {str(e)}"
             
 
+    ############################################
+    ##
+    ## Method: tokenize
+    ## Description:
+    ## Simple tokenizer for lexical overlap analysis
+    ##
+    ############################################
     def tokenize(self, text):
         return re.findall(r"\b\w+\b", text.lower())
 
 
+    ############################################
+    ##
+    ## Method: collect_llm_outputs
+    ## Description:
+    ## Runs LLM generation for all test queries
+    ##
+    ############################################
     def collect_llm_outputs(self, results:list) -> list:
 
         returnList = []
@@ -251,23 +329,33 @@ class LLMEvaluator:
             result_ids = entry['results']
             scores = entry['scores']
             retrieved_texts = entry['texts']
+
             similar_results = [
                 (rid, text, score)
-                for rid, text, score in zip(result_ids, retrieved_texts, scores)]
+                for rid, text, score in zip(result_ids, retrieved_texts, scores)
+            ]
 
             returnList.append(self.output_answer(query,similar_results))
 
         return returnList
     
 
+    ############################################
+    ##
+    ## Method: common_words_ratio
+    ## Description:
+    ## Measures lexical overlap between LLM answers
+    ## and retrieved documents (weak grounding signal)
+    ##
+    ############################################
     def common_words_ratio(self, llm_answers:list, results:list)-> float:
 
         conncated_answers = " ".join(llm_answers)
-        conncated_texts = ""
 
         all_texts = []
         for entry in results:
             all_texts.extend(entry['texts'])
+
         conncated_texts = " ".join(all_texts)
 
         answer_set = set(self.tokenize(conncated_answers))
@@ -277,6 +365,14 @@ class LLMEvaluator:
         return len(overlap) / len(answer_set) if answer_set else 0.0
     
 
+    ############################################
+    ##
+    ## Method: retrieved_id_coverage
+    ## Description:
+    ## Measures how many retrieved IDs are actually
+    ## referenced in the LLM output
+    ##
+    ############################################
     def retrieved_id_coverage(self, llm_answers:list, results:list) -> float:
 
         conncated_answers = " ".join(llm_answers)
@@ -292,6 +388,14 @@ class LLMEvaluator:
         return len(matches) / len(id_set) if id_set else 0.0
 
 
+    ############################################
+    ##
+    ## Method: summarize_llm
+    ## Description:
+    ## Aggregates all LLM evaluation signals into
+    ## a structured report (metrics + failure cases)
+    ##
+    ############################################
     def summarize_llm(self, results: list) -> dict:
 
         llm_answers = self.collect_llm_outputs(results)
@@ -300,11 +404,11 @@ class LLMEvaluator:
         summary = {}
         grounding = {}
 
-        # Groundness
+        # Grounding heuristics
         summary["common_words_ratio"] = self.common_words_ratio(llm_answers, results)
         summary["retrieved_id_coverage"] = self.retrieved_id_coverage(llm_answers, results)
 
-        # LLM Judge
+        # LLM judge
         judgment_list = self.judgement(results, llm_answers)
 
         correct = 0
@@ -343,6 +447,14 @@ class LLMEvaluator:
             "id_check": id_check
         }
     
+
+    ############################################
+    ##
+    ## Method: print_llm_output
+    ## Description:
+    ## Pretty-prints evaluation results in CLI format
+    ##
+    ############################################
     def print_llm_output(self, evaluation: dict):
 
         summary = evaluation["summary"]
